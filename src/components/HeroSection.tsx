@@ -26,12 +26,12 @@ const HeroSection: React.FC = () => {
         style={{ 
           backgroundImage: 'url("/lovable-uploads/5cddec10-307b-44f4-996d-316b082f4c0f.png")',
           transform: 'scale(1.1)',
-          filter: 'brightness(0.7) contrast(1.2)' 
+          filter: 'brightness(0.6) contrast(1.2)' 
         }}
       />
       
       {/* Decorative overlay */}
-      <div className="absolute inset-0 bg-art-deco-pattern opacity-10"></div>
+      <div className="absolute inset-0 bg-art-deco-pattern opacity-15"></div>
       
       {/* Gradient overlay with increased opacity */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent"></div>
@@ -44,8 +44,12 @@ const HeroSection: React.FC = () => {
             <span className="inline-block w-32 h-1 bg-gold"></span>
           </div>
           
-          <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-8xl mb-6 opacity-0 animate-fade-in">
-            <span className="text-gold">M</span>onumental
+          <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-8xl mb-6 opacity-0 animate-fade-in tracking-widest text-black" style={{ 
+            textTransform: 'uppercase', 
+            letterSpacing: '0.2em',
+            textShadow: '2px 2px 0px rgba(212, 175, 55, 0.3)'
+          }}>
+            Monumental
           </h1>
           
           <p className="font-accent text-xl md:text-2xl opacity-0 animate-fade-in" style={{ animationDelay: '300ms' }}>
