@@ -26,15 +26,15 @@ const HeroSection: React.FC = () => {
         style={{ 
           backgroundImage: 'url("/lovable-uploads/5cddec10-307b-44f4-996d-316b082f4c0f.png")',
           transform: 'scale(1.1)',
-          filter: 'brightness(0.9)'
+          filter: 'brightness(0.7) contrast(1.2)' 
         }}
       />
       
       {/* Decorative overlay */}
       <div className="absolute inset-0 bg-art-deco-pattern opacity-10"></div>
       
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+      {/* Gradient overlay with increased opacity */}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent"></div>
       
       {/* Content container */}
       <div className="absolute inset-0 flex flex-col justify-end items-center pb-24 md:pb-32 px-4">
