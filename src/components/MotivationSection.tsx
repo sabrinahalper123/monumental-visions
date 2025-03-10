@@ -84,7 +84,12 @@ const MotivationSection: React.FC = () => {
               <p className="mb-6">
                 If you have an idea of where and what we should build, propose a monument here.
               </p>
-              <a href="#" className="art-deco-button">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdP4v-778v3NyvX8GrxWw_nqho-5Dw6mfTAvMhUGflqJCfkIA/viewform?usp=sharing" 
+                className="art-deco-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Submit Proposal
               </a>
             </div>
@@ -92,7 +97,7 @@ const MotivationSection: React.FC = () => {
             <div>
               <h3 className="animate-on-scroll opacity-0 font-display text-2xl mb-4">Sponsors</h3>
               <p className="animate-on-scroll opacity-0 text-lg leading-relaxed">
-                The founding sponsor of Monumental is Elad Gil. Other sponsors and support list coming soon. 
+                The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-gold hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
                 Reach out to <a href="mailto:monumental@eladgil.com" className="text-gold hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
               </p>
             </div>
