@@ -8,7 +8,7 @@ interface AnimatedTextProps {
   once?: boolean;
   delay?: number;
   speed?: number;
-  tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'div';
+  tag?: keyof JSX.IntrinsicElements;
 }
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({
@@ -19,7 +19,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   speed = 40,
   tag = 'p'
 }) => {
-  const elementRef = useRef<HTMLElement | null>(null);
+  const elementRef = useRef<HTMLElement>(null);
   const renderedRef = useRef(false);
 
   useEffect(() => {
@@ -51,15 +51,15 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
     return () => clearTimeout(timer);
   }, [text, once, delay, speed]);
 
-  const Tag = tag as keyof JSX.IntrinsicElements;
+  const Component = tag as any;
 
   return (
-    <Tag 
-      ref={elementRef as React.RefObject<HTMLDivElement>} 
+    <Component 
+      ref={elementRef}
       className={cn('opacity-0', className)}
     >
       {text}
-    </Tag>
+    </Component>
   );
 };
 
