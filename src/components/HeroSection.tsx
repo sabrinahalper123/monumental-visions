@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
         ref={imageRef}
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2012&q=80")',
+          backgroundImage: 'url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
           transform: 'scale(1.1)',
           filter: 'brightness(0.8)'
         }}
