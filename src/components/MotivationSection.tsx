@@ -49,9 +49,9 @@ const MotivationSection: React.FC = () => {
       title: "Eiffel Tower (1889)"
     },
     {
-      image: "/lovable-uploads/e8ed3c93-4741-43cd-9c12-448aac30b133.png",
-      alt: "Christ the Redeemer statue above clouds",
-      title: "Christ the Redeemer (1931)"
+      image: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
+      alt: "Pyramids of Giza with Sphinx",
+      title: "Pyramids of Giza (c. 2600 – c. 2500 BC)"
     }
   ];
 
@@ -124,12 +124,6 @@ const MotivationSection: React.FC = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
-                <p className="text-lg leading-relaxed">
-                  Christ the Redeemer stands as one of the most iconic monuments of the modern era, representing hope and redemption above the city of Rio de Janeiro.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  These monuments demonstrate how large-scale public art can transform cities and cultures, creating lasting symbols that inspire generations.
-                </p>
               </div>
               <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
                 <div className="relative overflow-hidden group">
@@ -138,7 +132,7 @@ const MotivationSection: React.FC = () => {
                     <img 
                       src={monuments[2].image}
                       alt={monuments[2].alt} 
-                      className="relative z-10 w-full h-auto aspect-square object-cover object-center shadow-lg group-hover:scale-105 transition-transform duration-500"
+                      className="relative z-10 w-full h-auto aspect-square object-cover object-[80%_center] shadow-lg group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="mt-2 text-center">
