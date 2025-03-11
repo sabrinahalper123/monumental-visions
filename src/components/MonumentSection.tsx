@@ -35,8 +35,8 @@ const MonumentSection: React.FC = () => {
 
   return (
     <section 
-      id="athena" 
-      className="relative py-20 md:py-24 lg:py-32 px-4 bg-cover bg-center"
+      id="ideas" 
+      className="relative py-20 md:py-24 lg:py-24 px-4 bg-cover bg-center"
       style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("https://images.unsplash.com/photo-1504198322253-cfa87a0ff60f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")' }}
       ref={sectionRef}
     >

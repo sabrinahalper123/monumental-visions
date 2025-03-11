@@ -25,7 +25,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a 
           href="#" 
-          className="text-2xl font-display font-bold tracking-wide text-primary"
+          className="text-2xl font-display font-bold tracking-wide text-black"
         >
           <span className="text-gold">M</span>onumental
         </a>
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
         
         {/* Desktop menu */}
         <nav className="hidden md:flex space-x-8">
-          {['Athena', 'Palisades', 'Motivation', 'Process'].map((item) => (
+          {['Ideas', 'Motivation', 'Process'].map((item) => (
             <a 
               key={item}
               href={`#${item.toLowerCase()}`} 
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
         isMenuOpen ? "max-h-64 py-4" : "max-h-0 py-0"
       )}>
         <nav className="container mx-auto px-4 flex flex-col space-y-4">
-          {['Athena', 'Palisades', 'Motivation', 'Process'].map((item) => (
+          {['Ideas', 'Motivation', 'Process'].map((item) => (
             <a 
               key={item}
               href={`#${item.toLowerCase()}`} 

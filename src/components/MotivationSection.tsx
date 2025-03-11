@@ -37,11 +37,32 @@ const MotivationSection: React.FC = () => {
     "Monumental is building the next generation of large scale public works to inspire humanity to build its future. We are starting small but thinking big. Right now we're experimenting with marble work and brass works."
   ];
 
+  const monuments = [
+    {
+      image: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e",
+      alt: "Statue of Liberty",
+      title: "Statue of Liberty",
+      description: "Symbol of freedom and hope for generations of immigrants"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
+      alt: "Eiffel Tower",
+      title: "Eiffel Tower",
+      description: "French innovation in steel technology at the 1881 World Fair"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1527576539890-dfa815648363",
+      alt: "Great Pyramid",
+      title: "Ancient Wonders",
+      description: "The Seven Wonders inspired civilizations to think bigger"
+    }
+  ];
+
   return (
     <section 
       id="motivation" 
       ref={sectionRef}
-      className="relative py-20 md:py-24 lg:py-32 px-4"
+      className="relative py-20 md:py-24 px-4"
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
@@ -50,21 +71,42 @@ const MotivationSection: React.FC = () => {
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
           </div>
           
-          <div className="space-y-6 mb-12">
-            {motivationParagraphs.map((paragraph, index) => (
-              <p 
-                key={index} 
-                className={cn(
-                  "animate-on-scroll opacity-0 text-lg leading-relaxed",
-                  index === 2 && "text-primary font-medium"
-                )}
-              >
-                {paragraph}
-              </p>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+            <div className="col-span-1 md:col-span-2 space-y-6">
+              {motivationParagraphs.map((paragraph, index) => (
+                <p 
+                  key={index} 
+                  className={cn(
+                    "animate-on-scroll opacity-0 text-lg leading-relaxed",
+                    index === 2 && "text-primary font-medium"
+                  )}
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            
+            <div className="animate-on-scroll opacity-0 space-y-6">
+              {monuments.map((monument, index) => (
+                <div key={index} className="relative mb-6 overflow-hidden group">
+                  <div className="relative">
+                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+                    <img 
+                      src={monument.image}
+                      alt={monument.alt} 
+                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="mt-2 text-center">
+                    <h3 className="text-lg font-medium">{monument.title}</h3>
+                    <p className="text-sm text-gray-600">{monument.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           
-          <div className="my-16">
+          <div className="my-12">
             <div className="animate-on-scroll opacity-0 art-deco-divider"></div>
           </div>
           
