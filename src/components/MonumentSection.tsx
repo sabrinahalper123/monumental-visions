@@ -76,7 +76,7 @@ const MonumentSection: React.FC = () => {
               Positioned in the Presidio of San Francisco, the Athena monument honors the land's long-standing role in defense and leadership. The Presidio was established in 1776 as a Spanish military fort, later controlled by Mexico, and ultimately became a key U.S. Army post, playing a role in every major American conflict from the Civil War through Desert Storm.
             </p>
             <p className="mb-4 text-lg leading-relaxed">
-              Athena also embodies prudent restraint, strategic foresight, and heroic endeavor, all qualities reflected in the Presidio's past as a protector of the westernmost edge of the United States. The monument stands as a guardian, overlooking the bay, symbolizing both California's strength and its dedication to wisdom and justice.
+              Athena also embodies justice, wisdom, and heroic endeavor, standing as a guardian overlooking the bay.
             </p>
           </div>
         </div>
