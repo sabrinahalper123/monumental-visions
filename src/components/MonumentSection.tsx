@@ -80,6 +80,11 @@ const MonumentSection: React.FC = () => {
             </p>
           </div>
         </div>
+
+        {/* Add divider at the end of the section */}
+        <div className="mt-16 mb-0">
+          <div className="art-deco-divider opacity-0 animate-fade-in" style={{ animationDelay: '600ms' }}></div>
+        </div>
       </div>
     </section>
   );

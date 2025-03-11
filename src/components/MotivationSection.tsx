@@ -62,7 +62,7 @@ const MotivationSection: React.FC = () => {
     <section 
       id="motivation" 
       ref={sectionRef}
-      className="relative py-20 md:py-24 px-4"
+      className="relative pt-8 pb-20 md:pb-24 px-4" // Reduced top padding since we have the divider from previous section
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
