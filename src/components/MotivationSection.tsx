@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -128,142 +129,104 @@ const MotivationSection: React.FC = () => {
     <section 
       id="motivation" 
       ref={sectionRef}
-      className="relative pt-8 pb-20 md:pb-24 px-4"
+      className="relative py-6 md:py-10 px-4"
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-3">Our Vision</span>
+          <div className="text-center mb-8">
+            <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-2">Our Vision</span>
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
             <p className={cn(
-              "animate-on-scroll opacity-0 text-lg leading-relaxed text-primary font-medium mt-6 mb-10"
+              "animate-on-scroll opacity-0 text-lg leading-relaxed text-primary font-medium mt-4 mb-6"
             )}>
               {motivationParagraphs[3]}
             </p>
           </div>
           
-          <div className="space-y-16">
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
-              <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-4">
-                <p className="text-lg leading-relaxed">{motivationParagraphs[0]}</p>
-                <p className="text-lg leading-relaxed">
-                  {motivationParagraphs[1]}
-                </p>
+          <div className="space-y-8">
+            {/* Combined first two sections */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+              <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-3">
+                <p className="text-base leading-relaxed">{motivationParagraphs[0]}</p>
+                <p className="text-base leading-relaxed">{motivationParagraphs[1]}</p>
+                <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
               </div>
-              <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
-                <div className="relative overflow-hidden group">
-                  <div className="relative">
-                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
-                    <img 
-                      src={monuments[1].image}
-                      alt={monuments[1].alt} 
-                      className="relative z-10 w-full h-auto aspect-[3/4] max-w-[85%] mx-auto object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
-                    />
+              <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-4 justify-center">
+                {monuments.map((monument, index) => (
+                  <div key={index} className="relative overflow-hidden group w-1/2 md:w-full max-w-[220px] md:max-w-none">
+                    <div className="relative">
+                      <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+                      <img 
+                        src={monument.image}
+                        alt={monument.alt} 
+                        className="relative z-10 w-full h-auto aspect-[3/4] object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="mt-1 text-center">
+                      <h3 className="text-sm font-medium">{monument.title}</h3>
+                    </div>
                   </div>
-                  <div className="mt-2 text-center">
-                    <h3 className="text-lg font-medium">{monuments[1].title}</h3>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center mb-16">
-              <div className="animate-on-scroll opacity-0 order-1 md:col-span-2">
-                <div className="relative overflow-hidden group">
-                  <div className="relative">
-                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
-                    <img 
-                      src={monuments[0].image}
-                      alt={monuments[0].alt} 
-                      className="relative z-10 w-full h-auto aspect-[3/4] max-w-[85%] mx-auto object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="mt-2 text-center">
-                    <h3 className="text-lg font-medium">{monuments[0].title}</h3>
-                  </div>
-                </div>
-              </div>
-              <div className="animate-on-scroll opacity-0 order-2 md:col-span-3 space-y-4">
-                <p className="text-lg leading-relaxed">
-                  The Statue of Liberty inspired generations of immigrants entering Ellis Island and symbolized freedom and hope for a better future.
-                </p>
-                <p className="text-lg leading-relaxed">{motivationParagraphs[2]}</p>
-                <p className="text-lg leading-relaxed">{motivationParagraphs[3]}</p>
-              </div>
-            </div>
+            <div className="animate-on-scroll opacity-0 art-deco-divider my-6"></div>
             
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
-              <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
-                {/* Content can be added here if needed */}
-              </div>
-              <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
-                <ImageSlideshow images={slideshowImages} interval={4000} />
-              </div>
-            </div>
-          </div>
-          
-          <div className="my-24">
-            <div className="animate-on-scroll opacity-0 art-deco-divider"></div>
-          </div>
-          
-          <div id="process">
-            <div className="text-center mb-12">
-              <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-3">How We Work</span>
-              <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
-            </div>
-            
-            <div className="animate-on-scroll opacity-0 text-lg leading-relaxed mb-8">
-              We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens. Right now, we're experimenting with bronze and marble works.
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="animate-on-scroll opacity-0 space-y-4">
-                <h3 className="font-display text-2xl mb-4">Sponsors</h3>
-                <p className="text-lg leading-relaxed">
-                  The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-gold hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
-                  Reach out to <a href="mailto:monumental@eladgil.com" className="text-gold hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
-                </p>
+            <div id="process">
+              <div className="text-center mb-6">
+                <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-2">How We Work</span>
+                <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
               </div>
               
-              <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 p-8 border border-gold/20">
-                <h3 className="font-display text-2xl mb-4">Propose a Monument</h3>
-                <p className="mb-6">
-                  If you have an idea of where and what we should build, propose a monument here.
-                </p>
-                <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdP4v-778v3NyvX8GrxWw_nqho-5Dw6mfTAvMhUGflqJCfkIA/viewform?usp=sharing" 
-                  className="art-deco-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Submit Proposal
-                </a>
-              </div>
-            </div>
-            
-            <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-16">
-              <div className="relative mb-6">
-                <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
-                <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
-                <div className="absolute left-1/3 right-1/3 top-1/2 transform -translate-y-2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
-                <div className="absolute left-1/3 right-1/3 top-1/2 transform translate-y-2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
-                <div className="flex justify-center">
-                  <span className="relative px-4 bg-background text-gold font-accent text-sm">INSPIRATIONS</span>
-                </div>
+              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-6">
+                We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens. Right now, we're experimenting with bronze and marble works.
               </div>
               
-              <div className="relative">
-                <ImageSlideshow 
-                  images={newSlideshowImages} 
-                  interval={4000} 
-                  className="w-full h-[300px] md:h-[400px]"
-                />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div className="animate-on-scroll opacity-0 space-y-3">
+                  <h3 className="font-display text-xl mb-2">Sponsors</h3>
+                  <p className="text-base leading-relaxed">
+                    The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-gold hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
+                    Reach out to <a href="mailto:monumental@eladgil.com" className="text-gold hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
+                  </p>
+                </div>
                 
-                <div className="absolute -bottom-6 left-0 right-0 h-12 pointer-events-none">
-                  <div className="absolute left-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-gold/50 to-transparent"></div>
-                  <div className="absolute right-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-transparent to-gold/50"></div>
-                  <div className="absolute left-0 w-1/6 bottom-3 h-px bg-gradient-to-r from-gold/30 to-transparent"></div>
-                  <div className="absolute right-0 w-1/6 bottom-3 h-px bg-gradient-to-r from-transparent to-gold/30"></div>
+                <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 p-6 border border-gold/20">
+                  <h3 className="font-display text-xl mb-3">Propose a Monument</h3>
+                  <p className="mb-4 text-base">
+                    If you have an idea of where and what we should build, propose a monument here.
+                  </p>
+                  <a 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdP4v-778v3NyvX8GrxWw_nqho-5Dw6mfTAvMhUGflqJCfkIA/viewform?usp=sharing" 
+                    className="art-deco-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Submit Proposal
+                  </a>
+                </div>
+              </div>
+              
+              <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-8">
+                <div className="relative mb-4">
+                  <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+                  <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
+                  <div className="flex justify-center">
+                    <span className="relative px-4 bg-background text-gold font-accent text-sm">INSPIRATIONS</span>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <ImageSlideshow 
+                    images={newSlideshowImages} 
+                    interval={4000} 
+                    className="w-full h-[250px] md:h-[350px]"
+                  />
+                  
+                  <div className="absolute -bottom-6 left-0 right-0 h-12 pointer-events-none">
+                    <div className="absolute left-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-gold/50 to-transparent"></div>
+                    <div className="absolute right-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-transparent to-gold/50"></div>
+                  </div>
                 </div>
               </div>
             </div>
