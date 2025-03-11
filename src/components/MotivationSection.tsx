@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -32,7 +31,7 @@ const MotivationSection: React.FC = () => {
 
   const motivationParagraphs = [
     "Throughout human history, large-scale monuments and public art works have inspired optimism, awe, and ambition.",
-    "The Seven Wonders of the Ancient World inspired Egyptians, Babylonians, and Greeks to rethink their place in the world. The Eiffel Tower was originally a way for the French to showcase their new technology of steel making and steel casting at the 1881 World Fair. The Statue of Liberty inspired generations of immigrants entering Ellis Island and symbolized freedom and hope for a better future.",
+    "The Seven Wonders of the Ancient World inspired Egyptians, Babylonians, and Greeks to rethink their place in the world. The Eiffel Tower was originally a way for the French to showcase their new technology of steel making and steel casting at the 1889 World Fair.",
     "Somehow, Western society has lost the drive to build large scale, heart changing, odes to progress.",
     "Monumental is building the next generation of large scale public works to inspire humanity to build its future."
   ];
@@ -48,7 +47,7 @@ const MotivationSection: React.FC = () => {
       image: "/lovable-uploads/8933ec0a-b111-43e6-a4a2-350068e0ddb5.png",
       alt: "Eiffel Tower against blue sky",
       title: "Eiffel Tower",
-      description: "French innovation in steel technology at the 1881 World Fair"
+      description: "French innovation in steel technology at the 1889 World Fair"
     },
     {
       image: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
@@ -81,7 +80,7 @@ const MotivationSection: React.FC = () => {
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
                 <p className="text-lg leading-relaxed">{motivationParagraphs[0]}</p>
                 <p className="text-lg leading-relaxed">
-                  The Seven Wonders of the Ancient World inspired Egyptians, Babylonians, and Greeks to rethink their place in the world. The Eiffel Tower was originally a way for the French to showcase their new technology of steel making and steel casting at the 1881 World Fair.
+                  The Seven Wonders of the Ancient World inspired Egyptians, Babylonians, and Greeks to rethink their place in the world. The Eiffel Tower was originally a way for the French to showcase their new technology of steel making and steel casting at the 1889 World Fair.
                 </p>
               </div>
               <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
