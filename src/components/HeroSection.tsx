@@ -31,9 +31,6 @@ const HeroSection: React.FC = () => {
         }}
       />
       
-      {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
-      
       {/* Content container */}
       <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
