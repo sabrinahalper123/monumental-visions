@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -248,9 +249,6 @@ const MotivationSection: React.FC = () => {
                 <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
                 <div className="absolute left-1/3 right-1/3 top-1/2 transform -translate-y-2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
                 <div className="absolute left-1/3 right-1/3 top-1/2 transform translate-y-2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
-                <div className="flex justify-center">
-                  <span className="relative px-4 bg-background text-gold font-accent text-sm">INSPIRATIONS</span>
-                </div>
               </div>
               
               <div className="relative">
