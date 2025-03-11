@@ -179,7 +179,20 @@ const MotivationSection: React.FC = () => {
             
             <div id="process" className="pt-16">
               <div className="text-center mb-8">
-                <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
+                <h2 className="animate-on-scroll opacity-0 section-heading">
+                  Our <span className="relative">Process</span>
+                </h2>
+                <style jsx>{`
+                  .section-heading span::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: black;
+                  }
+                `}</style>
               </div>
               
               <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-8">
