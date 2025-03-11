@@ -111,10 +111,6 @@ const MotivationSection: React.FC = () => {
       alt: "Christ the Redeemer statue rising above clouds in Rio de Janeiro"
     },
     {
-      src: "/lovable-uploads/06fd2b9b-4b1b-49ca-a426-96ab0e31b817.png",
-      alt: "Taj Mahal with its reflection in water"
-    },
-    {
       src: "/lovable-uploads/01b7a8ed-9b94-4406-b5ae-3702a6c5a0a7.png",
       alt: "Mount Rushmore National Memorial showing the faces of four U.S. presidents"
     },
