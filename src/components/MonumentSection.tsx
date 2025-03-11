@@ -65,18 +65,18 @@ const MonumentSection: React.FC = () => {
           </div>
         </div>
         
-        {/* Text section below the image */}
+        {/* Text section below the image - updated text size to match Motivation section */}
         <div className="max-w-3xl mx-auto" ref={textRef}>
-          <p className="mb-4 text-lg leading-relaxed">
+          <p className="mb-4 text-base leading-relaxed">
             The proposed Athena Monument in the Presidio stands as a powerful tribute to wisdom, strategy, and the deep historical ties between California and its role as a western stronghold of the United States.
           </p>
-          <p className="mb-4 text-lg leading-relaxed">
+          <p className="mb-4 text-base leading-relaxed">
             Athena, the Greek goddess of wisdom and war, appears on the Great Seal of California to symbolize the state's immediate statehood—born fully formed, just as Athena herself was.
           </p>
-          <p className="mb-4 text-lg leading-relaxed">
+          <p className="mb-4 text-base leading-relaxed">
             Positioned in the Presidio of San Francisco, the Athena monument honors the land's long-standing role in defense and leadership. The Presidio was established in 1776 as a Spanish military fort, later controlled by Mexico, and ultimately became a key U.S. Army post, playing a role in every major American conflict from the Civil War through Desert Storm.
           </p>
-          <p className="text-lg leading-relaxed">
+          <p className="text-base leading-relaxed">
             Athena also embodies justice, wisdom, and heroic endeavor, standing as a guardian overlooking the bay.
           </p>
         </div>
