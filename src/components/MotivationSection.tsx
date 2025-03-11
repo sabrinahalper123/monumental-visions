@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -35,7 +36,7 @@ const ImageSlideshow: React.FC<{
             <img 
               src={image.src}
               alt={image.alt} 
-              className="w-full h-auto max-h-full object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         ))}
@@ -75,6 +76,7 @@ const MotivationSection: React.FC = () => {
   const motivationParagraphs = [
     "Throughout human history, large-scale monuments and public art works have inspired optimism, awe, and ambition.",
     "The Seven Wonders of the Ancient World inspired Egyptians, Babylonians, and Greeks to rethink their place in the world. The Eiffel Tower was originally a way for the French to showcase their new technology of steel making and steel casting at the 1889 World Fair.",
+    "The Statue of Liberty inspired generations of immigrants entering Ellis Island and symbolized freedom and hope for a better future.",
     "Somehow, Western society has lost the drive to build large scale, heart changing, odes to progress.",
     "Monumental is building the next generation of large scale public works to inspire humanity to build its future."
   ];
@@ -89,19 +91,6 @@ const MotivationSection: React.FC = () => {
       image: "/lovable-uploads/8933ec0a-b111-43e6-a4a2-350068e0ddb5.png",
       alt: "Eiffel Tower against blue sky",
       title: "Eiffel Tower (1889)"
-    }
-  ];
-  
-  const slideshowImages = [
-    {
-      src: "/lovable-uploads/a3c9eca4-02e5-461c-b352-333e819964d5.png",
-      alt: "Christ the Redeemer statue above clouds",
-      title: "Christ the Redeemer (1922)"
-    },
-    {
-      src: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
-      alt: "Pyramids of Giza with Sphinx",
-      title: "Pyramids of Giza (c. 2600 – c. 2500 BC)"
     }
   ];
   
@@ -138,17 +127,17 @@ const MotivationSection: React.FC = () => {
             <p className={cn(
               "animate-on-scroll opacity-0 text-lg leading-relaxed text-primary font-medium mt-3 mb-4"
             )}>
-              {motivationParagraphs[3]}
+              {motivationParagraphs[4]}
             </p>
           </div>
           
           <div className="space-y-6">
-            {/* Combined first two sections */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
               <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-3">
                 <p className="text-base leading-relaxed">{motivationParagraphs[0]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[1]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
+                <p className="text-base leading-relaxed">{motivationParagraphs[3]}</p>
               </div>
               <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-3 justify-center">
                 {monuments.map((monument, index) => (
@@ -219,7 +208,7 @@ const MotivationSection: React.FC = () => {
                   <ImageSlideshow 
                     images={newSlideshowImages} 
                     interval={4000} 
-                    className="w-full h-[180px] md:h-[220px]"
+                    className="w-full h-[250px] md:h-[300px]"
                   />
                   
                   <div className="absolute -bottom-6 left-0 right-0 h-10 pointer-events-none">
