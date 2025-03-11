@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -35,13 +34,10 @@ const ImageSlideshow: React.FC<{
             <img 
               src={image.src}
               alt={image.alt} 
-              className="w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-auto object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         ))}
-      </div>
-      <div className="mt-2 text-center">
-        <h3 className="text-lg font-medium">{images[currentIndex].title}</h3>
       </div>
     </div>
   );
@@ -117,7 +113,7 @@ const MotivationSection: React.FC = () => {
     <section 
       id="motivation" 
       ref={sectionRef}
-      className="relative pt-8 pb-20 md:pb-24 px-4" // Reduced top padding since we have the divider from previous section
+      className="relative pt-8 pb-20 md:pb-24 px-4"
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
