@@ -29,7 +29,7 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				gold: '#B8860B',
-				aqua: '#D3E4FD', // Changed from cream to light aqua
+				mint: 'rgba(220, 240, 232, 0.7)', // Semi-transparent light mint color instead of aqua
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

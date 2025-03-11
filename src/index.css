@@ -69,7 +69,7 @@
   }
   
   .glass-panel {
-    @apply bg-white/80 backdrop-blur-sm border border-black/5 shadow-sm;
+    @apply bg-mint backdrop-blur-sm border border-black/5 shadow-sm;
   }
   
   .section-heading {
