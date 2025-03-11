@@ -36,8 +36,8 @@ const HeroSection: React.FC = () => {
       {/* Gradient overlay with increased opacity */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent"></div>
       
-      {/* Content container */}
-      <div className="absolute inset-0 flex flex-col justify-end items-center pb-20 sm:pb-24 md:pb-32 px-4 sm:px-6 md:px-8">
+      {/* Content container - moved up by adjusting justify-end to justify-center and removing some bottom padding */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
           {/* Removed the yellow lines that were here */}
           
