@@ -198,7 +198,7 @@ const MotivationSection: React.FC = () => {
               <ImageSlideshow 
                 images={newSlideshowImages} 
                 interval={7000} 
-                className="w-full h-[450px] md:h-[600px]"
+                className="w-full h-[400px] md:h-[500px]"
               />
             </div>
             
