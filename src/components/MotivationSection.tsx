@@ -34,7 +34,7 @@ const MotivationSection: React.FC = () => {
     "Throughout human history, large-scale monuments and public art works have inspired optimism, awe, and ambition.",
     "The Seven Wonders of the Ancient World inspired Egyptians, Babylonians, and Greeks to rethink their place in the world. The Eiffel Tower was originally a way for the French to showcase their new technology of steel making and steel casting at the 1881 World Fair. The Statue of Liberty inspired generations of immigrants entering Ellis Island and symbolized freedom and hope for a better future.",
     "Somehow, Western society has lost the drive to build large scale, heart changing, odes to progress.",
-    "Monumental is building the next generation of large scale public works to inspire humanity to build its future. We are starting small but thinking big. Right now we're experimenting with marble work and brass works."
+    "Monumental is building the next generation of large scale public works to inspire humanity to build its future."
   ];
 
   const monuments = [
@@ -78,7 +78,7 @@ const MotivationSection: React.FC = () => {
                   key={index} 
                   className={cn(
                     "animate-on-scroll opacity-0 text-lg leading-relaxed",
-                    index === 2 && "text-primary font-medium"
+                    index === 3 && "text-primary font-medium"
                   )}
                 >
                   {paragraph}
@@ -117,7 +117,7 @@ const MotivationSection: React.FC = () => {
             </div>
             
             <p className="animate-on-scroll opacity-0 text-lg leading-relaxed mb-8">
-              We are committed to working alongside local artists to create something meaningful for the community. 
+              We are starting small but thinking big. Right now we're experimenting with marble work and brass works. We are committed to working alongside local artists to create something meaningful for the community. 
               Our goal is to foster collaboration, ensuring this project is shaped by and for the citizens of San Francisco.
             </p>
             
