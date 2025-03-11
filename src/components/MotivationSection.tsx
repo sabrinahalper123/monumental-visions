@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -198,7 +197,7 @@ const MotivationSection: React.FC = () => {
               <ImageSlideshow 
                 images={newSlideshowImages} 
                 interval={7000} 
-                className="w-full h-[400px] md:h-[500px]"
+                className="max-w-5xl mx-auto w-full h-[400px] md:h-[500px]"
               />
             </div>
             
