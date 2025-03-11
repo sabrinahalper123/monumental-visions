@@ -169,7 +169,7 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center mb-16">
               <div className="animate-on-scroll opacity-0 order-1 md:col-span-2">
                 <div className="relative overflow-hidden group">
                   <div className="relative">
@@ -193,17 +193,18 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            {/* New Slideshow Section */}
-            <div className="animate-on-scroll opacity-0 mt-12 mb-20">
+            {/* Full-width slideshow below Statue of Liberty */}
+            <div className="animate-on-scroll opacity-0 w-full mb-24">
               <ImageSlideshow 
                 images={newSlideshowImages} 
                 interval={7000} 
-                className="w-full max-h-[600px] overflow-hidden"
+                className="w-full h-[450px] md:h-[600px]"
               />
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
+                {/* Content can be added here if needed */}
               </div>
               <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
                 <ImageSlideshow images={slideshowImages} interval={7000} />
@@ -211,7 +212,7 @@ const MotivationSection: React.FC = () => {
             </div>
           </div>
           
-          <div className="my-16">
+          <div className="my-24">
             <div className="animate-on-scroll opacity-0 art-deco-divider"></div>
           </div>
           
