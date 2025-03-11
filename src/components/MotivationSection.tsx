@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -36,7 +35,7 @@ const ImageSlideshow: React.FC<{
             <img 
               src={image.src}
               alt={image.alt} 
-              className="w-full h-auto object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-auto max-h-full object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         ))}
@@ -129,21 +128,21 @@ const MotivationSection: React.FC = () => {
     <section 
       id="motivation" 
       ref={sectionRef}
-      className="relative py-6 md:py-10 px-4"
+      className="relative py-4 md:py-8 px-4"
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-2">Our Vision</span>
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
             <p className={cn(
-              "animate-on-scroll opacity-0 text-lg leading-relaxed text-primary font-medium mt-4 mb-6"
+              "animate-on-scroll opacity-0 text-lg leading-relaxed text-primary font-medium mt-3 mb-4"
             )}>
               {motivationParagraphs[3]}
             </p>
           </div>
           
-          <div className="space-y-8">
+          <div className="space-y-6">
             {/* Combined first two sections */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
               <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-3">
@@ -151,15 +150,15 @@ const MotivationSection: React.FC = () => {
                 <p className="text-base leading-relaxed">{motivationParagraphs[1]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
               </div>
-              <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-4 justify-center">
+              <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-3 justify-center">
                 {monuments.map((monument, index) => (
-                  <div key={index} className="relative overflow-hidden group w-1/2 md:w-full max-w-[220px] md:max-w-none">
+                  <div key={index} className="relative overflow-hidden group w-1/2 md:w-full max-w-[180px] md:max-w-none">
                     <div className="relative">
                       <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
                       <img 
                         src={monument.image}
                         alt={monument.alt} 
-                        className="relative z-10 w-full h-auto aspect-[3/4] object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                        className="relative z-10 w-full h-auto max-h-[150px] aspect-[3/4] object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
                     <div className="mt-1 text-center">
@@ -170,20 +169,20 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll opacity-0 art-deco-divider my-6"></div>
+            <div className="animate-on-scroll opacity-0 art-deco-divider my-4"></div>
             
             <div id="process">
-              <div className="text-center mb-6">
-                <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-2">How We Work</span>
+              <div className="text-center mb-4">
+                <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-1">How We Work</span>
                 <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
               </div>
               
-              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-6">
+              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-4">
                 We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens. Right now, we're experimenting with bronze and marble works.
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <div className="animate-on-scroll opacity-0 space-y-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
+                <div className="animate-on-scroll opacity-0 space-y-2">
                   <h3 className="font-display text-xl mb-2">Sponsors</h3>
                   <p className="text-base leading-relaxed">
                     The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-gold hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
@@ -191,9 +190,9 @@ const MotivationSection: React.FC = () => {
                   </p>
                 </div>
                 
-                <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 p-6 border border-gold/20">
-                  <h3 className="font-display text-xl mb-3">Propose a Monument</h3>
-                  <p className="mb-4 text-base">
+                <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 p-5 border border-gold/20">
+                  <h3 className="font-display text-xl mb-2">Propose a Monument</h3>
+                  <p className="mb-3 text-base">
                     If you have an idea of where and what we should build, propose a monument here.
                   </p>
                   <a 
@@ -207,8 +206,8 @@ const MotivationSection: React.FC = () => {
                 </div>
               </div>
               
-              <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-8">
-                <div className="relative mb-4">
+              <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-6">
+                <div className="relative mb-3">
                   <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
                   <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
                   <div className="flex justify-center">
@@ -220,10 +219,10 @@ const MotivationSection: React.FC = () => {
                   <ImageSlideshow 
                     images={newSlideshowImages} 
                     interval={4000} 
-                    className="w-full h-[250px] md:h-[350px]"
+                    className="w-full h-[180px] md:h-[220px]"
                   />
                   
-                  <div className="absolute -bottom-6 left-0 right-0 h-12 pointer-events-none">
+                  <div className="absolute -bottom-6 left-0 right-0 h-10 pointer-events-none">
                     <div className="absolute left-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-gold/50 to-transparent"></div>
                     <div className="absolute right-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-transparent to-gold/50"></div>
                   </div>
