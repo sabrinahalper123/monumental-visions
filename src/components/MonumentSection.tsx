@@ -81,9 +81,9 @@ const MonumentSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Add divider at the end of the section */}
+        {/* Divider at the end of the section with reduced bottom margin */}
         <div className="mt-16 mb-0">
-          <div className="art-deco-divider opacity-0 animate-fade-in" style={{ animationDelay: '600ms' }}></div>
+          <div className="art-deco-divider opacity-0 animate-fade-in" style={{ animationDelay: '600ms', marginBottom: 0 }}></div>
         </div>
       </div>
     </section>
