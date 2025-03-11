@@ -191,12 +191,11 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            {/* Full-width slideshow below Statue of Liberty */}
-            <div className="animate-on-scroll opacity-0 max-w-5xl mx-auto w-full mb-24">
+            <div className="animate-on-scroll opacity-0 max-w-4xl mx-auto w-full mb-24">
               <ImageSlideshow 
                 images={newSlideshowImages} 
                 interval={4000} 
-                className="w-full h-[400px] md:h-[500px]"
+                className="w-full h-[350px] md:h-[450px]"
               />
             </div>
             

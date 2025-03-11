@@ -46,9 +46,9 @@ const MonumentSection: React.FC = () => {
           <h2 className="section-heading">Athena</h2>
         </div>
         
-        <div className="flex flex-col md:flex-row gap-10 items-center">
-          {/* Left column - Image */}
-          <div className="md:w-1/2 opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
+        <div className="flex flex-col items-center mb-10">
+          {/* Centered image */}
+          <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
             <div className="relative">
               <div className="absolute inset-0 border-2 border-gold transform rotate-3 z-0"></div>
               <img 
@@ -63,22 +63,22 @@ const MonumentSection: React.FC = () => {
               </span>
             </div>
           </div>
-          
-          {/* Right column - Text */}
-          <div className="md:w-1/2" ref={textRef}>
-            <p className="mb-4 text-lg leading-relaxed">
-              The proposed Athena Monument in the Presidio stands as a powerful tribute to wisdom, strategy, and the deep historical ties between California and its role as a western stronghold of the United States.
-            </p>
-            <p className="mb-4 text-lg leading-relaxed">
-              Athena, the Greek goddess of wisdom and war, appears on the Great Seal of California to symbolize the state's immediate statehood—born fully formed, just as Athena herself was.
-            </p>
-            <p className="mb-4 text-lg leading-relaxed">
-              Positioned in the Presidio of San Francisco, the Athena monument honors the land's long-standing role in defense and leadership. The Presidio was established in 1776 as a Spanish military fort, later controlled by Mexico, and ultimately became a key U.S. Army post, playing a role in every major American conflict from the Civil War through Desert Storm.
-            </p>
-            <p className="text-lg leading-relaxed">
-              Athena also embodies justice, wisdom, and heroic endeavor, standing as a guardian overlooking the bay.
-            </p>
-          </div>
+        </div>
+        
+        {/* Text section below the image */}
+        <div className="max-w-3xl mx-auto" ref={textRef}>
+          <p className="mb-4 text-lg leading-relaxed">
+            The proposed Athena Monument in the Presidio stands as a powerful tribute to wisdom, strategy, and the deep historical ties between California and its role as a western stronghold of the United States.
+          </p>
+          <p className="mb-4 text-lg leading-relaxed">
+            Athena, the Greek goddess of wisdom and war, appears on the Great Seal of California to symbolize the state's immediate statehood—born fully formed, just as Athena herself was.
+          </p>
+          <p className="mb-4 text-lg leading-relaxed">
+            Positioned in the Presidio of San Francisco, the Athena monument honors the land's long-standing role in defense and leadership. The Presidio was established in 1776 as a Spanish military fort, later controlled by Mexico, and ultimately became a key U.S. Army post, playing a role in every major American conflict from the Civil War through Desert Storm.
+          </p>
+          <p className="text-lg leading-relaxed">
+            Athena also embodies justice, wisdom, and heroic endeavor, standing as a guardian overlooking the bay.
+          </p>
         </div>
       </div>
     </section>
