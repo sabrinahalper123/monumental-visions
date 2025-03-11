@@ -25,7 +25,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a 
           href="#" 
-          className="text-2xl font-display font-normal tracking-tight text-white"
+          className="text-2xl font-medium tracking-tight"
           style={{ 
             textTransform: 'uppercase', 
             letterSpacing: '0.05em',

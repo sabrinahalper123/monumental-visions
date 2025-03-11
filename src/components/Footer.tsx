@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <h3 className="font-display text-2xl mb-4">
+            <h3 className="text-2xl mb-4 font-medium">
               Monumental
             </h3>
             <p className="text-sm text-white/70 max-w-md">

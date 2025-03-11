@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Caslon+Display&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -73,7 +73,7 @@
   }
   
   .section-heading {
-    @apply relative inline-block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-normal mb-4 sm:mb-6 opacity-0 animate-fade-in;
+    @apply relative inline-block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-4 sm:mb-6 opacity-0 animate-fade-in;
     animation-delay: 300ms;
   }
   

@@ -64,8 +64,6 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-				display: ['Libre Caslon Display', 'serif'],
-				accent: ['Space Grotesk', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {
