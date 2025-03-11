@@ -26,7 +26,8 @@ const HeroSection: React.FC = () => {
         style={{ 
           backgroundImage: 'url("/lovable-uploads/4488f7d9-a9e9-4e53-80ac-ce60e9ce22ea.png")',
           transform: 'scale(1.1)',
-          filter: 'brightness(0.75) contrast(1.1)' 
+          filter: 'brightness(0.75) contrast(1.1)',
+          backgroundPosition: 'center 25%' // Adjusted to show more of the top
         }}
       />
       
