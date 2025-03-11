@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -157,7 +158,7 @@ const MotivationSection: React.FC = () => {
                     <img 
                       src={monuments[1].image}
                       alt={monuments[1].alt} 
-                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                      className="relative z-10 w-full h-auto aspect-[3/4] max-w-[85%] mx-auto object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="mt-2 text-center">
@@ -175,7 +176,7 @@ const MotivationSection: React.FC = () => {
                     <img 
                       src={monuments[0].image}
                       alt={monuments[0].alt} 
-                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                      className="relative z-10 w-full h-auto aspect-[3/4] max-w-[85%] mx-auto object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="mt-2 text-center">
@@ -183,7 +184,7 @@ const MotivationSection: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="animate-on-scroll opacity-0 order-2 md:col-span-3 space-y-6">
+              <div className="animate-on-scroll opacity-0 order-2 md:col-span-3 space-y-4">
                 <p className="text-lg leading-relaxed">
                   The Statue of Liberty inspired generations of immigrants entering Ellis Island and symbolized freedom and hope for a better future.
                 </p>
