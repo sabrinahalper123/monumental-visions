@@ -69,6 +69,11 @@ const MotivationSection: React.FC = () => {
           <div className="text-center mb-16">
             <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-3">Our Vision</span>
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
+            <p className={cn(
+              "animate-on-scroll opacity-0 text-lg leading-relaxed text-primary font-medium mt-6 mb-10"
+            )}>
+              {motivationParagraphs[3]}
+            </p>
           </div>
           
           <div className="space-y-16">
@@ -123,11 +128,7 @@ const MotivationSection: React.FC = () => {
             {/* Third row - Image on right */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
-                <p className={cn(
-                  "text-lg leading-relaxed text-primary font-medium"
-                )}>
-                  {motivationParagraphs[3]}
-                </p>
+                {/* The accent-colored text has been moved to under the "Motivation" heading */}
               </div>
               <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
                 <div className="relative overflow-hidden group">
