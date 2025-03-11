@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -78,7 +77,7 @@ const MotivationSection: React.FC = () => {
                   key={index} 
                   className={cn(
                     "animate-on-scroll opacity-0 text-lg leading-relaxed",
-                    index === 2 && "text-primary font-medium"
+                    index === 3 && "text-primary font-medium"
                   )}
                 >
                   {paragraph}
