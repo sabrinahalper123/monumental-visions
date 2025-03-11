@@ -39,8 +39,8 @@ const MotivationSection: React.FC = () => {
 
   const monuments = [
     {
-      image: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e",
-      alt: "Statue of Liberty",
+      image: "/lovable-uploads/f0ec81f2-364c-4247-9c58-d696022349b8.png",
+      alt: "Statue of Liberty with New York skyline",
       title: "Statue of Liberty",
       description: "Symbol of freedom and hope for generations of immigrants"
     },
