@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -173,7 +174,7 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll opacity-0 py-0">
+            <div className="animate-on-scroll opacity-0 pt-10 pb-0">
               <div className="art-deco-divider"></div>
             </div>
             
