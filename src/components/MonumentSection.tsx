@@ -36,7 +36,7 @@ const MonumentSection: React.FC = () => {
   return (
     <section 
       id="ideas" 
-      className="relative py-20 md:py-24 lg:py-24 px-4 bg-cover bg-center"
+      className="relative py-16 md:py-20 lg:py-20 px-4 bg-cover bg-center"
       style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("https://images.unsplash.com/photo-1504198322253-cfa87a0ff60f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")' }}
       ref={sectionRef}
     >
@@ -75,7 +75,7 @@ const MonumentSection: React.FC = () => {
             <p className="mb-4 text-lg leading-relaxed">
               Positioned in the Presidio of San Francisco, the Athena monument honors the land's long-standing role in defense and leadership. The Presidio was established in 1776 as a Spanish military fort, later controlled by Mexico, and ultimately became a key U.S. Army post, playing a role in every major American conflict from the Civil War through Desert Storm.
             </p>
-            <p className="mb-4 text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed">
               Athena also embodies justice, wisdom, and heroic endeavor, standing as a guardian overlooking the bay.
             </p>
           </div>
