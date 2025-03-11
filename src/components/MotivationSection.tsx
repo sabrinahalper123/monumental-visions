@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -145,10 +144,10 @@ const MotivationSection: React.FC = () => {
           
           <div className="space-y-16">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
-              <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
+              <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-4">
                 <p className="text-lg leading-relaxed">{motivationParagraphs[0]}</p>
                 <p className="text-lg leading-relaxed">
-                  The Seven Wonders of the Ancient World inspired Egyptians, Babylonians, and Greeks to rethink their place in the world. The Eiffel Tower was originally a way for the French to showcase their new technology of steel making and steel casting at the 1889 World Fair.
+                  {motivationParagraphs[1]}
                 </p>
               </div>
               <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
