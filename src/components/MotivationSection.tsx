@@ -220,13 +220,15 @@ const MotivationSection: React.FC = () => {
             </div>
             
             <div className="animate-on-scroll opacity-0 text-lg leading-relaxed mb-8">
-              We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens.
+              We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens. Right now, we're experimenting with bronze and marble works.
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="animate-on-scroll opacity-0 space-y-4">
+                <h3 className="font-display text-2xl mb-4">Sponsors</h3>
                 <p className="text-lg leading-relaxed">
-                  Right now, we're experimenting with bronze and marble works.
+                  The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-gold hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
+                  Reach out to <a href="mailto:monumental@eladgil.com" className="text-gold hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
                 </p>
               </div>
               
@@ -244,14 +246,6 @@ const MotivationSection: React.FC = () => {
                   Submit Proposal
                 </a>
               </div>
-            </div>
-            
-            <div className="mt-16">
-              <h3 className="animate-on-scroll opacity-0 font-display text-2xl mb-4">Sponsors</h3>
-              <p className="animate-on-scroll opacity-0 text-lg leading-relaxed">
-                The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-gold hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
-                Reach out to <a href="mailto:monumental@eladgil.com" className="text-gold hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
-              </p>
             </div>
           </div>
         </div>
