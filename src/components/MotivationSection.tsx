@@ -188,6 +188,7 @@ const MotivationSection: React.FC = () => {
                   The Statue of Liberty inspired generations of immigrants entering Ellis Island and symbolized freedom and hope for a better future.
                 </p>
                 <p className="text-lg leading-relaxed">{motivationParagraphs[2]}</p>
+                <p className="text-lg leading-relaxed">{motivationParagraphs[3]}</p>
               </div>
             </div>
             
