@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -132,11 +133,6 @@ const MotivationSection: React.FC = () => {
           <div className="text-center mb-6">
             <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-2">Our Vision</span>
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
-            <p className={cn(
-              "animate-on-scroll opacity-0 text-lg leading-relaxed text-primary font-medium mt-3 mb-4"
-            )}>
-              {motivationParagraphs[4]}
-            </p>
           </div>
           
           <div className="space-y-6">
@@ -167,6 +163,14 @@ const MotivationSection: React.FC = () => {
             </div>
             
             <div className="animate-on-scroll opacity-0 art-deco-divider my-4"></div>
+            
+            <div className="animate-on-scroll opacity-0 text-center">
+              <p className={cn(
+                "text-lg leading-relaxed text-primary font-medium mb-6"
+              )}>
+                {motivationParagraphs[4]}
+              </p>
+            </div>
             
             <div id="process">
               <div className="text-center mb-4">
