@@ -23,12 +23,6 @@ const Footer: React.FC = () => {
           <div className="text-sm text-white/50 mb-4 md:mb-0">
             © {new Date().getFullYear()} Monumental. All rights reserved.
           </div>
-          
-          <div className="flex space-x-6">
-            <a href="#" className="text-white/50 hover:text-gold transition-colors duration-200">
-              Contact
-            </a>
-          </div>
         </div>
       </div>
     </footer>
