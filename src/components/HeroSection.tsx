@@ -52,18 +52,20 @@ const HeroSection: React.FC = () => {
           <p className="font-accent text-xl md:text-2xl opacity-0 animate-fade-in" style={{ animationDelay: '300ms' }}>
             Inspiring humanity to build its future
           </p>
-          
-          <div className="mt-12 opacity-0 animate-fade-in" style={{ animationDelay: '600ms' }}>
-            <a href="#athena" className="art-deco-button">
-              Discover
-            </a>
-          </div>
         </div>
       </div>
       
-      {/* Scroll indicator */}
+      {/* Scroll indicator - Styled similar to the previous "Discover" button */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '900ms' }}>
-        <span className="text-xs uppercase tracking-widest mb-2">Scroll</span>
+        <span 
+          className="text-sm uppercase tracking-widest mb-2 bg-gold text-white px-8 py-2 font-medium"
+          style={{
+            clipPath: 'polygon(0 0, 100% 0, 95% 100%, 5% 100%)',
+            letterSpacing: '0.15em'
+          }}
+        >
+          Scroll
+        </span>
         <div className="w-0.5 h-8 bg-gradient-to-b from-gold to-transparent animate-pulse"></div>
       </div>
     </section>
