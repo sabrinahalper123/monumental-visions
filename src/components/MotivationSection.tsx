@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -45,8 +44,8 @@ const MotivationSection: React.FC = () => {
       description: "Symbol of freedom and hope for generations of immigrants"
     },
     {
-      image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
-      alt: "Eiffel Tower",
+      image: "/lovable-uploads/8933ec0a-b111-43e6-a4a2-350068e0ddb5.png",
+      alt: "Eiffel Tower against blue sky",
       title: "Eiffel Tower",
       description: "French innovation in steel technology at the 1881 World Fair"
     },
@@ -72,7 +71,54 @@ const MotivationSection: React.FC = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
-            <div className="col-span-1 md:col-span-2 space-y-6">
+            <div className="animate-on-scroll opacity-0 order-2 md:order-1">
+              <div className="relative mb-6 overflow-hidden group">
+                <div className="relative">
+                  <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+                  <img 
+                    src={monuments[1].image}
+                    alt={monuments[1].alt} 
+                    className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="mt-2 text-center">
+                  <h3 className="text-lg font-medium">{monuments[1].title}</h3>
+                  <p className="text-sm text-gray-600">{monuments[1].description}</p>
+                </div>
+              </div>
+              
+              <div className="relative mb-6 overflow-hidden group animate-on-scroll opacity-0">
+                <div className="relative">
+                  <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+                  <img 
+                    src={monuments[0].image}
+                    alt={monuments[0].alt} 
+                    className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="mt-2 text-center">
+                  <h3 className="text-lg font-medium">{monuments[0].title}</h3>
+                  <p className="text-sm text-gray-600">{monuments[0].description}</p>
+                </div>
+              </div>
+              
+              <div className="relative mb-6 overflow-hidden group animate-on-scroll opacity-0">
+                <div className="relative">
+                  <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+                  <img 
+                    src={monuments[2].image}
+                    alt={monuments[2].alt} 
+                    className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="mt-2 text-center">
+                  <h3 className="text-lg font-medium">{monuments[2].title}</h3>
+                  <p className="text-sm text-gray-600">{monuments[2].description}</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-span-1 md:col-span-2 space-y-6 order-1 md:order-2">
               {motivationParagraphs.map((paragraph, index) => (
                 <p 
                   key={index} 
@@ -83,25 +129,6 @@ const MotivationSection: React.FC = () => {
                 >
                   {paragraph}
                 </p>
-              ))}
-            </div>
-            
-            <div className="animate-on-scroll opacity-0 space-y-6">
-              {monuments.map((monument, index) => (
-                <div key={index} className="relative mb-6 overflow-hidden group">
-                  <div className="relative">
-                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
-                    <img 
-                      src={monument.image}
-                      alt={monument.alt} 
-                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="mt-2 text-center">
-                    <h3 className="text-lg font-medium">{monument.title}</h3>
-                    <p className="text-sm text-gray-600">{monument.description}</p>
-                  </div>
-                </div>
               ))}
             </div>
           </div>
