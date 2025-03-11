@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -220,19 +219,13 @@ const MotivationSection: React.FC = () => {
               <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
             </div>
             
-            <p className="animate-on-scroll opacity-0 text-lg leading-relaxed mb-8">
-              We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens.
-              <br /><br />
-              Right now, we're experimenting with bronze and marble works.
-            </p>
-            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="animate-on-scroll opacity-0 space-y-4">
                 <p className="text-lg leading-relaxed">
-                  If you have an idea for where we should build next or what kind of monument would inspire your community, we want to hear from you. Your vision could become the next landmark that inspires generations.
+                  We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  We're particularly interested in ideas that celebrate innovation, progress, and human achievement.
+                  Right now, we're experimenting with bronze and marble works.
                 </p>
               </div>
               
