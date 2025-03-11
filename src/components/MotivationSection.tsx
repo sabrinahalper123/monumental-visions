@@ -120,6 +120,11 @@ const MotivationSection: React.FC = () => {
       src: "/lovable-uploads/c6faf248-f55a-49bc-b0c1-29431c1d1330.png",
       alt: "Taj Mahal white marble mausoleum with reflecting pool and gardens in Agra, India",
       title: "Taj Mahal"
+    },
+    {
+      src: "/lovable-uploads/7ab7e7c5-2115-4eb5-ba08-41f5b1b8b3c1.png",
+      alt: "Lighthouse of Alexandria ancient illustration showing the tall lighthouse on an island",
+      title: "Lighthouse of Alexandria"
     }
   ];
 
@@ -190,7 +195,7 @@ const MotivationSection: React.FC = () => {
                   </p>
                 </div>
                 
-                <div className="animate-on-scroll opacity-0 bg-cream p-6 border border-black/20">
+                <div className="animate-on-scroll opacity-0 bg-aqua p-6 border border-black/20">
                   <h3 className="font-display text-xl mb-3">Propose a Monument</h3>
                   <p className="mb-4 text-base">
                     If you have an idea of where and what we should build, propose a monument here.

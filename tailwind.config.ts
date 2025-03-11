@@ -29,7 +29,7 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				gold: '#B8860B',
-				cream: '#FEF7E3', // Added cream color
+				aqua: '#D3E4FD', // Changed from cream to light aqua
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
