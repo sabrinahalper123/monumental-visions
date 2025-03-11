@@ -47,7 +47,6 @@ const MonumentSection: React.FC = () => {
         </div>
         
         <div className="flex flex-col items-center mb-10">
-          {/* Centered image - removed decorative elements */}
           <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
             <img 
               src="/lovable-uploads/f9cf8186-c0c8-467d-8b63-a890b03d5a85.png"
@@ -62,19 +61,18 @@ const MonumentSection: React.FC = () => {
           </div>
         </div>
         
-        {/* Text section below the image - updated text size to match Motivation section */}
         <div className="max-w-3xl mx-auto" ref={textRef}>
           <p className="mb-4 text-base leading-relaxed">
-            The proposed Athena Monument in the Presidio stands as a powerful tribute to wisdom, strategy, and the deep historical ties between California and its role as a western stronghold of the United States.
+            Athena would stand as a tribute to California's deep historical ties and its role as a western stronghold of the United States.
           </p>
           <p className="mb-4 text-base leading-relaxed">
-            Athena, the Greek goddess of wisdom and war, appears on the Great Seal of California to symbolize the state's immediate statehood—born fully formed, just as Athena herself was.
+            The Greek goddess of wisdom and war, Athena, appears on the Great Seal of California, symbolizing the state's immediate statehood—born fully formed, just as Athena was.
           </p>
           <p className="mb-4 text-base leading-relaxed">
-            Positioned in the Presidio of San Francisco, the Athena monument honors the land's long-standing role in defense and leadership. The Presidio was established in 1776 as a Spanish military fort, later controlled by Mexico, and ultimately became a key U.S. Army post, playing a role in every major American conflict from the Civil War through Desert Storm.
+            Standing in the Presidio of San Francisco, the monument would honor the land's long-standing history. Established in 1776 by the Spanish, the Presidio played a role in every major American conflict from the Civil War through Desert Storm.
           </p>
           <p className="text-base leading-relaxed">
-            Athena also embodies justice, wisdom, and heroic endeavor, standing as a guardian overlooking the bay.
+            Athena embodies justice, wisdom, and heroic endeavor, standing as a guardian over the bay—an enduring symbol of the West's pursuit of progress.
           </p>
         </div>
       </div>
