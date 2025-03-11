@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -131,15 +132,15 @@ const MotivationSection: React.FC = () => {
     <section 
       id="motivation" 
       ref={sectionRef}
-      className="relative py-4 md:py-12 px-4"
+      className="relative py-8 md:py-16 px-4" // Increased padding top and bottom
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-8">
+          <div className="text-center mb-12"> {/* Increased bottom margin from 8 to 12 */}
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
           </div>
           
-          <div className="animate-on-scroll opacity-0 text-center mb-8">
+          <div className="animate-on-scroll opacity-0 text-center mb-12"> {/* Increased bottom margin from 8 to 12 */}
             <p className={cn(
               "font-semibold font-accent text-sm uppercase tracking-wider"
             )}>
@@ -147,15 +148,15 @@ const MotivationSection: React.FC = () => {
             </p>
           </div>
           
-          <div className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-              <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-4">
+          <div className="space-y-12"> {/* Increased spacing in the whole container from 8 to 12 */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center"> {/* Increased gap from 6 to 8 */}
+              <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-6"> {/* Increased paragraph spacing from 4 to 6 */}
                 <p className="text-base leading-relaxed">{motivationParagraphs[0]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[1]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[3]}</p>
               </div>
-              <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-4 justify-center">
+              <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-6 justify-center"> {/* Increased gap from 4 to 6 */}
                 {monuments.map((monument, index) => (
                   <div key={index} className="relative overflow-hidden w-1/2 md:w-full max-w-[180px] aspect-square mx-auto">
                     <div className="relative h-full">
@@ -165,7 +166,7 @@ const MotivationSection: React.FC = () => {
                         className="w-full h-full object-cover shadow-lg"
                       />
                     </div>
-                    <div className="mt-2 text-center">
+                    <div className="mt-3 text-center"> {/* Increased margin top from 2 to 3 */}
                       <h3 className="text-sm font-medium">{monument.title}</h3>
                     </div>
                   </div>
@@ -173,20 +174,20 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll opacity-0 art-deco-divider my-16"></div>
+            <div className="animate-on-scroll opacity-0 art-deco-divider my-20"></div> {/* Increased vertical margin from 16 to 20 */}
             
-            <div id="process" className="pt-16">
-              <div className="text-center mb-8">
+            <div id="process" className="pt-20"> {/* Increased padding top from 16 to 20 */}
+              <div className="text-center mb-12"> {/* Increased bottom margin from 8 to 12 */}
                 <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
               </div>
               
-              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-8">
+              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-12"> {/* Increased bottom margin from 8 to 12 */}
                 We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens. Right now, we're experimenting with bronze and marble works.
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div className="animate-on-scroll opacity-0 space-y-3">
-                  <h3 className="font-display text-xl mb-3">Sponsors</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"> {/* Increased gap from 8 to 10 */}
+                <div className="animate-on-scroll opacity-0 space-y-4">
+                  <h3 className="font-display text-xl mb-4">Sponsors</h3> {/* Increased margin bottom from 3 to 4 */}
                   <p className="text-base leading-relaxed">
                     The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
                     Reach out to <a href="mailto:monumental@eladgil.com" className="text-black hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
@@ -194,8 +195,8 @@ const MotivationSection: React.FC = () => {
                 </div>
                 
                 <div className="animate-on-scroll opacity-0 bg-mint p-6 border border-black/20">
-                  <h3 className="font-display text-xl mb-3">Propose a Monument</h3>
-                  <p className="mb-4 text-base">
+                  <h3 className="font-display text-xl mb-4">Propose a Monument</h3> {/* Increased margin bottom from 3 to 4 */}
+                  <p className="mb-6 text-base"> {/* Increased margin bottom from 4 to 6 */}
                     If you have an idea of where and what we should build, propose a monument here.
                   </p>
                   <a 
@@ -209,8 +210,8 @@ const MotivationSection: React.FC = () => {
                 </div>
               </div>
               
-              <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-10">
-                <div className="relative mb-3">
+              <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-16"> {/* Increased margin top from 10 to 16 */}
+                <div className="relative mb-5"> {/* Increased margin bottom from 3 to 5 */}
                   <div className="flex justify-center">
                     <span className="relative px-4 bg-background text-black font-semibold font-accent text-sm">INSPIRATIONS</span>
                   </div>
