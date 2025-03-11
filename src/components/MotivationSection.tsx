@@ -38,16 +38,16 @@ const ImageSlideshow: React.FC<{
               alt={image.alt} 
               className="w-full h-full object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
             />
-            {image.title && (
-              <div className="absolute bottom-0 left-0 right-0 bg-white/90 py-2">
-                <span className="block text-center font-normal text-sm text-black">
-                  {image.title}
-                </span>
-              </div>
-            )}
           </div>
         ))}
       </div>
+      {images[currentIndex].title && (
+        <div className="mt-3">
+          <span className="block text-center font-normal text-sm text-black">
+            {images[currentIndex].title}
+          </span>
+        </div>
+      )}
     </div>
   );
 };
