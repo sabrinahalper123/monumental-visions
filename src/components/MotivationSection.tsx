@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -10,7 +9,7 @@ const ImageSlideshow: React.FC<{
   }>;
   interval?: number;
   className?: string;
-}> = ({ images, interval = 7000, className }) => {
+}> = ({ images, interval = 4000, className }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   useEffect(() => {
@@ -100,11 +99,6 @@ const MotivationSection: React.FC = () => {
       title: "Christ the Redeemer (1922)"
     },
     {
-      src: "/lovable-uploads/d018935a-aca2-46e4-9b1f-bb2c207d8d9f.png",
-      alt: "Mount Rushmore with four presidents carved in mountain",
-      title: "Mount Rushmore (1927)"
-    },
-    {
       src: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
       alt: "Pyramids of Giza with Sphinx",
       title: "Pyramids of Giza (c. 2600 – c. 2500 BC)"
@@ -117,12 +111,16 @@ const MotivationSection: React.FC = () => {
       alt: "Christ the Redeemer statue rising above clouds in Rio de Janeiro"
     },
     {
-      src: "/lovable-uploads/7ef6cae9-85e8-462b-8221-5c27c0a18644.png",
-      alt: "Mount Rushmore National Memorial showing four presidents carved in mountain"
-    },
-    {
       src: "/lovable-uploads/06fd2b9b-4b1b-49ca-a426-96ab0e31b817.png",
       alt: "Taj Mahal with its reflection in water"
+    },
+    {
+      src: "/lovable-uploads/01b7a8ed-9b94-4406-b5ae-3702a6c5a0a7.png",
+      alt: "Mount Rushmore National Memorial showing the faces of four U.S. presidents"
+    },
+    {
+      src: "/lovable-uploads/74b964ae-0c58-4c6e-9827-91150bf7afef.png",
+      alt: "Colossus of Rhodes ancient illustration with a giant figure straddling a harbor"
     }
   ];
 
@@ -194,11 +192,11 @@ const MotivationSection: React.FC = () => {
             </div>
             
             {/* Full-width slideshow below Statue of Liberty */}
-            <div className="animate-on-scroll opacity-0 w-full mb-24">
+            <div className="animate-on-scroll opacity-0 max-w-5xl mx-auto w-full mb-24">
               <ImageSlideshow 
                 images={newSlideshowImages} 
-                interval={7000} 
-                className="w-full h-[450px] md:h-[600px]"
+                interval={4000} 
+                className="w-full h-[400px] md:h-[500px]"
               />
             </div>
             
@@ -207,7 +205,7 @@ const MotivationSection: React.FC = () => {
                 {/* Content can be added here if needed */}
               </div>
               <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
-                <ImageSlideshow images={slideshowImages} interval={7000} />
+                <ImageSlideshow images={slideshowImages} interval={4000} />
               </div>
             </div>
           </div>
