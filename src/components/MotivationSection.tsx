@@ -80,28 +80,11 @@ const MotivationSection: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
                 <p className="text-lg leading-relaxed">{motivationParagraphs[0]}</p>
-                <p className="text-lg leading-relaxed">{motivationParagraphs[1].substring(0, motivationParagraphs[1].length / 2)}</p>
+                <p className="text-lg leading-relaxed">
+                  The Seven Wonders of the Ancient World inspired Egyptians, Babylonians, and Greeks to rethink their place in the world. The Eiffel Tower was originally a way for the French to showcase their new technology of steel making and steel casting at the 1881 World Fair.
+                </p>
               </div>
               <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
-                <div className="relative overflow-hidden group">
-                  <div className="relative">
-                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
-                    <img 
-                      src={monuments[0].image}
-                      alt={monuments[0].alt} 
-                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="mt-2 text-center">
-                    <h3 className="text-lg font-medium">{monuments[0].title}</h3>
-                    <p className="text-sm text-gray-600">{monuments[0].description}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
-              <div className="animate-on-scroll opacity-0 order-1 md:col-span-2">
                 <div className="relative overflow-hidden group">
                   <div className="relative">
                     <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
@@ -117,8 +100,29 @@ const MotivationSection: React.FC = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+              <div className="animate-on-scroll opacity-0 order-1 md:col-span-2">
+                <div className="relative overflow-hidden group">
+                  <div className="relative">
+                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+                    <img 
+                      src={monuments[0].image}
+                      alt={monuments[0].alt} 
+                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="mt-2 text-center">
+                    <h3 className="text-lg font-medium">{monuments[0].title}</h3>
+                    <p className="text-sm text-gray-600">{monuments[0].description}</p>
+                  </div>
+                </div>
+              </div>
               <div className="animate-on-scroll opacity-0 order-2 md:col-span-3 space-y-6">
-                <p className="text-lg leading-relaxed">{motivationParagraphs[1].substring(motivationParagraphs[1].length / 2)}</p>
+                <p className="text-lg leading-relaxed">
+                  The Statue of Liberty inspired generations of immigrants entering Ellis Island and symbolized freedom and hope for a better future.
+                </p>
                 <p className="text-lg leading-relaxed">{motivationParagraphs[2]}</p>
               </div>
             </div>
