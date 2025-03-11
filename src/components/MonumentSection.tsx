@@ -47,16 +47,13 @@ const MonumentSection: React.FC = () => {
         </div>
         
         <div className="flex flex-col items-center mb-10">
-          {/* Centered image */}
+          {/* Centered image - removed decorative elements */}
           <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
-            <div className="relative">
-              <div className="absolute inset-0 border-2 border-gold transform rotate-3 z-0"></div>
-              <img 
-                src="/lovable-uploads/f9cf8186-c0c8-467d-8b63-a890b03d5a85.png"
-                alt="Athena Monument Concept" 
-                className="relative z-10 w-full h-auto object-cover shadow-lg"
-              />
-            </div>
+            <img 
+              src="/lovable-uploads/f9cf8186-c0c8-467d-8b63-a890b03d5a85.png"
+              alt="Athena Monument Concept" 
+              className="relative w-full h-auto object-cover shadow-lg"
+            />
             <div className="flex justify-center mt-6">
               <span className="inline-block px-4 py-1 bg-gold/10 border border-gold/30 text-xs font-medium uppercase tracking-widest text-primary">
                 Presidio, San Francisco

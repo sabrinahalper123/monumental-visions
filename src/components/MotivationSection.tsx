@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -22,9 +21,8 @@ const ImageSlideshow: React.FC<{
   }, [images.length, interval]);
   
   return (
-    <div className={cn("relative overflow-hidden group", className)}>
+    <div className={cn("relative overflow-hidden", className)}>
       <div className="relative h-full">
-        <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
         {images.map((image, index) => (
           <div 
             key={index}
@@ -36,7 +34,7 @@ const ImageSlideshow: React.FC<{
             <img 
               src={image.src}
               alt={image.alt} 
-              className="w-full h-full object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-contain shadow-lg"
             />
             {image.title && (
               <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm py-2 px-2">
@@ -146,16 +144,13 @@ const MotivationSection: React.FC = () => {
               </div>
               <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-4 justify-center">
                 {monuments.map((monument, index) => (
-                  <div key={index} className="relative overflow-hidden group w-1/2 md:w-full max-w-[150px] md:max-w-[180px] mx-auto">
+                  <div key={index} className="relative overflow-hidden w-1/2 md:w-full max-w-[150px] md:max-w-[180px] mx-auto">
                     <div className="relative">
-                      <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
-                      <div className="relative z-10 w-full aspect-square overflow-hidden">
-                        <img 
-                          src={monument.image}
-                          alt={monument.alt} 
-                          className="w-full h-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </div>
+                      <img 
+                        src={monument.image}
+                        alt={monument.alt} 
+                        className="w-full h-full object-cover shadow-lg"
+                      />
                     </div>
                     <div className="mt-2 text-center">
                       <h3 className="text-sm font-medium">{monument.title}</h3>
