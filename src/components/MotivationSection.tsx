@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -50,10 +51,10 @@ const MotivationSection: React.FC = () => {
       description: "French innovation in steel technology at the 1881 World Fair"
     },
     {
-      image: "https://images.unsplash.com/photo-1527576539890-dfa815648363",
-      alt: "Great Pyramid",
-      title: "Ancient Wonders",
-      description: "The Seven Wonders inspired civilizations to think bigger"
+      image: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
+      alt: "Pyramids of Giza with Sphinx",
+      title: "Pyramids of Giza",
+      description: "Ancient wonder that has endured for millennia"
     }
   ];
 
@@ -70,66 +71,80 @@ const MotivationSection: React.FC = () => {
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
-            <div className="animate-on-scroll opacity-0 order-2 md:order-1">
-              <div className="relative mb-6 overflow-hidden group">
-                <div className="relative">
-                  <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
-                  <img 
-                    src={monuments[1].image}
-                    alt={monuments[1].alt} 
-                    className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="mt-2 text-center">
-                  <h3 className="text-lg font-medium">{monuments[1].title}</h3>
-                  <p className="text-sm text-gray-600">{monuments[1].description}</p>
-                </div>
+          <div className="space-y-16">
+            {/* First row - Image on right */}
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+              <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
+                <p className="text-lg leading-relaxed">{motivationParagraphs[0]}</p>
+                <p className="text-lg leading-relaxed">{motivationParagraphs[1].substring(0, motivationParagraphs[1].length / 2)}</p>
               </div>
-              
-              <div className="relative mb-6 overflow-hidden group animate-on-scroll opacity-0">
-                <div className="relative">
-                  <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
-                  <img 
-                    src={monuments[0].image}
-                    alt={monuments[0].alt} 
-                    className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="mt-2 text-center">
-                  <h3 className="text-lg font-medium">{monuments[0].title}</h3>
-                  <p className="text-sm text-gray-600">{monuments[0].description}</p>
-                </div>
-              </div>
-              
-              <div className="relative mb-6 overflow-hidden group animate-on-scroll opacity-0">
-                <div className="relative">
-                  <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
-                  <img 
-                    src={monuments[2].image}
-                    alt={monuments[2].alt} 
-                    className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="mt-2 text-center">
-                  <h3 className="text-lg font-medium">{monuments[2].title}</h3>
-                  <p className="text-sm text-gray-600">{monuments[2].description}</p>
+              <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
+                <div className="relative overflow-hidden group">
+                  <div className="relative">
+                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+                    <img 
+                      src={monuments[0].image}
+                      alt={monuments[0].alt} 
+                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="mt-2 text-center">
+                    <h3 className="text-lg font-medium">{monuments[0].title}</h3>
+                    <p className="text-sm text-gray-600">{monuments[0].description}</p>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="col-span-1 md:col-span-2 space-y-6 order-1 md:order-2">
-              {motivationParagraphs.map((paragraph, index) => (
-                <p 
-                  key={index} 
-                  className={cn(
-                    "animate-on-scroll opacity-0 text-lg leading-relaxed",
-                    index === 3 && "text-primary font-medium"
-                  )}
-                >
-                  {paragraph}
+            {/* Second row - Image on left */}
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+              <div className="animate-on-scroll opacity-0 order-1 md:col-span-2">
+                <div className="relative overflow-hidden group">
+                  <div className="relative">
+                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+                    <img 
+                      src={monuments[1].image}
+                      alt={monuments[1].alt} 
+                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="mt-2 text-center">
+                    <h3 className="text-lg font-medium">{monuments[1].title}</h3>
+                    <p className="text-sm text-gray-600">{monuments[1].description}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="animate-on-scroll opacity-0 order-2 md:col-span-3 space-y-6">
+                <p className="text-lg leading-relaxed">{motivationParagraphs[1].substring(motivationParagraphs[1].length / 2)}</p>
+                <p className="text-lg leading-relaxed">{motivationParagraphs[2]}</p>
+              </div>
+            </div>
+            
+            {/* Third row - Image on right */}
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+              <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
+                <p className={cn(
+                  "text-lg leading-relaxed text-primary font-medium"
+                )}>
+                  {motivationParagraphs[3]}
                 </p>
-              ))}
+              </div>
+              <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
+                <div className="relative overflow-hidden group">
+                  <div className="relative">
+                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+                    <img 
+                      src={monuments[2].image}
+                      alt={monuments[2].alt} 
+                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="mt-2 text-center">
+                    <h3 className="text-lg font-medium">{monuments[2].title}</h3>
+                    <p className="text-sm text-gray-600">{monuments[2].description}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           
