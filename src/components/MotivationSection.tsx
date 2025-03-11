@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -225,22 +226,33 @@ const MotivationSection: React.FC = () => {
               Right now, we're experimenting with bronze and marble works.
             </p>
             
-            <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 p-8 border border-gold/20 mb-12">
-              <h3 className="font-display text-2xl mb-4">Propose a Monument</h3>
-              <p className="mb-6">
-                If you have an idea of where and what we should build, propose a monument here.
-              </p>
-              <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdP4v-778v3NyvX8GrxWw_nqho-5Dw6mfTAvMhUGflqJCfkIA/viewform?usp=sharing" 
-                className="art-deco-button"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Submit Proposal
-              </a>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="animate-on-scroll opacity-0 space-y-4">
+                <p className="text-lg leading-relaxed">
+                  If you have an idea for where we should build next or what kind of monument would inspire your community, we want to hear from you. Your vision could become the next landmark that inspires generations.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  We're particularly interested in ideas that celebrate innovation, progress, and human achievement.
+                </p>
+              </div>
+              
+              <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 p-8 border border-gold/20">
+                <h3 className="font-display text-2xl mb-4">Propose a Monument</h3>
+                <p className="mb-6">
+                  If you have an idea of where and what we should build, propose a monument here.
+                </p>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdP4v-778v3NyvX8GrxWw_nqho-5Dw6mfTAvMhUGflqJCfkIA/viewform?usp=sharing" 
+                  className="art-deco-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Submit Proposal
+                </a>
+              </div>
             </div>
             
-            <div>
+            <div className="mt-16">
               <h3 className="animate-on-scroll opacity-0 font-display text-2xl mb-4">Sponsors</h3>
               <p className="animate-on-scroll opacity-0 text-lg leading-relaxed">
                 The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-gold hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
