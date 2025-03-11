@@ -37,36 +37,36 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent"></div>
       
       {/* Content container */}
-      <div className="absolute inset-0 flex flex-col justify-end items-center pb-24 md:pb-32 px-4">
+      <div className="absolute inset-0 flex flex-col justify-end items-center pb-20 sm:pb-24 md:pb-32 px-4 sm:px-6 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
           {/* Removed the yellow lines that were here */}
           
-          <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-8xl mb-6 opacity-0 animate-fade-in tracking-widest text-black" style={{ 
+          <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 opacity-0 animate-fade-in tracking-wider sm:tracking-widest text-black" style={{ 
             textTransform: 'uppercase', 
-            letterSpacing: '0.2em',
+            letterSpacing: '0.15em',
             textShadow: '2px 2px 0px rgba(212, 175, 55, 0.3)'
           }}>
             Monumental
           </h1>
           
-          <p className="font-accent text-xl md:text-2xl opacity-0 animate-fade-in" style={{ animationDelay: '300ms' }}>
+          <p className="font-accent text-lg sm:text-xl md:text-2xl opacity-0 animate-fade-in" style={{ animationDelay: '300ms' }}>
             Inspiring humanity to build its future
           </p>
         </div>
       </div>
       
       {/* Scroll indicator - Styled similar to the previous "Discover" button */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '900ms' }}>
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '900ms' }}>
         <span 
-          className="text-sm uppercase tracking-widest mb-2 bg-gold text-white px-8 py-2 font-medium"
+          className="text-xs sm:text-sm uppercase tracking-wider sm:tracking-widest mb-2 bg-gold text-white px-6 sm:px-8 py-1.5 sm:py-2 font-medium"
           style={{
             clipPath: 'polygon(0 0, 100% 0, 95% 100%, 5% 100%)',
-            letterSpacing: '0.15em'
+            letterSpacing: '0.1em',
           }}
         >
           Scroll
         </span>
-        <div className="w-0.5 h-8 bg-gradient-to-b from-gold to-transparent animate-pulse"></div>
+        <div className="w-0.5 h-6 sm:h-8 bg-gradient-to-b from-gold to-transparent animate-pulse"></div>
       </div>
     </section>
   );
