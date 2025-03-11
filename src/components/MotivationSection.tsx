@@ -40,20 +40,17 @@ const MotivationSection: React.FC = () => {
     {
       image: "/lovable-uploads/f0ec81f2-364c-4247-9c58-d696022349b8.png",
       alt: "Statue of Liberty with New York skyline",
-      title: "Statue of Liberty",
-      description: "Symbol of freedom and hope for generations of immigrants"
+      title: "Statue of Liberty"
     },
     {
       image: "/lovable-uploads/8933ec0a-b111-43e6-a4a2-350068e0ddb5.png",
       alt: "Eiffel Tower against blue sky",
-      title: "Eiffel Tower",
-      description: "French innovation in steel technology at the 1889 World Fair"
+      title: "Eiffel Tower"
     },
     {
       image: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
       alt: "Pyramids of Giza with Sphinx",
-      title: "Pyramids of Giza",
-      description: "Ancient wonder that has endured for millennia"
+      title: "Pyramids of Giza"
     }
   ];
 
@@ -95,7 +92,6 @@ const MotivationSection: React.FC = () => {
                   </div>
                   <div className="mt-2 text-center">
                     <h3 className="text-lg font-medium">{monuments[1].title}</h3>
-                    <p className="text-sm text-gray-600">{monuments[1].description}</p>
                   </div>
                 </div>
               </div>
@@ -114,7 +110,6 @@ const MotivationSection: React.FC = () => {
                   </div>
                   <div className="mt-2 text-center">
                     <h3 className="text-lg font-medium">{monuments[0].title}</h3>
-                    <p className="text-sm text-gray-600">{monuments[0].description}</p>
                   </div>
                 </div>
               </div>
@@ -141,7 +136,6 @@ const MotivationSection: React.FC = () => {
                   </div>
                   <div className="mt-2 text-center">
                     <h3 className="text-lg font-medium">{monuments[2].title}</h3>
-                    <p className="text-sm text-gray-600">{monuments[2].description}</p>
                   </div>
                 </div>
               </div>
