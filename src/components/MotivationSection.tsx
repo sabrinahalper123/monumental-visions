@@ -242,8 +242,6 @@ const MotivationSection: React.FC = () => {
             </div>
             
             <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-16">
-              <h3 className="font-display text-2xl mb-6 text-center">Monument Inspirations</h3>
-              
               <div className="relative mb-6">
                 <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
                 <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
