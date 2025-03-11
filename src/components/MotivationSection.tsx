@@ -117,6 +117,10 @@ const MotivationSection: React.FC = () => {
     {
       src: "/lovable-uploads/74b964ae-0c58-4c6e-9827-91150bf7afef.png",
       alt: "Colossus of Rhodes ancient illustration with a giant figure straddling a harbor"
+    },
+    {
+      src: "/lovable-uploads/c6faf248-f55a-49bc-b0c1-29431c1d1330.png",
+      alt: "Taj Mahal white marble mausoleum with reflecting pool and gardens in Agra, India"
     }
   ];
 
