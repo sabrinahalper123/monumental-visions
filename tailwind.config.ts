@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontSize: {
+				'sm-plus': '0.925rem',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -60,7 +63,7 @@ export default {
 				silver: "#C0C0C0",
 				platinum: "#E5E4E2",
 				emerald: {
-					900: "#064e3b", // This is a bronze-y green color
+					900: "#064e3b",
 				},
 			},
 			borderRadius: {
