@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -156,6 +157,8 @@ const MotivationSection: React.FC = () => {
             
             <p className="animate-on-scroll opacity-0 text-lg leading-relaxed mb-8">
               We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens.
+              <br /><br />
+              Right now, we're experimenting with bronze and marble works.
             </p>
             
             <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 p-8 border border-gold/20 mb-12">
