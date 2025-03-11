@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -131,7 +130,6 @@ const MotivationSection: React.FC = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-2 font-semibold">Our Vision</span>
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
           </div>
           
@@ -176,7 +174,6 @@ const MotivationSection: React.FC = () => {
             
             <div id="process" className="pt-16">
               <div className="text-center mb-8">
-                <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-2 font-semibold">How We Work</span>
                 <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
               </div>
               
