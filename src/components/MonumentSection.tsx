@@ -55,7 +55,7 @@ const MonumentSection: React.FC = () => {
               className="relative w-full h-auto object-cover shadow-lg"
             />
             <div className="flex justify-center mt-6">
-              <span className="inline-block px-4 py-1 bg-black/10 border border-black/30 text-xs font-medium uppercase tracking-widest text-primary">
+              <span className="inline-block px-4 py-1 bg-cream border border-black/30 text-xs font-medium uppercase tracking-widest text-primary">
                 Presidio, San Francisco
               </span>
             </div>

@@ -190,7 +190,7 @@ const MotivationSection: React.FC = () => {
                   </p>
                 </div>
                 
-                <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-black/5 via-black/10 to-black/5 p-6 border border-black/20">
+                <div className="animate-on-scroll opacity-0 bg-cream p-6 border border-black/20">
                   <h3 className="font-display text-xl mb-3">Propose a Monument</h3>
                   <p className="mb-4 text-base">
                     If you have an idea of where and what we should build, propose a monument here.
