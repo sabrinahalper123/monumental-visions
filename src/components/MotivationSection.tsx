@@ -131,7 +131,7 @@ const MotivationSection: React.FC = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-2">Our Vision</span>
+            <span className="animate-on-scroll opacity-0 inline-block font-accent text-primary font-medium text-sm uppercase tracking-widest mb-2">Our Vision</span>
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
           </div>
           
@@ -176,7 +176,7 @@ const MotivationSection: React.FC = () => {
             
             <div id="process" className="pt-16">
               <div className="text-center mb-8">
-                <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-2">How We Work</span>
+                <span className="animate-on-scroll opacity-0 inline-block font-accent text-primary font-medium text-sm uppercase tracking-widest mb-2">How We Work</span>
                 <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
               </div>
               
@@ -214,7 +214,7 @@ const MotivationSection: React.FC = () => {
                   <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
                   <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
                   <div className="flex justify-center">
-                    <span className="relative px-4 bg-background text-gold font-accent text-sm">INSPIRATIONS</span>
+                    <span className="relative px-4 bg-background text-primary font-medium font-accent text-sm">INSPIRATIONS</span>
                   </div>
                 </div>
                 
