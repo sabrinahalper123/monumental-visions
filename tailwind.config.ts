@@ -56,6 +56,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				gold: '#D4AF37',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -64,6 +65,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
+				playfair: ['Playfair Display', 'serif'],
 			},
 			keyframes: {
 				'accordion-down': {

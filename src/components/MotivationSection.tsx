@@ -167,7 +167,9 @@ const MotivationSection: React.FC = () => {
             
             <div className="animate-on-scroll opacity-0 text-center">
               <p className={cn(
-                "text-lg leading-relaxed text-primary font-medium mb-20"
+                "font-monument text-xl md:text-2xl leading-relaxed text-primary mb-20 relative px-4 py-6",
+                "after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[1px] after:bg-gradient-to-r after:from-transparent after:via-gold/60 after:to-transparent",
+                "before:content-[''] before:absolute before:left-0 before:right-0 before:top-0 before:h-[1px] before:bg-gradient-to-r before:from-transparent before:via-gold/60 before:to-transparent"
               )}>
                 {motivationParagraphs[4]}
               </p>
