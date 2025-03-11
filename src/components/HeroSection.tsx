@@ -39,10 +39,7 @@ const HeroSection: React.FC = () => {
       {/* Content container */}
       <div className="absolute inset-0 flex flex-col justify-end items-center pb-24 md:pb-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-6">
-            <span className="inline-block w-16 h-1 bg-gold mb-3"></span>
-            <span className="inline-block w-32 h-1 bg-gold"></span>
-          </div>
+          {/* Removed the yellow lines that were here */}
           
           <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-8xl mb-6 opacity-0 animate-fade-in tracking-widest text-black" style={{ 
             textTransform: 'uppercase', 

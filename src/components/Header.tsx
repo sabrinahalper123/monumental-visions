@@ -26,8 +26,13 @@ const Header: React.FC = () => {
         <a 
           href="#" 
           className="text-2xl font-display font-bold tracking-wide text-black"
+          style={{ 
+            textTransform: 'uppercase', 
+            letterSpacing: '0.15em',
+            textShadow: '1px 1px 0px rgba(212, 175, 55, 0.3)'
+          }}
         >
-          <span className="text-gold">M</span>onumental
+          <span className="text-black">M</span>onumental
         </a>
         
         {/* Mobile menu button */}
