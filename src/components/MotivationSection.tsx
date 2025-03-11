@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -38,8 +39,8 @@ const ImageSlideshow: React.FC<{
               className="w-full h-full object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
             />
             {image.title && (
-              <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm py-2 px-2">
-                <span className="block text-center font-medium tracking-wide text-sm text-black">
+              <div className="absolute bottom-0 left-0 right-0 bg-white/90 py-2">
+                <span className="block text-center font-normal text-sm text-black">
                   {image.title}
                 </span>
               </div>
