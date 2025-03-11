@@ -35,13 +35,7 @@ const Footer: React.FC = () => {
           
           <div className="flex space-x-6">
             <a href="#" className="text-white/50 hover:text-gold transition-colors duration-200">
-              Privacy
-            </a>
-            <a href="#" className="text-white/50 hover:text-gold transition-colors duration-200">
-              Terms
-            </a>
-            <a href="#" className="text-white/50 hover:text-gold transition-colors duration-200">
-              Newsletter
+              Contact
             </a>
           </div>
         </div>
