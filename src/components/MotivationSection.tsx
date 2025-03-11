@@ -35,7 +35,7 @@ const ImageSlideshow: React.FC<{
             <img 
               src={image.src}
               alt={image.alt} 
-              className="w-full h-auto object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-auto object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         ))}
@@ -191,11 +191,11 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll opacity-0 max-w-4xl mx-auto w-full mb-24">
+            <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mb-24">
               <ImageSlideshow 
                 images={newSlideshowImages} 
                 interval={4000} 
-                className="w-full h-[350px] md:h-[450px]"
+                className="w-full h-[300px] md:h-[400px]"
               />
             </div>
             
