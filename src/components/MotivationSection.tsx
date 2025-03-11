@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -165,10 +166,19 @@ const MotivationSection: React.FC = () => {
             </div>
             
             <div className="animate-on-scroll opacity-0 text-center">
+              <div className="relative mb-3 mt-10">
+                <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+                <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
+                <div className="flex justify-center">
+                  <span className="relative px-4 bg-background text-gold font-semibold font-accent text-sm uppercase tracking-wider">
+                    Our Mission
+                  </span>
+                </div>
+              </div>
               <p className={cn(
-                "text-lg leading-relaxed text-primary font-medium mb-20"
+                "text-gold font-semibold font-accent text-sm uppercase tracking-wider mb-20"
               )}>
-                {motivationParagraphs[4]}
+                Monumental is building the next generation of large scale public works to inspire humanity to build its future.
               </p>
             </div>
 
