@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -5,10 +6,11 @@ const ImageSlideshow: React.FC<{
   images: Array<{
     src: string;
     alt: string;
-    title: string;
+    title?: string;
   }>;
   interval?: number;
-}> = ({ images, interval = 7000 }) => {
+  className?: string;
+}> = ({ images, interval = 7000, className }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   useEffect(() => {
@@ -20,7 +22,7 @@ const ImageSlideshow: React.FC<{
   }, [images.length, interval]);
   
   return (
-    <div className="relative overflow-hidden group">
+    <div className={cn("relative overflow-hidden group", className)}>
       <div className="relative">
         <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
         {images.map((image, index) => (
@@ -108,6 +110,21 @@ const MotivationSection: React.FC = () => {
       title: "Pyramids of Giza (c. 2600 – c. 2500 BC)"
     }
   ];
+  
+  const newSlideshowImages = [
+    {
+      src: "/lovable-uploads/ba8bda9d-b2ef-4903-a21e-1ed96f23efe3.png",
+      alt: "Christ the Redeemer statue rising above clouds in Rio de Janeiro"
+    },
+    {
+      src: "/lovable-uploads/7ef6cae9-85e8-462b-8221-5c27c0a18644.png",
+      alt: "Mount Rushmore National Memorial showing four presidents carved in mountain"
+    },
+    {
+      src: "/lovable-uploads/06fd2b9b-4b1b-49ca-a426-96ab0e31b817.png",
+      alt: "Taj Mahal with its reflection in water"
+    }
+  ];
 
   return (
     <section 
@@ -176,6 +193,15 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
+            {/* New Slideshow Section */}
+            <div className="animate-on-scroll opacity-0 mt-12 mb-20">
+              <ImageSlideshow 
+                images={newSlideshowImages} 
+                interval={7000} 
+                className="w-full max-h-[600px] overflow-hidden"
+              />
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
               </div>
@@ -185,7 +211,7 @@ const MotivationSection: React.FC = () => {
             </div>
           </div>
           
-          <div className="my-12">
+          <div className="my-16">
             <div className="animate-on-scroll opacity-0 art-deco-divider"></div>
           </div>
           
