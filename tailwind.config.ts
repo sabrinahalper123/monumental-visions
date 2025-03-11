@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -60,6 +59,9 @@ export default {
 				navy: "#0A1128",
 				silver: "#C0C0C0",
 				platinum: "#E5E4E2",
+				emerald: {
+					900: "#064e3b", // This is a bronze-y green color
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -113,4 +115,3 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-

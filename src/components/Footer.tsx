@@ -1,8 +1,9 @@
+
 import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-primary text-white py-12 px-4">
+    <footer className="bg-emerald-900/90 text-white py-12 px-4">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
@@ -13,15 +14,6 @@ const Footer: React.FC = () => {
               Building monumental public works to inspire humanity's future.
               Thinking big, starting small, and making a lasting impact.
             </p>
-          </div>
-          
-          <div className="grid grid-cols-2 gap-x-12 gap-y-4">
-            <a href="#athena" className="hover:text-gold transition-colors duration-200">Athena</a>
-            <a href="#" className="hover:text-gold transition-colors duration-200">About</a>
-            <a href="#palisades" className="hover:text-gold transition-colors duration-200">Palisades</a>
-            <a href="#" className="hover:text-gold transition-colors duration-200">Contact</a>
-            <a href="#motivation" className="hover:text-gold transition-colors duration-200">Motivation</a>
-            <a href="#" className="hover:text-gold transition-colors duration-200">Support</a>
           </div>
         </div>
         
