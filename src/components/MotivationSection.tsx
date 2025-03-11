@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -164,15 +163,15 @@ const MotivationSection: React.FC = () => {
             
             <div className="animate-on-scroll opacity-0 text-center">
               <p className={cn(
-                "text-lg leading-relaxed text-primary font-medium mb-12"
+                "text-lg leading-relaxed text-primary font-medium mb-16"
               )}>
                 {motivationParagraphs[4]}
               </p>
             </div>
 
-            <div className="animate-on-scroll opacity-0 art-deco-divider my-8"></div>
+            <div className="animate-on-scroll opacity-0 art-deco-divider my-12"></div>
             
-            <div id="process" className="pt-6">
+            <div id="process" className="pt-10">
               <div className="text-center mb-4">
                 <span className="animate-on-scroll opacity-0 inline-block font-accent text-gold text-sm uppercase tracking-widest mb-1">How We Work</span>
                 <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
