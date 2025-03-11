@@ -43,7 +43,7 @@ const MonumentSection: React.FC = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <span className="inline-block font-accent text-gold text-sm uppercase tracking-widest mb-3 opacity-0 animate-fade-in">Proposed Monument</span>
-          <h2 className="section-heading">The Athena Monument</h2>
+          <h2 className="section-heading">Athena</h2>
         </div>
         
         <div className="flex flex-col md:flex-row gap-10 items-center">
