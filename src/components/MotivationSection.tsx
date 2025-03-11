@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -193,8 +192,6 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            {/* Removing slideshow from here */}
-            
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
                 {/* Content can be added here if needed */}
@@ -244,14 +241,33 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            {/* Adding slideshow at the bottom of Our Process section */}
             <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-16">
               <h3 className="font-display text-2xl mb-6 text-center">Monument Inspirations</h3>
-              <ImageSlideshow 
-                images={newSlideshowImages} 
-                interval={4000} 
-                className="w-full h-[300px] md:h-[400px]"
-              />
+              
+              <div className="relative mb-6">
+                <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+                <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
+                <div className="absolute left-1/3 right-1/3 top-1/2 transform -translate-y-2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+                <div className="absolute left-1/3 right-1/3 top-1/2 transform translate-y-2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+                <div className="flex justify-center">
+                  <span className="relative px-4 bg-background text-gold font-accent text-sm">INSPIRATIONS</span>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <ImageSlideshow 
+                  images={newSlideshowImages} 
+                  interval={4000} 
+                  className="w-full h-[300px] md:h-[400px]"
+                />
+                
+                <div className="absolute -bottom-6 left-0 right-0 h-12 pointer-events-none">
+                  <div className="absolute left-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-gold/50 to-transparent"></div>
+                  <div className="absolute right-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-transparent to-gold/50"></div>
+                  <div className="absolute left-0 w-1/6 bottom-3 h-px bg-gradient-to-r from-gold/30 to-transparent"></div>
+                  <div className="absolute right-0 w-1/6 bottom-3 h-px bg-gradient-to-r from-transparent to-gold/30"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
