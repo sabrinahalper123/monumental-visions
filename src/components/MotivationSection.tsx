@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -192,13 +193,7 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mb-24">
-              <ImageSlideshow 
-                images={newSlideshowImages} 
-                interval={4000} 
-                className="w-full h-[300px] md:h-[400px]"
-              />
-            </div>
+            {/* Removing slideshow from here */}
             
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
@@ -247,6 +242,16 @@ const MotivationSection: React.FC = () => {
                   Submit Proposal
                 </a>
               </div>
+            </div>
+            
+            {/* Adding slideshow at the bottom of Our Process section */}
+            <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-16">
+              <h3 className="font-display text-2xl mb-6 text-center">Monument Inspirations</h3>
+              <ImageSlideshow 
+                images={newSlideshowImages} 
+                interval={4000} 
+                className="w-full h-[300px] md:h-[400px]"
+              />
             </div>
           </div>
         </div>
