@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -162,16 +163,11 @@ const MotivationSection: React.FC = () => {
             
             <div className="animate-on-scroll opacity-0 text-center">
               <div className="relative mb-3 mt-10">
-                <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
-                <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
-                <div className="flex justify-center">
-                  <span className="relative px-4 bg-background text-gold font-semibold font-accent text-sm uppercase tracking-wider">
-                    Our Mission
-                  </span>
-                </div>
+                <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-black/30 to-transparent"></div>
+                <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-black/50 to-transparent"></div>
               </div>
               <p className={cn(
-                "text-gold font-semibold font-accent text-sm uppercase tracking-wider mb-20"
+                "font-semibold font-accent text-sm uppercase tracking-wider mb-20"
               )}>
                 Monumental is building the next generation of large scale public works to inspire humanity to build its future.
               </p>
@@ -192,12 +188,12 @@ const MotivationSection: React.FC = () => {
                 <div className="animate-on-scroll opacity-0 space-y-3">
                   <h3 className="font-display text-xl mb-3">Sponsors</h3>
                   <p className="text-base leading-relaxed">
-                    The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-gold hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
-                    Reach out to <a href="mailto:monumental@eladgil.com" className="text-gold hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
+                    The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
+                    Reach out to <a href="mailto:monumental@eladgil.com" className="text-black hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
                   </p>
                 </div>
                 
-                <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 p-6 border border-gold/20">
+                <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-black/5 via-black/10 to-black/5 p-6 border border-black/20">
                   <h3 className="font-display text-xl mb-3">Propose a Monument</h3>
                   <p className="mb-4 text-base">
                     If you have an idea of where and what we should build, propose a monument here.
@@ -215,10 +211,10 @@ const MotivationSection: React.FC = () => {
               
               <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-10">
                 <div className="relative mb-3">
-                  <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
-                  <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
+                  <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-black/30 to-transparent"></div>
+                  <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-black/50 to-transparent"></div>
                   <div className="flex justify-center">
-                    <span className="relative px-4 bg-background text-gold font-semibold font-accent text-sm">INSPIRATIONS</span>
+                    <span className="relative px-4 bg-background text-black font-semibold font-accent text-sm">INSPIRATIONS</span>
                   </div>
                 </div>
                 
@@ -230,8 +226,8 @@ const MotivationSection: React.FC = () => {
                   />
                   
                   <div className="absolute -bottom-6 left-0 right-0 h-10 pointer-events-none">
-                    <div className="absolute left-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-gold/50 to-transparent"></div>
-                    <div className="absolute right-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-transparent to-gold/50"></div>
+                    <div className="absolute left-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-black/50 to-transparent"></div>
+                    <div className="absolute right-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-transparent to-black/50"></div>
                   </div>
                 </div>
               </div>

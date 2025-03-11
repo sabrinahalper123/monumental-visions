@@ -42,7 +42,7 @@ const MonumentSection: React.FC = () => {
     >
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <span className="inline-block font-accent text-gold text-sm uppercase tracking-widest mb-3 opacity-0 animate-fade-in font-semibold">Proposed Monument</span>
+          <span className="inline-block font-accent text-black text-sm uppercase tracking-widest mb-3 opacity-0 animate-fade-in font-semibold">Proposed Monument</span>
           <h2 className="section-heading">Athena</h2>
         </div>
         
@@ -55,7 +55,7 @@ const MonumentSection: React.FC = () => {
               className="relative w-full h-auto object-cover shadow-lg"
             />
             <div className="flex justify-center mt-6">
-              <span className="inline-block px-4 py-1 bg-gold/10 border border-gold/30 text-xs font-medium uppercase tracking-widest text-primary">
+              <span className="inline-block px-4 py-1 bg-black/10 border border-black/30 text-xs font-medium uppercase tracking-widest text-primary">
                 Presidio, San Francisco
               </span>
             </div>
