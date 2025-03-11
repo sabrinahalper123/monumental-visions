@@ -35,7 +35,8 @@ const ImageSlideshow: React.FC<{
             <img 
               src={image.src}
               alt={image.alt} 
-              className="w-full h-auto object-contain shadow-lg group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+              style={{ objectPosition: image.src.includes("06fd2b9b-4b1b") ? "center 40%" : "center center" }}
             />
           </div>
         ))}
