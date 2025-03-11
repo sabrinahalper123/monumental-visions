@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -118,10 +117,6 @@ const MotivationSection: React.FC = () => {
     {
       src: "/lovable-uploads/74b964ae-0c58-4c6e-9827-91150bf7afef.png",
       alt: "Colossus of Rhodes ancient illustration with a giant figure straddling a harbor"
-    },
-    {
-      src: "/lovable-uploads/60febc2c-6440-4451-953f-0f85e0e59957.png",
-      alt: "Pyramids of Giza and Sphinx in Egypt under clear blue sky"
     }
   ];
 
