@@ -136,7 +136,7 @@ const MotivationSection: React.FC = () => {
                     <img 
                       src={monuments[2].image}
                       alt={monuments[2].alt} 
-                      className="relative z-10 w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+                      className="relative z-10 w-full h-auto aspect-square object-cover object-[80%_center] shadow-lg group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="mt-2 text-center">
