@@ -50,10 +50,11 @@ const MonumentSection: React.FC = () => {
           {/* Centered image with simpler styling */}
           <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
             <div className="relative">
+              <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0"></div>
               <img 
                 src="/lovable-uploads/f9cf8186-c0c8-467d-8b63-a890b03d5a85.png"
                 alt="Athena Monument Concept" 
-                className="relative z-10 w-full h-auto object-cover shadow-lg border-b-4 border-gold"
+                className="relative z-10 w-full h-auto object-cover shadow-lg"
               />
             </div>
             <div className="flex justify-center mt-6">
