@@ -145,7 +145,7 @@ const MotivationSection: React.FC = () => {
               </div>
               <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-4 justify-center">
                 {monuments.map((monument, index) => (
-                  <div key={index} className="relative overflow-hidden group w-1/2 md:w-full max-w-[180px] md:max-w-none">
+                  <div key={index} className="relative overflow-hidden group w-1/2 md:w-full max-w-[150px] md:max-w-[180px] mx-auto">
                     <div className="relative">
                       <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
                       <div className="relative z-10 w-full aspect-square overflow-hidden">
