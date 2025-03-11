@@ -3,12 +3,12 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gold/90 text-white py-12 px-4">
+    <footer className="bg-black text-white py-12 px-4">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
             <h3 className="font-display text-2xl mb-4">
-              <span className="text-ivory">M</span>onumental
+              Monumental
             </h3>
             <p className="text-sm text-white/70 max-w-md">
               Building monumental public works to inspire humanity's future.

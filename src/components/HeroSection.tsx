@@ -26,48 +26,42 @@ const HeroSection: React.FC = () => {
         style={{ 
           backgroundImage: 'url("/lovable-uploads/4488f7d9-a9e9-4e53-80ac-ce60e9ce22ea.png")',
           transform: 'scale(1.1)',
-          filter: 'brightness(0.75) contrast(1.1)',
+          filter: 'brightness(0.75)',
           backgroundPosition: 'center 75%' // Changed from 55% to 75% to show more of the bottom
         }}
       />
       
-      {/* Decorative overlay */}
-      <div className="absolute inset-0 bg-art-deco-pattern opacity-15"></div>
+      {/* Subtle gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
       
-      {/* Gradient overlay with increased opacity */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent"></div>
-      
-      {/* Content container - moved up by adjusting justify-end to justify-center and removing some bottom padding */}
+      {/* Content container */}
       <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Removed the yellow lines that were here */}
-          
-          <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 opacity-0 animate-fade-in tracking-wider sm:tracking-widest text-black" style={{ 
-            textTransform: 'uppercase', 
-            letterSpacing: '0.15em',
-            textShadow: '2px 2px 0px rgba(212, 175, 55, 0.3)'
+          <h1 className="font-sans font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 opacity-0 animate-fade-in tracking-tight text-white" style={{ 
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            animationDelay: '200ms'
           }}>
             Monumental
           </h1>
           
-          <p className="font-accent text-lg sm:text-xl md:text-2xl opacity-0 animate-fade-in" style={{ animationDelay: '300ms' }}>
+          <p className="font-sans text-lg sm:text-xl md:text-2xl opacity-0 animate-fade-in text-white/90" style={{ animationDelay: '500ms' }}>
             Inspiring humanity to build its future
           </p>
         </div>
       </div>
       
-      {/* Scroll indicator - Styled similar to the previous "Discover" button */}
+      {/* Scroll indicator - Sleeker version */}
       <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '900ms' }}>
         <span 
-          className="text-xs sm:text-sm uppercase tracking-wider sm:tracking-widest mb-2 bg-gold text-white px-6 sm:px-8 py-1.5 sm:py-2 font-medium"
+          className="text-xs sm:text-sm uppercase tracking-wider mb-2 bg-white/10 backdrop-blur-sm text-white px-6 sm:px-8 py-1.5 sm:py-2 font-medium"
           style={{
-            clipPath: 'polygon(0 0, 100% 0, 95% 100%, 5% 100%)',
             letterSpacing: '0.1em',
           }}
         >
           Scroll
         </span>
-        <div className="w-0.5 h-6 sm:h-8 bg-gradient-to-b from-gold to-transparent animate-pulse"></div>
+        <div className="w-px h-6 sm:h-8 bg-white/40 animate-pulse"></div>
       </div>
     </section>
   );
