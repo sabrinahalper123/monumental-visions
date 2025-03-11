@@ -88,14 +88,14 @@ const MotivationSection: React.FC = () => {
 
   const monuments = [
     {
-      image: "/lovable-uploads/f0ec81f2-364c-4247-9c58-d696022349b8.png",
-      alt: "Statue of Liberty with New York skyline",
-      title: "Statue of Liberty (1886)"
-    },
-    {
       image: "/lovable-uploads/8933ec0a-b111-43e6-a4a2-350068e0ddb5.png",
       alt: "Eiffel Tower against blue sky",
       title: "Eiffel Tower (1889)"
+    },
+    {
+      image: "/lovable-uploads/f0ec81f2-364c-4247-9c58-d696022349b8.png",
+      alt: "Statue of Liberty with New York skyline",
+      title: "Statue of Liberty (1886)"
     }
   ];
   
