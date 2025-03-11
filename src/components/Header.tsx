@@ -60,8 +60,8 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex space-x-8">
           {[
             { name: 'Ideas', color: 'text-gold hover:text-gold/80' },
-            { name: 'Motivation', color: 'text-emerald-900 hover:text-emerald-900/80' },
-            { name: 'Process', color: 'text-navy hover:text-navy/80' }
+            { name: 'Motivation', color: 'text-gold hover:text-gold/80' },
+            { name: 'Process', color: 'text-gold hover:text-gold/80' }
           ].map((item) => (
             <a 
               key={item.name}
@@ -82,8 +82,8 @@ const Header: React.FC = () => {
         <nav className="container mx-auto px-4 flex flex-col space-y-4">
           {[
             { name: 'Ideas', color: 'text-gold hover:text-gold/80' },
-            { name: 'Motivation', color: 'text-emerald-900 hover:text-emerald-900/80' },
-            { name: 'Process', color: 'text-navy hover:text-navy/80' }
+            { name: 'Motivation', color: 'text-gold hover:text-gold/80' },
+            { name: 'Process', color: 'text-gold hover:text-gold/80' }
           ].map((item) => (
             <a 
               key={item.name}
