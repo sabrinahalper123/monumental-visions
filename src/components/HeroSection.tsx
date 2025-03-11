@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ 
           backgroundImage: 'url("/lovable-uploads/32097b65-6782-451f-85dd-dcde39f66a8a.png")',
-          transform: 'scale(1.1)',
+          transform: 'scale(1.1) translateY(-5vh)', // Added translateY to move the image up
           filter: 'brightness(0.7) contrast(1.1)' 
         }}
       />
