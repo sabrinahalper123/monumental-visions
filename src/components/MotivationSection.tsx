@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -77,7 +76,6 @@ const MotivationSection: React.FC = () => {
           </div>
           
           <div className="space-y-16">
-            {/* First row - Image on right */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
                 <p className="text-lg leading-relaxed">{motivationParagraphs[0]}</p>
@@ -101,7 +99,6 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            {/* Second row - Image on left */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-1 md:col-span-2">
                 <div className="relative overflow-hidden group">
@@ -125,10 +122,8 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            {/* Third row - Image on right */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
-                {/* The accent-colored text has been moved to under the "Motivation" heading */}
               </div>
               <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
                 <div className="relative overflow-hidden group">
@@ -160,8 +155,7 @@ const MotivationSection: React.FC = () => {
             </div>
             
             <p className="animate-on-scroll opacity-0 text-lg leading-relaxed mb-8">
-              We are starting small but thinking big. Right now we're experimenting with marble work and brass works. We are committed to working alongside local artists to create something meaningful for the community. 
-              Our goal is to foster collaboration, ensuring this project is shaped by and for the citizens of San Francisco.
+              We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens.
             </p>
             
             <div className="animate-on-scroll opacity-0 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5 p-8 border border-gold/20 mb-12">
