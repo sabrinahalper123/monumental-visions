@@ -58,13 +58,17 @@ const Header: React.FC = () => {
         
         {/* Desktop menu */}
         <nav className="hidden md:flex space-x-8">
-          {['Ideas', 'Motivation', 'Process'].map((item) => (
+          {[
+            { name: 'Ideas', color: 'text-gold hover:text-gold/80' },
+            { name: 'Motivation', color: 'text-emerald-900 hover:text-emerald-900/80' },
+            { name: 'Process', color: 'text-navy hover:text-navy/80' }
+          ].map((item) => (
             <a 
-              key={item}
-              href={`#${item.toLowerCase()}`} 
-              className="text-sm font-medium tracking-wide uppercase transition-colors hover:text-gold"
+              key={item.name}
+              href={`#${item.name.toLowerCase()}`} 
+              className={`text-sm font-medium tracking-wide uppercase transition-colors ${item.color} font-bold`}
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </nav>
@@ -76,14 +80,18 @@ const Header: React.FC = () => {
         isMenuOpen ? "max-h-64 py-4" : "max-h-0 py-0"
       )}>
         <nav className="container mx-auto px-4 flex flex-col space-y-4">
-          {['Ideas', 'Motivation', 'Process'].map((item) => (
+          {[
+            { name: 'Ideas', color: 'text-gold hover:text-gold/80' },
+            { name: 'Motivation', color: 'text-emerald-900 hover:text-emerald-900/80' },
+            { name: 'Process', color: 'text-navy hover:text-navy/80' }
+          ].map((item) => (
             <a 
-              key={item}
-              href={`#${item.toLowerCase()}`} 
-              className="text-sm font-medium tracking-wide uppercase transition-colors hover:text-gold py-2"
+              key={item.name}
+              href={`#${item.name.toLowerCase()}`} 
+              className={`text-sm font-medium tracking-wide uppercase transition-colors ${item.color} font-bold py-2`}
               onClick={() => setIsMenuOpen(false)}
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </nav>
