@@ -174,11 +174,11 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll opacity-0 py-5">
+            <div className="animate-on-scroll opacity-0 py-3">
               <div className="art-deco-divider"></div>
             </div>
             
-            <div id="process" className="pt-10">
+            <div id="process" className="pt-8">
               <div className="text-center mb-12">
                 <h2 className="animate-on-scroll opacity-0 section-heading">Our Process</h2>
               </div>
