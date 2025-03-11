@@ -1,6 +1,51 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
+
+const ImageSlideshow: React.FC<{
+  images: Array<{
+    src: string;
+    alt: string;
+    title: string;
+  }>;
+  interval?: number;
+}> = ({ images, interval = 7000 }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, interval);
+    
+    return () => clearInterval(timer);
+  }, [images.length, interval]);
+  
+  return (
+    <div className="relative overflow-hidden group">
+      <div className="relative">
+        <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
+        {images.map((image, index) => (
+          <div 
+            key={index}
+            className={cn(
+              "absolute inset-0 transition-opacity duration-1000",
+              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+            )}
+          >
+            <img 
+              src={image.src}
+              alt={image.alt} 
+              className="w-full h-auto aspect-square object-cover shadow-lg group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        ))}
+      </div>
+      <div className="mt-2 text-center">
+        <h3 className="text-lg font-medium">{images[currentIndex].title}</h3>
+      </div>
+    </div>
+  );
+};
 
 const MotivationSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -47,9 +92,22 @@ const MotivationSection: React.FC = () => {
       image: "/lovable-uploads/8933ec0a-b111-43e6-a4a2-350068e0ddb5.png",
       alt: "Eiffel Tower against blue sky",
       title: "Eiffel Tower (1889)"
+    }
+  ];
+  
+  const slideshowImages = [
+    {
+      src: "/lovable-uploads/a3c9eca4-02e5-461c-b352-333e819964d5.png",
+      alt: "Christ the Redeemer statue above clouds",
+      title: "Christ the Redeemer (1922)"
     },
     {
-      image: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
+      src: "/lovable-uploads/d018935a-aca2-46e4-9b1f-bb2c207d8d9f.png",
+      alt: "Mount Rushmore with four presidents carved in mountain",
+      title: "Mount Rushmore (1927)"
+    },
+    {
+      src: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
       alt: "Pyramids of Giza with Sphinx",
       title: "Pyramids of Giza (c. 2600 – c. 2500 BC)"
     }
@@ -126,19 +184,7 @@ const MotivationSection: React.FC = () => {
               <div className="animate-on-scroll opacity-0 order-2 md:order-1 md:col-span-3 space-y-6">
               </div>
               <div className="animate-on-scroll opacity-0 order-1 md:order-2 md:col-span-2">
-                <div className="relative overflow-hidden group">
-                  <div className="relative">
-                    <div className="absolute inset-0 border-2 border-gold/30 transform rotate-2 z-0 group-hover:rotate-0 transition-transform duration-300"></div>
-                    <img 
-                      src={monuments[2].image}
-                      alt={monuments[2].alt} 
-                      className="relative z-10 w-full h-auto aspect-square object-cover object-[80%_center] shadow-lg group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="mt-2 text-center">
-                    <h3 className="text-lg font-medium">{monuments[2].title}</h3>
-                  </div>
-                </div>
+                <ImageSlideshow images={slideshowImages} interval={7000} />
               </div>
             </div>
           </div>
