@@ -52,7 +52,7 @@ const MonumentSection: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 border-2 border-gold transform rotate-3 z-0"></div>
               <img 
-                src="https://images.unsplash.com/photo-1503625542587-535ce6579686?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
+                src="/lovable-uploads/f9cf8186-c0c8-467d-8b63-a890b03d5a85.png"
                 alt="Athena Monument Concept" 
                 className="relative z-10 w-full h-auto object-cover shadow-lg"
               />
