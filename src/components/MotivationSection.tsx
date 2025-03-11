@@ -135,6 +135,15 @@ const MotivationSection: React.FC = () => {
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
           </div>
           
+          {/* Mission statement moved directly under the Motivation heading */}
+          <div className="animate-on-scroll opacity-0 text-center mb-8">
+            <p className={cn(
+              "font-semibold font-accent text-sm uppercase tracking-wider"
+            )}>
+              Monumental is building the next generation of large scale public works to inspire humanity to build its future.
+            </p>
+          </div>
+          
           <div className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
               <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-4">
@@ -145,8 +154,8 @@ const MotivationSection: React.FC = () => {
               </div>
               <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-4 justify-center">
                 {monuments.map((monument, index) => (
-                  <div key={index} className="relative overflow-hidden w-1/2 md:w-full max-w-[150px] md:max-w-[180px] mx-auto">
-                    <div className="relative">
+                  <div key={index} className="relative overflow-hidden w-1/2 md:w-full max-w-[180px] aspect-square mx-auto">
+                    <div className="relative h-full">
                       <img 
                         src={monument.image}
                         alt={monument.alt} 
@@ -161,18 +170,6 @@ const MotivationSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll opacity-0 text-center">
-              <div className="relative mb-3 mt-10">
-                <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-black/30 to-transparent"></div>
-                <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-black/50 to-transparent"></div>
-              </div>
-              <p className={cn(
-                "font-semibold font-accent text-sm uppercase tracking-wider mb-20"
-              )}>
-                Monumental is building the next generation of large scale public works to inspire humanity to build its future.
-              </p>
-            </div>
-
             <div className="animate-on-scroll opacity-0 art-deco-divider my-16"></div>
             
             <div id="process" className="pt-16">
@@ -211,8 +208,6 @@ const MotivationSection: React.FC = () => {
               
               <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-10">
                 <div className="relative mb-3">
-                  <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-black/30 to-transparent"></div>
-                  <div className="absolute left-1/4 right-1/4 top-1/2 h-px bg-gradient-to-r from-transparent via-black/50 to-transparent"></div>
                   <div className="flex justify-center">
                     <span className="relative px-4 bg-background text-black font-semibold font-accent text-sm">INSPIRATIONS</span>
                   </div>
@@ -224,11 +219,6 @@ const MotivationSection: React.FC = () => {
                     interval={4000} 
                     className="w-full h-[250px] md:h-[300px]"
                   />
-                  
-                  <div className="absolute -bottom-6 left-0 right-0 h-10 pointer-events-none">
-                    <div className="absolute left-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-black/50 to-transparent"></div>
-                    <div className="absolute right-0 w-1/4 bottom-0 h-px bg-gradient-to-r from-transparent to-black/50"></div>
-                  </div>
                 </div>
               </div>
             </div>

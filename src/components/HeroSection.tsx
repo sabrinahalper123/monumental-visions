@@ -19,14 +19,14 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Hero background - increased opacity by adjusting brightness filter */}
+      {/* Hero background - reduced filter opacity */}
       <div 
         ref={imageRef}
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ 
           backgroundImage: 'url("/lovable-uploads/4488f7d9-a9e9-4e53-80ac-ce60e9ce22ea.png")',
           transform: 'scale(1.1)',
-          filter: 'brightness(0.85)', // Increased from 0.75 to 0.85 for higher opacity
+          filter: 'brightness(0.95)', // Increased from 0.85 to 0.95 for less opacity
           backgroundPosition: 'center 75%'
         }}
       />
