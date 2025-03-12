@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -106,6 +105,11 @@ const MotivationSection: React.FC = () => {
   
   const newSlideshowImages = [
     {
+      src: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
+      alt: "Pyramids of Giza in Egypt",
+      title: "Pyramids of Giza, ~2,550 BC"
+    },
+    {
       src: "/lovable-uploads/ba8bda9d-b2ef-4903-a21e-1ed96f23efe3.png",
       alt: "Christ the Redeemer statue rising above clouds in Rio de Janeiro",
       title: "Christ the Redeemer"
@@ -169,7 +173,7 @@ const MotivationSection: React.FC = () => {
                         alt={monument.alt} 
                         className="w-full h-full object-cover shadow-lg"
                       />
-                      <div className="absolute top-0 left-2 mt-1">
+                      <div className="absolute top-0 left-2 mt-0.5">
                         <span className="text-white text-xs font-accent tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
                           {monument.location}
                         </span>
