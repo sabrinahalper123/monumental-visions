@@ -121,6 +121,11 @@ const MotivationSection: React.FC = () => {
       title: "Mount Rushmore (1941)"
     },
     {
+      src: "/lovable-uploads/c0f64c07-3473-41f3-b326-d785b20b53fc.png",
+      alt: "Chichen Itza pyramid against blue sky",
+      title: "Chichen Itza (800-1100s CE)"
+    },
+    {
       src: "/lovable-uploads/74b964ae-0c58-4c6e-9827-91150bf7afef.png",
       alt: "Colossus of Rhodes ancient illustration with a giant figure straddling a harbor",
       title: "Colossus of Rhodes (280 BC.)"

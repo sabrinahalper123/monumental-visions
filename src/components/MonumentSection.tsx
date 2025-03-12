@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -25,17 +24,6 @@ const monuments = [
     description: [
       "The Rising Phoenix symbolizes rebirth, renewal, and hope for Pacific Palisades.",
       "The mythical bird has risen from the ashes time and time again and calls for a song of renewal for this next chapter for the community."
-    ]
-  },
-  {
-    id: 'chichenitza',
-    name: 'Chichen Itza',
-    image: '/lovable-uploads/c0f64c07-3473-41f3-b326-d785b20b53fc.png',
-    location: 'Yucatan, Mexico',
-    description: [
-      "Chichen Itza, built during 800-1100s CE, stands as one of the most impressive Mayan architectural achievements.",
-      "The iconic El Castillo pyramid (Temple of Kukulcan) demonstrates the Mayans' advanced knowledge of astronomy and mathematics.",
-      "This monument would pay homage to the rich pre-Columbian heritage of the Americas and celebrate the cultural connections across North America."
     ]
   }
 ];
