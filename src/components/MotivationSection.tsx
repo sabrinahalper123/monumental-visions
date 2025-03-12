@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -107,32 +108,32 @@ const MotivationSection: React.FC = () => {
     {
       src: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
       alt: "Pyramids of Giza in Egypt",
-      title: "Pyramids of Giza, ~2,550 BC"
+      title: "Pyramids of Giza, ~2,550 BC."
     },
     {
       src: "/lovable-uploads/ba8bda9d-b2ef-4903-a21e-1ed96f23efe3.png",
       alt: "Christ the Redeemer statue rising above clouds in Rio de Janeiro",
-      title: "Christ the Redeemer"
+      title: "Christ the Redeemer (1931)"
     },
     {
       src: "/lovable-uploads/01b7a8ed-9b94-4406-b5ae-3702a6c5a0a7.png",
       alt: "Mount Rushmore National Memorial showing the faces of four U.S. presidents",
-      title: "Mount Rushmore"
+      title: "Mount Rushmore (1941)"
     },
     {
       src: "/lovable-uploads/74b964ae-0c58-4c6e-9827-91150bf7afef.png",
       alt: "Colossus of Rhodes ancient illustration with a giant figure straddling a harbor",
-      title: "Colossus of Rhodes"
+      title: "Colossus of Rhodes (280 BC.)"
     },
     {
       src: "/lovable-uploads/c6faf248-f55a-49bc-b0c1-29431c1d1330.png",
       alt: "Taj Mahal white marble mausoleum with reflecting pool and gardens in Agra, India",
-      title: "Taj Mahal"
+      title: "Taj Mahal (1632)"
     },
     {
       src: "/lovable-uploads/7ab7e7c5-2115-4eb5-ba08-41f5b1b8b3c1.png",
       alt: "Lighthouse of Alexandria ancient illustration showing the tall lighthouse on an island",
-      title: "Lighthouse of Alexandria"
+      title: "Lighthouse of Alexandria (280 BC.)"
     }
   ];
 
