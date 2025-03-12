@@ -91,12 +91,14 @@ const MotivationSection: React.FC = () => {
     {
       image: "/lovable-uploads/8933ec0a-b111-43e6-a4a2-350068e0ddb5.png",
       alt: "Eiffel Tower against blue sky",
-      title: "Eiffel Tower (1889)"
+      title: "Eiffel Tower",
+      year: "1889"
     },
     {
       image: "/lovable-uploads/f0ec81f2-364c-4247-9c58-d696022349b8.png",
       alt: "Statue of Liberty with New York skyline",
-      title: "Statue of Liberty (1886)"
+      title: "Statue of Liberty",
+      year: "1886"
     }
   ];
   
@@ -167,7 +169,7 @@ const MotivationSection: React.FC = () => {
                       />
                     </div>
                     <div className="mt-3 text-center">
-                      <h3 className="text-sm font-medium">{monument.title}</h3>
+                      <h3 className="text-sm font-medium">{monument.title} ({monument.year})</h3>
                     </div>
                   </div>
                 ))}
