@@ -1,10 +1,48 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+// Monument data for the slideshow
+const monuments = [
+  {
+    id: 'athena',
+    name: 'Athena',
+    image: '/lovable-uploads/f9cf8186-c0c8-467d-8b63-a890b03d5a85.png',
+    location: 'Presidio, San Francisco',
+    description: [
+      "Athena would stand as a tribute to California's deep historical ties and its role as a western stronghold of the United States.",
+      "The Greek goddess of wisdom and war, Athena, appears on the Great Seal of California, symbolizing the state's immediate statehood—born fully formed, just as Athena was.",
+      "Standing in the Presidio of San Francisco, the monument would honor the land's long-standing history. Established in 1776 by the Spanish, the Presidio played a role in every major American conflict from the Civil War through Desert Storm.",
+      "Athena embodies justice, wisdom, and heroic endeavor, standing as a guardian over the bay—an enduring symbol of the West's pursuit of progress."
+    ]
+  },
+  {
+    id: 'phoenix',
+    name: 'Rising Phoenix',
+    image: '/lovable-uploads/9e582c96-a0a6-4742-970b-b8f34a2225fc.png',
+    location: 'Pacific Palisades, California',
+    description: [
+      "The Rising Phoenix symbolizes rebirth, renewal, and hope for Pacific Palisades.",
+      "The mythical bird has risen from the ashes time and time again and calls for a song of renewal for this next chapter for the community."
+    ]
+  }
+];
 
 const MonumentSection: React.FC = () => {
+  const [currentMonumentIndex, setCurrentMonumentIndex] = useState(0);
   const sectionRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
+  
+  const currentMonument = monuments[currentMonumentIndex];
+  
+  const nextMonument = () => {
+    setCurrentMonumentIndex((prev) => (prev + 1) % monuments.length);
+  };
+  
+  const prevMonument = () => {
+    setCurrentMonumentIndex((prev) => (prev - 1 + monuments.length) % monuments.length);
+  };
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -23,15 +61,20 @@ const MonumentSection: React.FC = () => {
       observer.observe(sectionRef.current);
     }
     
-    const paragraphs = textRef.current?.querySelectorAll('p');
-    paragraphs?.forEach((p, index) => {
-      p.style.animationDelay = `${index * 200}ms`;
-      p.classList.add('opacity-0');
-      observer.observe(p);
-    });
+    // Reset and observe new content when monument changes
+    const resetAnimations = () => {
+      const paragraphs = textRef.current?.querySelectorAll('p');
+      paragraphs?.forEach((p) => {
+        p.classList.remove('animate-fade-in');
+        p.classList.add('opacity-0');
+        observer.observe(p);
+      });
+    };
+    
+    resetAnimations();
     
     return () => observer.disconnect();
-  }, []);
+  }, [currentMonumentIndex]);
 
   return (
     <section 
@@ -43,37 +86,60 @@ const MonumentSection: React.FC = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <span className="inline-block font-accent text-black text-sm uppercase tracking-widest mb-3 opacity-0 animate-fade-in font-semibold">Proposed Monument</span>
-          <h2 className="section-heading">Athena</h2>
+          <h2 className="section-heading">{currentMonument.name}</h2>
         </div>
         
-        <div className="flex flex-col items-center mb-10">
+        <div className="flex flex-col items-center mb-10 relative">
           <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
             <img 
-              src="/lovable-uploads/f9cf8186-c0c8-467d-8b63-a890b03d5a85.png"
-              alt="Athena Monument Concept" 
+              src={currentMonument.image}
+              alt={`${currentMonument.name} Monument Concept`} 
               className="relative w-full h-auto object-cover shadow-lg"
             />
-            <div className="flex justify-center mt-6">
+            <div className="flex justify-center mt-2">
               <span className="inline-block px-4 py-1 bg-mint border border-black/30 text-xs font-medium uppercase tracking-widest text-primary">
-                Presidio, San Francisco
+                {currentMonument.location}
               </span>
             </div>
+          </div>
+          
+          {/* Navigation arrows */}
+          <button 
+            onClick={prevMonument}
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-md transition-all"
+            aria-label="Previous monument"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <button 
+            onClick={nextMonument}
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-md transition-all"
+            aria-label="Next monument"
+          >
+            <ChevronRight size={24} />
+          </button>
+          
+          {/* Navigation dots */}
+          <div className="flex justify-center gap-2 mt-4">
+            {monuments.map((monument, index) => (
+              <button
+                key={monument.id}
+                onClick={() => setCurrentMonumentIndex(index)}
+                className={`w-2.5 h-2.5 rounded-full transition-all ${
+                  index === currentMonumentIndex ? 'bg-black' : 'bg-gray-300'
+                }`}
+                aria-label={`Go to ${monument.name} monument`}
+              />
+            ))}
           </div>
         </div>
         
         <div className="max-w-3xl mx-auto" ref={textRef}>
-          <p className="mb-4 text-base leading-relaxed">
-            Athena would stand as a tribute to California's deep historical ties and its role as a western stronghold of the United States.
-          </p>
-          <p className="mb-4 text-base leading-relaxed">
-            The Greek goddess of wisdom and war, Athena, appears on the Great Seal of California, symbolizing the state's immediate statehood—born fully formed, just as Athena was.
-          </p>
-          <p className="mb-4 text-base leading-relaxed">
-            Standing in the Presidio of San Francisco, the monument would honor the land's long-standing history. Established in 1776 by the Spanish, the Presidio played a role in every major American conflict from the Civil War through Desert Storm.
-          </p>
-          <p className="text-base leading-relaxed">
-            Athena embodies justice, wisdom, and heroic endeavor, standing as a guardian over the bay—an enduring symbol of the West's pursuit of progress.
-          </p>
+          {currentMonument.description.map((paragraph, index) => (
+            <p key={index} className="mb-4 text-base leading-relaxed opacity-0">
+              {paragraph}
+            </p>
+          ))}
         </div>
       </div>
     </section>
