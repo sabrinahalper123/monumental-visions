@@ -26,6 +26,17 @@ const monuments = [
       "The Rising Phoenix symbolizes rebirth, renewal, and hope for Pacific Palisades.",
       "The mythical bird has risen from the ashes time and time again and calls for a song of renewal for this next chapter for the community."
     ]
+  },
+  {
+    id: 'chichenitza',
+    name: 'Chichen Itza',
+    image: '/lovable-uploads/c0f64c07-3473-41f3-b326-d785b20b53fc.png',
+    location: 'Yucatan, Mexico',
+    description: [
+      "Chichen Itza, built during 800-1100s CE, stands as one of the most impressive Mayan architectural achievements.",
+      "The iconic El Castillo pyramid (Temple of Kukulcan) demonstrates the Mayans' advanced knowledge of astronomy and mathematics.",
+      "This monument would pay homage to the rich pre-Columbian heritage of the Americas and celebrate the cultural connections across North America."
+    ]
   }
 ];
 
@@ -103,21 +114,19 @@ const MonumentSection: React.FC = () => {
             </div>
           </div>
           
-          {/* Navigation arrows */}
-          <button 
+          {/* Navigation arrows - now more subtle without button styling */}
+          <ChevronLeft 
             onClick={prevMonument}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-md transition-all"
+            className="absolute left-0 top-1/2 -translate-y-1/2 text-black/70 hover:text-black transition-colors cursor-pointer"
+            size={36}
             aria-label="Previous monument"
-          >
-            <ChevronLeft size={24} />
-          </button>
-          <button 
+          />
+          <ChevronRight 
             onClick={nextMonument}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-md transition-all"
+            className="absolute right-0 top-1/2 -translate-y-1/2 text-black/70 hover:text-black transition-colors cursor-pointer"
+            size={36}
             aria-label="Next monument"
-          >
-            <ChevronRight size={24} />
-          </button>
+          />
           
           {/* Navigation dots */}
           <div className="flex justify-center gap-2 mt-4">
