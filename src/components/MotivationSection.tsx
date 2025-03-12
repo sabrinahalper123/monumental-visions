@@ -92,13 +92,15 @@ const MotivationSection: React.FC = () => {
       image: "/lovable-uploads/8933ec0a-b111-43e6-a4a2-350068e0ddb5.png",
       alt: "Eiffel Tower against blue sky",
       title: "Eiffel Tower",
-      year: "1889"
+      year: "1889",
+      location: "Paris, 1887"
     },
     {
       image: "/lovable-uploads/f0ec81f2-364c-4247-9c58-d696022349b8.png",
       alt: "Statue of Liberty with New York skyline",
       title: "Statue of Liberty",
-      year: "1886"
+      year: "1886",
+      location: "New York, 1884"
     }
   ];
   
@@ -167,6 +169,11 @@ const MotivationSection: React.FC = () => {
                         alt={monument.alt} 
                         className="w-full h-full object-cover shadow-lg"
                       />
+                      <div className="absolute bottom-2 left-2">
+                        <span className="text-white text-xs font-accent tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
+                          {monument.location}
+                        </span>
+                      </div>
                     </div>
                     <div className="mt-3 text-center">
                       <h3 className="text-sm font-medium">{monument.title} ({monument.year})</h3>
