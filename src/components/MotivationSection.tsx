@@ -6,6 +6,8 @@ const ImageSlideshow: React.FC<{
     src: string;
     alt: string;
     title?: string;
+    location?: string;
+    year?: string;
   }>;
   interval?: number;
   className?: string;
@@ -41,8 +43,9 @@ const ImageSlideshow: React.FC<{
             />
             {image.title && (
               <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm py-2 px-2">
-                <span className="block text-center font-medium tracking-wide text-sm text-black">
+                <span className="block text-center uppercase tracking-wider text-xs sm:text-sm font-medium text-black" style={{ letterSpacing: '0.1em' }}>
                   {image.title}
+                  {image.location && image.year && `, ${image.location} [est. ${image.year}]`}
                 </span>
               </div>
             )}
@@ -110,37 +113,51 @@ const MotivationSection: React.FC = () => {
     {
       src: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
       alt: "Pyramids of Giza in Egypt",
-      title: "Pyramids of Giza (2550 BC.)"
+      title: "Pyramids of Giza",
+      location: "Egypt",
+      year: "2550 BC"
     },
     {
       src: "/lovable-uploads/ba8bda9d-b2ef-4903-a21e-1ed96f23efe3.png",
       alt: "Christ the Redeemer statue rising above clouds in Rio de Janeiro",
-      title: "Christ the Redeemer (1931)"
+      title: "Christ the Redeemer",
+      location: "Rio de Janeiro",
+      year: "1931"
     },
     {
       src: "/lovable-uploads/01b7a8ed-9b94-4406-b5ae-3702a6c5a0a7.png",
       alt: "Mount Rushmore National Memorial showing the faces of four U.S. presidents",
-      title: "Mount Rushmore (1941)"
+      title: "Mount Rushmore",
+      location: "South Dakota",
+      year: "1941"
     },
     {
       src: "/lovable-uploads/71541524-00d1-4cc2-9d5e-51525a6cc55c.png",
       alt: "Chichen Itza pyramid against sunset sky",
-      title: "Chichen Itza (800-1100s CE)"
+      title: "Chichen Itza",
+      location: "Mexico",
+      year: "800-1100s CE"
     },
     {
       src: "/lovable-uploads/74b964ae-0c58-4c6e-9827-91150bf7afef.png",
       alt: "Colossus of Rhodes ancient illustration with a giant figure straddling a harbor",
-      title: "Colossus of Rhodes (280 BC.)"
+      title: "Colossus of Rhodes",
+      location: "Greece",
+      year: "280 BC"
     },
     {
       src: "/lovable-uploads/c6faf248-f55a-49bc-b0c1-29431c1d1330.png",
       alt: "Taj Mahal white marble mausoleum with reflecting pool and gardens in Agra, India",
-      title: "Taj Mahal (1632)"
+      title: "Taj Mahal",
+      location: "Agra",
+      year: "1632"
     },
     {
       src: "/lovable-uploads/7ab7e7c5-2115-4eb5-ba08-41f5b1b8b3c1.png",
       alt: "Lighthouse of Alexandria ancient illustration showing the tall lighthouse on an island",
-      title: "Lighthouse of Alexandria (280 BC.)"
+      title: "Lighthouse of Alexandria",
+      location: "Egypt",
+      year: "280 BC"
     }
   ];
 
