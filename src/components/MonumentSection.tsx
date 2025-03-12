@@ -1,9 +1,7 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-// Add debugging log
-console.log("Monuments data:", monuments);
 
 // Monument data for the slideshow
 const monuments = [
@@ -37,7 +35,6 @@ const MonumentSection: React.FC = () => {
   const textRef = useRef<HTMLDivElement>(null);
   
   const currentMonument = monuments[currentMonumentIndex];
-  console.log("Current monument:", currentMonument); // Add debugging log
   
   const nextMonument = () => {
     setCurrentMonumentIndex((prev) => (prev + 1) % monuments.length);
