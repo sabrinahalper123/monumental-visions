@@ -108,7 +108,7 @@ const MotivationSection: React.FC = () => {
     {
       src: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
       alt: "Pyramids of Giza in Egypt",
-      title: "Pyramids of Giza, ~2,550 BC."
+      title: "Pyramids of Giza (2550 BC.)"
     },
     {
       src: "/lovable-uploads/ba8bda9d-b2ef-4903-a21e-1ed96f23efe3.png",
