@@ -31,6 +31,13 @@ const HeroSection: React.FC = () => {
         }}
       />
       
+      {/* Image caption - Pantheon */}
+      <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 z-10">
+        <span className="text-xs sm:text-sm uppercase tracking-wider text-white font-medium" style={{ letterSpacing: '0.1em' }}>
+          Pantheon, Rome [est.27 BC]
+        </span>
+      </div>
+      
       {/* Content container */}
       <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
