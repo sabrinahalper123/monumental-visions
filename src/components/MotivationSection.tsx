@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -124,8 +123,8 @@ const MotivationSection: React.FC = () => {
       title: "Mount Rushmore (1941)"
     },
     {
-      src: "/lovable-uploads/c0f64c07-3473-41f3-b326-d785b20b53fc.png",
-      alt: "Chichen Itza pyramid against blue sky",
+      src: "/lovable-uploads/71541524-00d1-4cc2-9d5e-51525a6cc55c.png",
+      alt: "Chichen Itza pyramid against sunset sky",
       title: "Chichen Itza (800-1100s CE)"
     },
     {
