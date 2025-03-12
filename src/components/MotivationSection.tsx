@@ -14,12 +14,13 @@ const ImageSlideshow: React.FC<{
   const [currentIndex, setCurrentIndex] = useState(0);
   
   useEffect(() => {
+    console.log('Current image:', images[currentIndex]);
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, interval);
     
     return () => clearInterval(timer);
-  }, [images.length, interval]);
+  }, [images.length, interval, currentIndex, images]);
   
   return (
     <div className={cn("relative overflow-hidden", className)}>
@@ -36,6 +37,8 @@ const ImageSlideshow: React.FC<{
               src={image.src}
               alt={image.alt} 
               className="w-full h-full object-contain shadow-lg"
+              onError={(e) => console.error('Image failed to load:', image.src)}
+              onLoad={() => console.log('Image loaded successfully:', image.src)}
             />
             {image.title && (
               <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm py-2 px-2">
