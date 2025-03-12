@@ -169,7 +169,7 @@ const MotivationSection: React.FC = () => {
                         alt={monument.alt} 
                         className="w-full h-full object-cover shadow-lg"
                       />
-                      <div className="absolute bottom-2 left-2">
+                      <div className="absolute bottom-0 left-2 mb-1">
                         <span className="text-white text-xs font-accent tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
                           {monument.location}
                         </span>
