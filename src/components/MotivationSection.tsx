@@ -160,7 +160,7 @@ const MotivationSection: React.FC = () => {
               </div>
               <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-6 justify-center">
                 {monuments.map((monument, index) => (
-                  <div key={index} className="relative overflow-hidden w-1/2 md:w-full max-w-[180px] aspect-square mx-auto">
+                  <div key={index} className="relative overflow-hidden w-1/2 md:w-full max-w-[220px] aspect-square mx-auto">
                     <div className="relative h-full">
                       <img 
                         src={monument.image}
