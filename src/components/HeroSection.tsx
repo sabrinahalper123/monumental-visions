@@ -19,22 +19,22 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Hero background - reduced filter opacity */}
+      {/* Hero background with the Eiffel Tower construction image */}
       <div 
         ref={imageRef}
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 w-full h-full bg-cover bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("/lovable-uploads/4488f7d9-a9e9-4e53-80ac-ce60e9ce22ea.png")',
+          backgroundImage: 'url("/lovable-uploads/e714d035-de5a-4662-8397-b7d4c6367b17.png")',
           transform: 'scale(1.1)',
-          filter: 'brightness(0.95)', // Increased from 0.85 to 0.95 for less opacity
-          backgroundPosition: 'center 75%'
+          filter: 'brightness(0.9)',
+          backgroundPosition: 'center 35%' // Focus on top 2/3rds of the image
         }}
       />
       
-      {/* Image caption - Pantheon */}
+      {/* Image caption - Eiffel Tower */}
       <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 z-10">
         <span className="text-xs sm:text-sm uppercase tracking-wider text-white font-medium" style={{ letterSpacing: '0.1em' }}>
-          Pantheon, Rome [est.27 BC]
+          Eiffel Tower Construction [1887-1889]
         </span>
       </div>
       
