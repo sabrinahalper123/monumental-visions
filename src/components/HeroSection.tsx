@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
       if (!imageRef.current) return;
       const scrollPosition = window.scrollY;
       // Parallax effect for hero image
-      imageRef.current.style.transform = `translateY(${scrollPosition * 0.2}px)`;
+      imageRef.current.style.transform = `translateY(${scrollPosition * 0.2}px) rotate(-5deg)`;
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
         className="absolute inset-0 w-full h-full bg-cover bg-no-repeat"
         style={{ 
           backgroundImage: 'url("/lovable-uploads/e714d035-de5a-4662-8397-b7d4c6367b17.png")',
-          transform: 'scale(1.1)',
+          transform: 'scale(1.1) rotate(-5deg)',
           filter: 'brightness(0.9)',
           backgroundPosition: 'center 20%' // Changed from 35% to 20% to show more of the top
         }}
