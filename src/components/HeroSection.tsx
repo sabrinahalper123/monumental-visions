@@ -44,7 +44,8 @@ const HeroSection: React.FC = () => {
           <h1 className="font-sans font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 opacity-0 animate-fade-in tracking-tight text-white" style={{ 
             textTransform: 'uppercase',
             letterSpacing: '0.05em',
-            animationDelay: '200ms'
+            animationDelay: '200ms',
+            textShadow: '0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006' // Adding thin black text-shadow for letter outline
           }}>
             Monumental
           </h1>
