@@ -214,7 +214,11 @@ const MotivationSection: React.FC = () => {
                       <img 
                         src={monument.image}
                         alt={monument.alt} 
-                        className="w-full h-full object-cover shadow-lg"
+                        className={cn(
+                          "w-full h-full object-cover shadow-lg",
+                          // Apply object-position to show the top half for the Christ the Redeemer image
+                          monument.title === "Christ the Redeemer" ? "object-top" : ""
+                        )}
                       />
                       {monument.captionPosition === "top-left" && (
                         <div className="absolute top-0 left-2 mt-0.5">
