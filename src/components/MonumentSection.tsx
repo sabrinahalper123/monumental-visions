@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -20,7 +19,7 @@ const monuments = [
   {
     id: 'phoenix',
     name: 'Rising Phoenix',
-    image: '/lovable-uploads/8eadf6ce-3fe2-4651-8cf4-57eeb02de3b5.png',
+    image: '/lovable-uploads/ef1c0463-dea0-4a3e-bd3e-d686f4545871.png',
     location: 'Pacific Palisades, California',
     description: [
       "The Rising Phoenix stands as a powerful symbol of rebirth, renewal, and resilience for Pacific Palisades, especially in the wake of the devastating fires earlier this year.",
@@ -62,7 +61,6 @@ const MonumentSection: React.FC = () => {
       observer.observe(sectionRef.current);
     }
     
-    // Reset and observe new content when monument changes
     const resetAnimations = () => {
       const paragraphs = textRef.current?.querySelectorAll('p');
       paragraphs?.forEach((p) => {
@@ -77,7 +75,6 @@ const MonumentSection: React.FC = () => {
     return () => observer.disconnect();
   }, [currentMonumentIndex]);
 
-  // Log the current monument to debug
   useEffect(() => {
     console.log("Current monument:", currentMonument);
   }, [currentMonument]);
@@ -109,7 +106,6 @@ const MonumentSection: React.FC = () => {
             </div>
           </div>
           
-          {/* Navigation arrows - now more subtle without button styling */}
           <ChevronLeft 
             onClick={prevMonument}
             className="absolute left-0 top-1/2 -translate-y-1/2 text-black/70 hover:text-black transition-colors cursor-pointer"
@@ -123,7 +119,6 @@ const MonumentSection: React.FC = () => {
             aria-label="Next monument"
           />
           
-          {/* Navigation dots */}
           <div className="flex justify-center gap-2 mt-4">
             {monuments.map((monument, index) => (
               <button
