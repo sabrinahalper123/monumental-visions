@@ -95,14 +95,6 @@ const MotivationSection: React.FC = () => {
 
   const monuments = [
     {
-      image: "/lovable-uploads/79ca7ba9-236a-45d4-b73f-886f559b1212.png",
-      alt: "Christ the Redeemer statue under construction with scaffolding",
-      title: "Christ the Redeemer",
-      year: "1931",
-      location: "RIO DE JANEIRO, 1927",
-      captionPosition: "bottom-right"
-    },
-    {
       image: "/lovable-uploads/60c4ecfc-2dfb-48f4-8040-a2fba8260d8e.png",
       alt: "Mount Rushmore under construction showing workers on scaffolding",
       title: "Mount Rushmore",
@@ -201,44 +193,28 @@ const MotivationSection: React.FC = () => {
           
           <div className="space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-              <div className="animate-on-scroll opacity-0 md:col-span-3 flex flex-row md:flex-col gap-6 justify-start">
-                <div key="monument-0" className="relative overflow-hidden w-full max-w-[220px] aspect-square">
-                  <div className="relative h-full">
-                    <img 
-                      src={monuments[0].image}
-                      alt={monuments[0].alt} 
-                      className="w-full h-full object-cover shadow-lg"
-                    />
-                    {monuments[0].captionPosition === "bottom-right" && (
-                      <div className="absolute bottom-0 right-2 mb-0.5">
-                        <span className="text-white text-xs font-accent tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
-                          {monuments[0].location}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                  <div className="mt-3 text-center">
-                    <h3 className="text-sm font-medium">{monuments[0].title} ({monuments[0].year})</h3>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="animate-on-scroll opacity-0 md:col-span-6 space-y-6 max-w-2xl mx-auto">
+              <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-6">
                 <p className="text-base leading-relaxed">{motivationParagraphs[0]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[1]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[3]}</p>
               </div>
-              
-              <div className="animate-on-scroll opacity-0 md:col-span-3 flex flex-row md:flex-col gap-6 justify-end">
-                {monuments.slice(1).map((monument, index) => (
-                  <div key={`monument-${index+1}`} className="relative overflow-hidden w-full max-w-[220px] aspect-square">
+              <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-6 justify-center">
+                {monuments.map((monument, index) => (
+                  <div key={index} className="relative overflow-hidden w-1/2 md:w-full max-w-[220px] aspect-square mx-auto">
                     <div className="relative h-full">
                       <img 
                         src={monument.image}
                         alt={monument.alt} 
                         className="w-full h-full object-cover shadow-lg"
                       />
+                      {monument.captionPosition === "top-left" && (
+                        <div className="absolute top-0 left-2 mt-0.5">
+                          <span className="text-white text-xs font-accent tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
+                            {monument.location}
+                          </span>
+                        </div>
+                      )}
                       {monument.captionPosition === "bottom-right" && (
                         <div className="absolute bottom-0 right-2 mb-0.5">
                           <span className="text-white text-xs font-accent tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
@@ -264,11 +240,11 @@ const MotivationSection: React.FC = () => {
                 <h2 className="animate-on-scroll opacity-0 process-heading">Our Process</h2>
               </div>
               
-              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-12 max-w-2xl mx-auto">
+              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-12">
                 We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens. Right now, we're experimenting with bronze and marble works.
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-3xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div className="animate-on-scroll opacity-0 space-y-4">
                   <h3 className="font-display text-xl mb-4">Sponsors</h3>
                   <p className="text-base leading-relaxed">
@@ -304,7 +280,7 @@ const MotivationSection: React.FC = () => {
                   <ImageSlideshow 
                     images={newSlideshowImages} 
                     interval={4000} 
-                    className="w-full h-[300px] md:h-[350px]"
+                    className="w-full h-[250px] md:h-[300px]"
                   />
                 </div>
               </div>
