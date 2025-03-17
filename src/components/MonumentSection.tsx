@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -19,7 +20,7 @@ const monuments = [
   {
     id: 'phoenix',
     name: 'Rising Phoenix',
-    image: '/lovable-uploads/9fe15101-632b-4d58-ad83-d6d772f6bc17.png',
+    image: '/lovable-uploads/8eadf6ce-3fe2-4651-8cf4-57eeb02de3b5.png',
     location: 'Pacific Palisades, California',
     description: [
       "The Rising Phoenix stands as a powerful symbol of rebirth, renewal, and resilience for Pacific Palisades, especially in the wake of the devastating fires earlier this year.",
