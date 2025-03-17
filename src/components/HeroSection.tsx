@@ -24,10 +24,10 @@ const HeroSection: React.FC = () => {
         ref={imageRef}
         className="absolute inset-0 w-full h-full bg-cover bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("/lovable-uploads/598e8131-1224-4d6d-8920-9530bf85e32d.png")',
+          backgroundImage: 'url("/lovable-uploads/33f46351-9263-4813-b773-dc49e5f8fdff.png")',
           transform: 'scale(1.2)', // Keeping scale to prevent cutoff
           filter: 'brightness(0.9)',
-          backgroundPosition: 'right 0% center 30%' // Positioning to show the very right edge of the image
+          backgroundPosition: 'right center' // Positioning to center on the right side of the image
         }}
       />
       
