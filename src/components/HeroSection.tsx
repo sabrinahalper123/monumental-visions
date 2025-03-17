@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import AnimatedText from './AnimatedText';
 
@@ -27,7 +26,7 @@ const HeroSection: React.FC = () => {
           backgroundImage: 'url("/lovable-uploads/598e8131-1224-4d6d-8920-9530bf85e32d.png")',
           transform: 'scale(1.2)', // Keeping scale to prevent cutoff
           filter: 'brightness(0.9)',
-          backgroundPosition: 'center 30% left 50%' // Adjusted even further left to show more of the right edge
+          backgroundPosition: 'center 30% right 50%' // Moved all the way to the right to show the left side
         }}
       />
       
