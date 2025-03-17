@@ -95,12 +95,12 @@ const MotivationSection: React.FC = () => {
 
   const monuments = [
     {
-      image: "/lovable-uploads/8933ec0a-b111-43e6-a4a2-350068e0ddb5.png",
-      alt: "Eiffel Tower against blue sky",
-      title: "Eiffel Tower",
-      year: "1889",
-      location: "PARIS, 1887",
-      captionPosition: "top-left" // Default position
+      image: "/lovable-uploads/60c4ecfc-2dfb-48f4-8040-a2fba8260d8e.png",
+      alt: "Mount Rushmore under construction showing workers on scaffolding",
+      title: "Mount Rushmore",
+      year: "1941",
+      location: "SOUTH DAKOTA, 1927",
+      captionPosition: "bottom-right"
     },
     {
       image: "/lovable-uploads/75a0e077-b77b-4173-b0ee-15e5aea1655b.png",
@@ -108,7 +108,7 @@ const MotivationSection: React.FC = () => {
       title: "Statue of Liberty",
       year: "1886",
       location: "NEW YORK, 1884",
-      captionPosition: "bottom-right" // New position
+      captionPosition: "bottom-right"
     }
   ];
   
