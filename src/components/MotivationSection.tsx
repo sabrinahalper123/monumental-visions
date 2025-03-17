@@ -101,8 +101,8 @@ const MotivationSection: React.FC = () => {
       location: "PARIS, 1887"
     },
     {
-      image: "/lovable-uploads/f0ec81f2-364c-4247-9c58-d696022349b8.png",
-      alt: "Statue of Liberty with New York skyline",
+      image: "/lovable-uploads/75a0e077-b77b-4173-b0ee-15e5aea1655b.png",
+      alt: "Statue of Liberty under construction",
       title: "Statue of Liberty",
       year: "1886",
       location: "NEW YORK, 1884"
