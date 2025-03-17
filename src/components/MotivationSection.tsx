@@ -201,8 +201,8 @@ const MotivationSection: React.FC = () => {
           
           <div className="space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-              <div className="animate-on-scroll opacity-0 md:col-span-2 flex flex-row md:flex-col gap-6 justify-start">
-                <div key="monument-0" className="relative overflow-hidden w-full max-w-[180px] aspect-square">
+              <div className="animate-on-scroll opacity-0 md:col-span-3 flex flex-row md:flex-col gap-6 justify-start">
+                <div key="monument-0" className="relative overflow-hidden w-full max-w-[220px] aspect-square">
                   <div className="relative h-full">
                     <img 
                       src={monuments[0].image}
@@ -223,16 +223,16 @@ const MotivationSection: React.FC = () => {
                 </div>
               </div>
               
-              <div className="animate-on-scroll opacity-0 md:col-span-8 space-y-6">
+              <div className="animate-on-scroll opacity-0 md:col-span-6 space-y-6 max-w-2xl mx-auto">
                 <p className="text-base leading-relaxed">{motivationParagraphs[0]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[1]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[3]}</p>
               </div>
               
-              <div className="animate-on-scroll opacity-0 md:col-span-2 flex flex-row md:flex-col gap-6 justify-end">
+              <div className="animate-on-scroll opacity-0 md:col-span-3 flex flex-row md:flex-col gap-6 justify-end">
                 {monuments.slice(1).map((monument, index) => (
-                  <div key={`monument-${index+1}`} className="relative overflow-hidden w-full max-w-[180px] aspect-square">
+                  <div key={`monument-${index+1}`} className="relative overflow-hidden w-full max-w-[220px] aspect-square">
                     <div className="relative h-full">
                       <img 
                         src={monument.image}
@@ -264,11 +264,11 @@ const MotivationSection: React.FC = () => {
                 <h2 className="animate-on-scroll opacity-0 process-heading">Our Process</h2>
               </div>
               
-              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-12">
+              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-12 max-w-2xl mx-auto">
                 We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens. Right now, we're experimenting with bronze and marble works.
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-3xl mx-auto">
                 <div className="animate-on-scroll opacity-0 space-y-4">
                   <h3 className="font-display text-xl mb-4">Sponsors</h3>
                   <p className="text-base leading-relaxed">
@@ -304,7 +304,7 @@ const MotivationSection: React.FC = () => {
                   <ImageSlideshow 
                     images={newSlideshowImages} 
                     interval={4000} 
-                    className="w-full h-[250px] md:h-[300px]"
+                    className="w-full h-[300px] md:h-[350px]"
                   />
                 </div>
               </div>
