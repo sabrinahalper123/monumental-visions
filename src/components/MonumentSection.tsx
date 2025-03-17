@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 // Monument data for the slideshow
 const monuments = [
@@ -32,6 +33,8 @@ const monuments = [
 
 const MonumentSection: React.FC = () => {
   const [currentMonumentIndex, setCurrentMonumentIndex] = useState(0);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   
@@ -39,10 +42,14 @@ const MonumentSection: React.FC = () => {
   
   const nextMonument = () => {
     setCurrentMonumentIndex((prev) => (prev + 1) % monuments.length);
+    setImageLoaded(false);
+    setImageError(false);
   };
   
   const prevMonument = () => {
     setCurrentMonumentIndex((prev) => (prev - 1 + monuments.length) % monuments.length);
+    setImageLoaded(false);
+    setImageError(false);
   };
   
   useEffect(() => {
@@ -78,7 +85,31 @@ const MonumentSection: React.FC = () => {
 
   useEffect(() => {
     console.log("Current monument:", currentMonument);
+    // Preload image
+    const img = new Image();
+    img.src = currentMonument.image;
+    img.onload = () => {
+      console.log("Image loaded successfully:", currentMonument.image);
+      setImageLoaded(true);
+      setImageError(false);
+    };
+    img.onerror = () => {
+      console.error("Failed to load image:", currentMonument.image);
+      setImageError(true);
+      setImageLoaded(false);
+    };
   }, [currentMonument]);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+    setImageError(false);
+  };
+
+  const handleImageError = () => {
+    console.error("Error loading image in the component:", currentMonument.image);
+    setImageError(true);
+    setImageLoaded(false);
+  };
 
   return (
     <section 
@@ -95,11 +126,21 @@ const MonumentSection: React.FC = () => {
         
         <div className="flex flex-col items-center mb-10 relative">
           <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
-            <img 
-              src={currentMonument.image}
-              alt={`${currentMonument.name} Monument Concept`} 
-              className="relative w-full h-auto object-cover shadow-lg"
-            />
+            {imageError ? (
+              <div className="relative w-full h-80 bg-gray-100 flex items-center justify-center rounded-md shadow-lg">
+                <p className="text-gray-500">Image not available</p>
+              </div>
+            ) : !imageLoaded ? (
+              <Skeleton className="w-full h-80 rounded-md" />
+            ) : (
+              <img 
+                src={currentMonument.image}
+                alt={`${currentMonument.name} Monument Concept`} 
+                className="relative w-full h-auto object-cover shadow-lg rounded-md"
+                onLoad={handleImageLoad}
+                onError={handleImageError}
+              />
+            )}
             <div className="flex justify-center mt-2">
               <span className="inline-block px-4 py-1 bg-mint border border-black/30 text-xs font-medium uppercase tracking-widest text-primary">
                 {currentMonument.location}
