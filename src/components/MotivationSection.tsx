@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -187,16 +186,11 @@ const MotivationSection: React.FC = () => {
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
           </div>
           
-          {/* Move the first paragraph to appear here, before the mission statement */}
-          <div className="animate-on-scroll opacity-0 text-center mb-6">
-            <p className="text-base leading-relaxed max-w-3xl mx-auto">{motivationParagraphs[0]}</p>
-          </div>
-          
-          <div className="animate-on-scroll opacity-0 text-center mb-12">
+          <div className="animate-on-scroll opacity-0 text-center mb-8">
             <p className={cn(
               "font-semibold font-accent text-sm uppercase tracking-wider"
             )}>
@@ -207,7 +201,7 @@ const MotivationSection: React.FC = () => {
           <div className="space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
               <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-6">
-                {/* Skip the first paragraph since we moved it above */}
+                <p className="text-base leading-relaxed">{motivationParagraphs[0]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[1]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[3]}</p>
@@ -221,7 +215,6 @@ const MotivationSection: React.FC = () => {
                         alt={monument.alt} 
                         className={cn(
                           "w-full h-full object-cover shadow-lg",
-                          // Apply object-position to show the top half for the Christ the Redeemer image
                           monument.title === "Christ the Redeemer" ? "object-top" : ""
                         )}
                       />
