@@ -191,6 +191,11 @@ const MotivationSection: React.FC = () => {
             <h2 className="animate-on-scroll opacity-0 section-heading">Motivation</h2>
           </div>
           
+          {/* Move the first paragraph to appear here, before the mission statement */}
+          <div className="animate-on-scroll opacity-0 text-center mb-6">
+            <p className="text-base leading-relaxed max-w-3xl mx-auto">{motivationParagraphs[0]}</p>
+          </div>
+          
           <div className="animate-on-scroll opacity-0 text-center mb-12">
             <p className={cn(
               "font-semibold font-accent text-sm uppercase tracking-wider"
@@ -202,7 +207,7 @@ const MotivationSection: React.FC = () => {
           <div className="space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
               <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-6">
-                <p className="text-base leading-relaxed">{motivationParagraphs[0]}</p>
+                {/* Skip the first paragraph since we moved it above */}
                 <p className="text-base leading-relaxed">{motivationParagraphs[1]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[3]}</p>
