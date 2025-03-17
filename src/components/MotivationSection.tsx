@@ -193,7 +193,7 @@ const MotivationSection: React.FC = () => {
           
           <div className="animate-on-scroll opacity-0 text-center mb-8">
             <p className={cn(
-              "font-semibold font-accent text-sm uppercase tracking-wider"
+              "font-semibold font-accent text-base uppercase tracking-wider"
             )}>
               Monumental is building the next generation of large scale public works to inspire humanity to build its future.
             </p>
@@ -202,10 +202,10 @@ const MotivationSection: React.FC = () => {
           <div className="space-y-12">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
               <div className="animate-on-scroll opacity-0 md:col-span-7 space-y-6">
-                <p className="text-base leading-relaxed">{motivationParagraphs[0]}</p>
-                <p className="text-base leading-relaxed">{motivationParagraphs[1]}</p>
-                <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
-                <p className="text-base leading-relaxed">{motivationParagraphs[3]}</p>
+                <p className="text-lg leading-relaxed">{motivationParagraphs[0]}</p>
+                <p className="text-lg leading-relaxed">{motivationParagraphs[1]}</p>
+                <p className="text-lg leading-relaxed">{motivationParagraphs[2]}</p>
+                <p className="text-lg leading-relaxed">{motivationParagraphs[3]}</p>
               </div>
               <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-col gap-6 justify-center">
                 {monuments.map((monument, index) => (
@@ -251,14 +251,14 @@ const MotivationSection: React.FC = () => {
                 <h2 className="animate-on-scroll opacity-0 process-heading">Our Process</h2>
               </div>
               
-              <div className="animate-on-scroll opacity-0 text-base leading-relaxed mb-12">
+              <div className="animate-on-scroll opacity-0 text-lg leading-relaxed mb-12">
                 We are starting small but thinking big. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens. Right now, we're experimenting with bronze and marble works.
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div className="animate-on-scroll opacity-0 space-y-4">
                   <h3 className="font-display text-xl mb-4">Sponsors</h3>
-                  <p className="text-base leading-relaxed">
+                  <p className="text-lg leading-relaxed">
                     The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
                     Reach out to <a href="mailto:monumental@eladgil.com" className="text-black hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
                   </p>
@@ -266,7 +266,7 @@ const MotivationSection: React.FC = () => {
                 
                 <div className="animate-on-scroll opacity-0 bg-mint p-6 border border-black/20">
                   <h3 className="font-display text-xl mb-4">Propose a Monument</h3>
-                  <p className="mb-6 text-base">
+                  <p className="mb-6 text-lg">
                     If you have an idea of where and what we should build, propose a monument here.
                   </p>
                   <a 
