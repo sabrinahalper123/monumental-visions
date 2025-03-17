@@ -109,6 +109,14 @@ const MotivationSection: React.FC = () => {
       year: "1886",
       location: "NEW YORK, 1884",
       captionPosition: "bottom-right"
+    },
+    {
+      image: "/lovable-uploads/7da1d04e-315d-4379-a49b-ba062ad150f9.png",
+      alt: "Christ the Redeemer statue under construction in Rio de Janeiro",
+      title: "Christ the Redeemer",
+      year: "1931",
+      location: "RIO DE JANEIRO, 1927",
+      captionPosition: "bottom-right"
     }
   ];
   
@@ -199,9 +207,9 @@ const MotivationSection: React.FC = () => {
                 <p className="text-base leading-relaxed">{motivationParagraphs[2]}</p>
                 <p className="text-base leading-relaxed">{motivationParagraphs[3]}</p>
               </div>
-              <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-row md:flex-col gap-6 justify-center">
+              <div className="animate-on-scroll opacity-0 md:col-span-5 flex flex-col gap-6 justify-center">
                 {monuments.map((monument, index) => (
-                  <div key={index} className="relative overflow-hidden w-1/2 md:w-full max-w-[220px] aspect-square mx-auto">
+                  <div key={index} className="relative overflow-hidden w-full max-w-[220px] aspect-square mx-auto">
                     <div className="relative h-full">
                       <img 
                         src={monument.image}
