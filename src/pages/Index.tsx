@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import MonumentSection from '@/components/MonumentSection';
 import MotivationSection from '@/components/MotivationSection';
-import PalisadesSection from '@/components/PalisadesSection';
 import Footer from '@/components/Footer';
 
 const Index: React.FC = () => {
@@ -26,7 +25,6 @@ const Index: React.FC = () => {
         <HeroSection />
         <MonumentSection />
         <MotivationSection />
-        <PalisadesSection />
       </main>
       <Footer />
     </div>
