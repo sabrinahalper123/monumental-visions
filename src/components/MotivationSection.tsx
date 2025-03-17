@@ -114,6 +114,13 @@ const MotivationSection: React.FC = () => {
   
   const newSlideshowImages = [
     {
+      src: "/lovable-uploads/ee2bb267-8e96-49d2-ab93-c78ff2b814bf.png",
+      alt: "Eiffel Tower with green park and people relaxing in Paris, France",
+      title: "Eiffel Tower",
+      location: "Paris",
+      year: "1889"
+    },
+    {
       src: "/lovable-uploads/27357f25-0be9-4db5-a98a-90ef5016e090.png",
       alt: "Pyramids of Giza in Egypt",
       title: "Pyramids of Giza",
