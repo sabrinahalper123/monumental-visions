@@ -23,8 +23,9 @@ const monuments = [
     image: '/lovable-uploads/b2a34840-e86c-437d-872e-e0176886f03c.png',
     location: 'Pacific Palisades, California',
     description: [
-      "The Rising Phoenix symbolizes rebirth, renewal, and hope for Pacific Palisades.",
-      "The mythical bird has risen from the ashes time and time again and calls for a song of renewal for this next chapter for the community."
+      "The Rising Phoenix stands as a powerful symbol of rebirth, renewal, and resilience for Pacific Palisades, especially in the wake of the devastating fires earlier this year.",
+      "A timeless emblem of transformation, the mythical bird rising from the ashes reflects the community's strength and ability to rebuild.",
+      "Positioned along the cliffs overlooking the Pacific, the monument serves as a reminder that from destruction comes renewal, and from endings, new beginnings emerge."
     ]
   }
 ];
