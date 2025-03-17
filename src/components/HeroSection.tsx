@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
         ref={imageRef}
         className="absolute inset-0 w-full h-full bg-cover bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("/lovable-uploads/e714d035-de5a-4662-8397-b7d4c6367b17.png")',
+          backgroundImage: 'url("/lovable-uploads/e05cec08-83a7-47ea-9ff5-aafa711f079e.png")',
           transform: 'scale(1.2) rotate(-2.5deg)', // Increased scale to avoid cutoff edges
           filter: 'brightness(0.9)',
           backgroundPosition: 'center 20%' // Changed from 35% to 20% to show more of the top
