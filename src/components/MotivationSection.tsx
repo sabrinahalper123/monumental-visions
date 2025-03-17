@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -98,14 +99,16 @@ const MotivationSection: React.FC = () => {
       alt: "Eiffel Tower against blue sky",
       title: "Eiffel Tower",
       year: "1889",
-      location: "PARIS, 1887"
+      location: "PARIS, 1887",
+      captionPosition: "top-left" // Default position
     },
     {
       image: "/lovable-uploads/75a0e077-b77b-4173-b0ee-15e5aea1655b.png",
       alt: "Statue of Liberty under construction",
       title: "Statue of Liberty",
       year: "1886",
-      location: "NEW YORK, 1884"
+      location: "NEW YORK, 1884",
+      captionPosition: "bottom-right" // New position
     }
   ];
   
@@ -198,11 +201,20 @@ const MotivationSection: React.FC = () => {
                         alt={monument.alt} 
                         className="w-full h-full object-cover shadow-lg"
                       />
-                      <div className="absolute top-0 left-2 mt-0.5">
-                        <span className="text-white text-xs font-accent tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
-                          {monument.location}
-                        </span>
-                      </div>
+                      {monument.captionPosition === "top-left" && (
+                        <div className="absolute top-0 left-2 mt-0.5">
+                          <span className="text-white text-xs font-accent tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
+                            {monument.location}
+                          </span>
+                        </div>
+                      )}
+                      {monument.captionPosition === "bottom-right" && (
+                        <div className="absolute bottom-0 right-2 mb-0.5">
+                          <span className="text-white text-xs font-accent tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">
+                            {monument.location}
+                          </span>
+                        </div>
+                      )}
                     </div>
                     <div className="mt-3 text-center">
                       <h3 className="text-sm font-medium">{monument.title} ({monument.year})</h3>
