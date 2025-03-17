@@ -21,7 +21,7 @@ const monuments = [
   {
     id: 'phoenix',
     name: 'Rising Phoenix',
-    image: '/lovable-uploads/c6a795d5-11e8-4407-8d2e-392dc3f1bb89.png',
+    image: '/lovable-uploads/bf1a347e-3155-491e-869c-3d02c29a95bb.png',
     location: 'Pacific Palisades, California',
     description: [
       "The Rising Phoenix stands as a powerful symbol of rebirth, renewal, and resilience for Pacific Palisades, especially in the wake of the devastating fires earlier this year.",
