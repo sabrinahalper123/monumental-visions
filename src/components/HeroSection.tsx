@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           backgroundImage: 'url("/lovable-uploads/598e8131-1224-4d6d-8920-9530bf85e32d.png")',
           transform: 'scale(1.2)', // Keeping scale to prevent cutoff
           filter: 'brightness(0.9)',
-          backgroundPosition: 'left 0% center 30%' // Positioning to show the far right edge of the image
+          backgroundPosition: 'right 0% center 30%' // Positioning to show the very right edge of the image
         }}
       />
       
