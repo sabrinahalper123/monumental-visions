@@ -77,6 +77,11 @@ const MonumentSection: React.FC = () => {
     return () => observer.disconnect();
   }, [currentMonumentIndex]);
 
+  // Log the current monument to debug
+  useEffect(() => {
+    console.log("Current monument:", currentMonument);
+  }, [currentMonument]);
+
   return (
     <section 
       id="ideas" 
