@@ -19,13 +19,13 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Hero background with the Eiffel Tower construction image */}
+      {/* Hero background with the Eiffel Tower construction progression image */}
       <div 
         ref={imageRef}
         className="absolute inset-0 w-full h-full bg-cover bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("/lovable-uploads/e05cec08-83a7-47ea-9ff5-aafa711f079e.png")',
-          transform: 'scale(1.2)', // Removed rotation but kept scale to prevent cutoff
+          backgroundImage: 'url("/lovable-uploads/598e8131-1224-4d6d-8920-9530bf85e32d.png")',
+          transform: 'scale(1.2)', // Keeping scale to prevent cutoff
           filter: 'brightness(0.9)',
           backgroundPosition: 'center 20%' // Showing more of the top
         }}
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
       {/* Image caption - Eiffel Tower */}
       <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 z-10">
         <span className="text-xs sm:text-sm uppercase tracking-wider text-white font-medium" style={{ letterSpacing: '0.1em' }}>
-          Eiffel Tower Construction [1887-1889]
+          Eiffel Tower Construction Progression [1887-1889]
         </span>
       </div>
       
