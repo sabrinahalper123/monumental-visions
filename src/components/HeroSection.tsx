@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
       if (!imageRef.current) return;
       const scrollPosition = window.scrollY;
       // Parallax effect for hero image
-      imageRef.current.style.transform = `translateY(${scrollPosition * 0.2}px) rotate(-2.5deg)`;
+      imageRef.current.style.transform = `translateY(${scrollPosition * 0.2}px)`;
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -25,9 +25,9 @@ const HeroSection: React.FC = () => {
         className="absolute inset-0 w-full h-full bg-cover bg-no-repeat"
         style={{ 
           backgroundImage: 'url("/lovable-uploads/e05cec08-83a7-47ea-9ff5-aafa711f079e.png")',
-          transform: 'scale(1.2) rotate(-2.5deg)', // Increased scale to avoid cutoff edges
+          transform: 'scale(1.2)', // Removed rotation but kept scale to prevent cutoff
           filter: 'brightness(0.9)',
-          backgroundPosition: 'center 20%' // Changed from 35% to 20% to show more of the top
+          backgroundPosition: 'center 20%' // Showing more of the top
         }}
       />
       
@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
             textTransform: 'uppercase',
             letterSpacing: '0.05em',
             animationDelay: '200ms',
-            textShadow: '0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006' // Adding thin black text-shadow for letter outline
+            textShadow: '0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006' // Keeping the thin black text-shadow for letter outline
           }}>
             Monumental
           </h1>
