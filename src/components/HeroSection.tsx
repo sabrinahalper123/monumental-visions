@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
       {/* Image caption - Eiffel Tower */}
       <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 z-10">
         <span className="text-xs sm:text-sm uppercase tracking-wider text-white font-medium" style={{ letterSpacing: '0.1em' }}>
-          Eiffel Tower Construction Progression [1887-1889]
+          Eiffel Tower Construction [1887-1889]
         </span>
       </div>
       
