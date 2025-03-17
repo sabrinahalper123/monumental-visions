@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           backgroundImage: 'url("/lovable-uploads/598e8131-1224-4d6d-8920-9530bf85e32d.png")',
           transform: 'scale(1.2)', // Keeping scale to prevent cutoff
           filter: 'brightness(0.9)',
-          backgroundPosition: 'center 30% left 15%' // Adjusted to move left and show more of the right side
+          backgroundPosition: 'center 30% left 30%' // Adjusted further left to show more of the right edge
         }}
       />
       
