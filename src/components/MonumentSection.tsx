@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -85,10 +84,13 @@ const MonumentSection: React.FC = () => {
 
   useEffect(() => {
     console.log("Current monument:", currentMonument);
-    // Only preload image if it exists
+    setImageLoaded(false);
+    setImageError(false);
+    
     if (currentMonument.image) {
       const img = new Image();
       img.src = currentMonument.image;
+      console.log("Attempting to load image:", currentMonument.image);
       img.onload = () => {
         console.log("Image loaded successfully:", currentMonument.image);
         setImageLoaded(true);
@@ -100,13 +102,13 @@ const MonumentSection: React.FC = () => {
         setImageLoaded(false);
       };
     } else {
-      // No image to load
       setImageLoaded(false);
       setImageError(false);
     }
   }, [currentMonument]);
 
   const handleImageLoad = () => {
+    console.log("Image loaded in component:", currentMonument.image);
     setImageLoaded(true);
     setImageError(false);
   };
