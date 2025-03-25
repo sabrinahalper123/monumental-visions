@@ -1,8 +1,8 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { toast } from "sonner";
 
 // Monument data for the slideshow
 const monuments = [
@@ -21,7 +21,7 @@ const monuments = [
   {
     id: 'phoenix',
     name: 'Rising Phoenix',
-    image: '/lovable-uploads/9b55b174-783f-4981-bd85-fb559ae35918.png',
+    image: '/lovable-uploads/06fd2b9b-4b1b-49ca-a426-96ab0e31b817.png',
     location: 'Pacific Palisades, California',
     description: [
       "The Rising Phoenix stands as a powerful symbol of rebirth, renewal, and resilience for Pacific Palisades, especially in the wake of the devastating fires earlier this year.",
@@ -101,6 +101,7 @@ const MonumentSection: React.FC = () => {
         console.error("Failed to load image:", currentMonument.image, error);
         setImageError(true);
         setImageLoaded(false);
+        toast.error(`Failed to load image: ${currentMonument.image}`);
       };
     } else {
       setImageLoaded(false);
@@ -118,6 +119,7 @@ const MonumentSection: React.FC = () => {
     console.error("Error loading image in the component:", currentMonument.image, error);
     setImageError(true);
     setImageLoaded(false);
+    toast.error(`Failed to load image: ${currentMonument.image}`);
   };
 
   return (
