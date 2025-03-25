@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -20,7 +21,7 @@ const monuments = [
   {
     id: 'phoenix',
     name: 'Rising Phoenix',
-    image: '/lovable-uploads/60870c84-79d8-47b7-83a4-bf9fde752aaa.png',
+    image: '/lovable-uploads/9b55b174-783f-4981-bd85-fb559ae35918.png',
     location: 'Pacific Palisades, California',
     description: [
       "The Rising Phoenix stands as a powerful symbol of rebirth, renewal, and resilience for Pacific Palisades, especially in the wake of the devastating fires earlier this year.",
@@ -96,8 +97,8 @@ const MonumentSection: React.FC = () => {
         setImageLoaded(true);
         setImageError(false);
       };
-      img.onerror = () => {
-        console.error("Failed to load image:", currentMonument.image);
+      img.onerror = (error) => {
+        console.error("Failed to load image:", currentMonument.image, error);
         setImageError(true);
         setImageLoaded(false);
       };
@@ -113,8 +114,8 @@ const MonumentSection: React.FC = () => {
     setImageError(false);
   };
 
-  const handleImageError = () => {
-    console.error("Error loading image in the component:", currentMonument.image);
+  const handleImageError = (error: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    console.error("Error loading image in the component:", currentMonument.image, error);
     setImageError(true);
     setImageLoaded(false);
   };
