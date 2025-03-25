@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -260,7 +259,7 @@ const MotivationSection: React.FC = () => {
                   <h3 className="font-display text-xl mb-4">Sponsors</h3>
                   <p className="text-lg leading-relaxed">
                     The founding sponsor of Monumental is <a href="https://eladgil.com/" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
-                    Reach out to <a href="mailto:monumental@eladgil.com" className="text-black hover:underline">monumental@eladgil.com</a> if you're interested in supporting this project.
+                    Reach out to <a href="mailto:hi@monumental.net" className="text-black hover:underline">hi@monumental.net</a> if you're interested in supporting this project.
                   </p>
                 </div>
                 
