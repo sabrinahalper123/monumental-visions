@@ -251,7 +251,7 @@ const MotivationSection: React.FC = () => {
               </div>
               
               <div className="animate-on-scroll opacity-0 text-lg leading-relaxed mb-12">
-                We are starting small but thinking big, currently working with bronze and marble foundries and artisans on several projects. We are committed to collaborating with local artists to create something meaningful for the community, ensuring this project is shaped by and for the citizens. Reach out to <a href="mailto:hi@monumental.net" className="text-black hover:underline">hi@monumental.net</a> if you're an artist or architect interested in getting involved.
+                We're starting small but thinking big, collaborating with bronze and marble foundries and artisans on several projects. Our goal is to create something meaningful with the community. Reach out if you're an artist or architect interested in getting involved.
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
