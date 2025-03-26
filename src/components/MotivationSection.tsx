@@ -1,61 +1,5 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
-
-const ImageSlideshow: React.FC<{
-  images: Array<{
-    src: string;
-    alt: string;
-    title?: string;
-    location?: string;
-    year?: string;
-  }>;
-  interval?: number;
-  className?: string;
-}> = ({ images, interval = 4000, className }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  
-  useEffect(() => {
-    console.log('Current image:', images[currentIndex]);
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, interval);
-    
-    return () => clearInterval(timer);
-  }, [images.length, interval, currentIndex, images]);
-  
-  return (
-    <div className={cn("relative overflow-hidden", className)}>
-      <div className="relative h-full">
-        {images.map((image, index) => (
-          <div 
-            key={index}
-            className={cn(
-              "absolute inset-0 transition-opacity duration-1000 h-full",
-              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-            )}
-          >
-            <img 
-              src={image.src}
-              alt={image.alt} 
-              className="w-full h-full object-contain shadow-lg"
-              onError={(e) => console.error('Image failed to load:', image.src)}
-              onLoad={() => console.log('Image loaded successfully:', image.src)}
-            />
-            {image.title && (
-              <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm py-2 px-2">
-                <span className="block text-center uppercase tracking-wider text-xs sm:text-sm font-medium text-black" style={{ letterSpacing: '0.1em' }}>
-                  {image.title}
-                  {image.location && image.year && `, ${image.location} [est. ${image.year}]`}
-                </span>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
 
 const MotivationSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -120,7 +64,7 @@ const MotivationSection: React.FC = () => {
     }
   ];
   
-  const newSlideshowImages = [
+  const inspirationImages = [
     {
       src: "/lovable-uploads/ee2bb267-8e96-49d2-ab93-c78ff2b814bf.png",
       alt: "Eiffel Tower with green park and people relaxing in Paris, France",
@@ -287,12 +231,28 @@ const MotivationSection: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="relative">
-                  <ImageSlideshow 
-                    images={newSlideshowImages} 
-                    interval={4000} 
-                    className="w-full h-[250px] md:h-[300px]"
-                  />
+                <div className="animate-on-scroll opacity-0">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {inspirationImages.map((image, index) => (
+                      <div key={index} className="flex flex-col items-center">
+                        <div className="relative w-full h-[140px] mb-2 overflow-hidden rounded-sm shadow-md">
+                          <img 
+                            src={image.src}
+                            alt={image.alt} 
+                            className="w-full h-full object-cover"
+                            onError={(e) => console.error('Image failed to load:', image.src)}
+                            onLoad={() => console.log('Image loaded successfully:', image.src)}
+                          />
+                        </div>
+                        <div className="text-center w-full py-1 px-2 bg-white/80 backdrop-blur-sm">
+                          <span className="block uppercase tracking-wider text-xs font-medium text-black" style={{ letterSpacing: '0.1em' }}>
+                            {image.title}
+                            {image.location && image.year && `, ${image.location} [est. ${image.year}]`}
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
