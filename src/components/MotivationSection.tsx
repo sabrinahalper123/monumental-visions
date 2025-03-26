@@ -136,6 +136,13 @@ const MotivationSection: React.FC = () => {
       title: "Lighthouse of Alexandria",
       location: "Egypt",
       year: "280 BC"
+    },
+    {
+      src: "/lovable-uploads/9f0f4497-758c-4bfb-a523-e7d553979f27.png",
+      alt: "Statue of Liberty standing tall on Liberty Island with a colorful sunset sky",
+      title: "Statue of Liberty",
+      location: "New York",
+      year: "1886"
     }
   ];
   
