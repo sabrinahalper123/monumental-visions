@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -64,7 +65,22 @@ const MotivationSection: React.FC = () => {
     }
   ];
   
-  const inspirationImages = [
+  // Convert year strings to numbers for sorting
+  const processYear = (yearStr: string) => {
+    if (yearStr.includes("BC")) {
+      return -parseInt(yearStr.replace(" BC", ""), 10);
+    }
+    if (yearStr.includes("BCE")) {
+      return -parseInt(yearStr.replace(" BCE", ""), 10);
+    }
+    if (yearStr.includes("CE")) {
+      return parseInt(yearStr.replace("s CE", "").replace(" CE", ""), 10);
+    }
+    return parseInt(yearStr, 10);
+  };
+  
+  // Original inspiration images array
+  const unsortedInspirationImages = [
     {
       src: "/lovable-uploads/ee2bb267-8e96-49d2-ab93-c78ff2b814bf.png",
       alt: "Eiffel Tower with green park and people relaxing in Paris, France",
@@ -122,6 +138,13 @@ const MotivationSection: React.FC = () => {
       year: "280 BC"
     }
   ];
+  
+  // Sort the images by year (oldest to newest)
+  const inspirationImages = [...unsortedInspirationImages].sort((a, b) => {
+    const yearA = processYear(a.year);
+    const yearB = processYear(b.year);
+    return yearA - yearB;
+  });
 
   return (
     <section 
