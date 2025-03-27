@@ -31,7 +31,7 @@ const MonumentImage: React.FC<MonumentImageProps> = ({ image, name, location }) 
   };
 
   return (
-    <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
+    <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms', opacity: '1' }}>
       {image ? (
         imageError ? (
           <div className="relative w-full h-80 bg-gray-100 flex items-center justify-center rounded-md shadow-lg">
@@ -46,6 +46,7 @@ const MonumentImage: React.FC<MonumentImageProps> = ({ image, name, location }) 
               className={`relative w-full h-auto object-cover shadow-lg rounded-md ${imageLoaded ? 'block' : 'hidden'}`}
               onLoad={handleImageLoad}
               onError={handleImageError}
+              style={{ maxHeight: '500px', width: '100%' }}
             />
           </>
         )

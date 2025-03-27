@@ -4,7 +4,7 @@ export const monuments = [
   {
     id: 'athena',
     name: 'Athena',
-    image: 'https://i.imgur.com/9Y4FkSN.jpeg',
+    image: 'https://i.imgur.com/9Y4FkSN.jpg',
     location: 'Presidio, San Francisco',
     description: [
       "Athena would stand as a tribute to California's deep historical ties and its role as a western stronghold of the United States.",
