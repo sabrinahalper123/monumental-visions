@@ -270,7 +270,7 @@ const MotivationSection: React.FC = () => {
                             onLoad={() => console.log('Image loaded successfully:', image.src)}
                           />
                         </div>
-                        <div className="text-center w-full py-1 px-2 bg-white/85 text-black">
+                        <div className="text-center w-full py-1 px-2 bg-white text-black">
                           <span className="block uppercase tracking-wider text-xs font-medium" style={{ letterSpacing: '0.1em' }}>
                             {image.title}
                             {image.location && image.year && `, ${image.location} [est. ${image.year}]`}
