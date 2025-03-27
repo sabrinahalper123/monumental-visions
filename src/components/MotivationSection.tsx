@@ -191,14 +191,14 @@ const MotivationSection: React.FC = () => {
                       />
                       {monument.captionPosition === "top-left" && (
                         <div className="absolute top-0 left-2 mt-0.5">
-                          <span className="px-2 py-0.5 bg-white/85 text-white text-xs font-accent tracking-wide">
+                          <span className="px-2 py-0.5 bg-white/85 text-black text-xs font-accent tracking-wide">
                             {monument.location}
                           </span>
                         </div>
                       )}
                       {monument.captionPosition === "bottom-right" && (
                         <div className="absolute bottom-0 right-2 mb-0.5">
-                          <span className="px-2 py-0.5 bg-white/85 text-white text-xs font-accent tracking-wide">
+                          <span className="px-2 py-0.5 bg-white/85 text-black text-xs font-accent tracking-wide">
                             {monument.location}
                           </span>
                         </div>
@@ -270,7 +270,7 @@ const MotivationSection: React.FC = () => {
                             onLoad={() => console.log('Image loaded successfully:', image.src)}
                           />
                         </div>
-                        <div className="text-center w-full py-1 px-2 bg-white/85 text-white">
+                        <div className="text-center w-full py-1 px-2 bg-white/85 text-black">
                           <span className="block uppercase tracking-wider text-xs font-medium" style={{ letterSpacing: '0.1em' }}>
                             {image.title}
                             {image.location && image.year && `, ${image.location} [est. ${image.year}]`}
