@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -65,7 +64,6 @@ const MotivationSection: React.FC = () => {
     }
   ];
   
-  // Convert year strings to numbers for sorting
   const processYear = (yearStr: string) => {
     if (yearStr.includes("BC")) {
       return -parseInt(yearStr.replace(" BC", ""), 10);
@@ -79,7 +77,6 @@ const MotivationSection: React.FC = () => {
     return parseInt(yearStr, 10);
   };
   
-  // Original inspiration images array
   const unsortedInspirationImages = [
     {
       src: "/lovable-uploads/ee2bb267-8e96-49d2-ab93-c78ff2b814bf.png",
@@ -146,7 +143,6 @@ const MotivationSection: React.FC = () => {
     }
   ];
   
-  // Sort the images by year (oldest to newest)
   const inspirationImages = [...unsortedInspirationImages].sort((a, b) => {
     const yearA = processYear(a.year);
     const yearB = processYear(b.year);
@@ -195,14 +191,14 @@ const MotivationSection: React.FC = () => {
                       />
                       {monument.captionPosition === "top-left" && (
                         <div className="absolute top-0 left-2 mt-0.5">
-                          <span className="px-2 py-0.5 bg-white/85 text-black text-xs font-accent tracking-wide">
+                          <span className="px-2 py-0.5 bg-white/85 text-white text-xs font-accent tracking-wide">
                             {monument.location}
                           </span>
                         </div>
                       )}
                       {monument.captionPosition === "bottom-right" && (
                         <div className="absolute bottom-0 right-2 mb-0.5">
-                          <span className="px-2 py-0.5 bg-white/85 text-black text-xs font-accent tracking-wide">
+                          <span className="px-2 py-0.5 bg-white/85 text-white text-xs font-accent tracking-wide">
                             {monument.location}
                           </span>
                         </div>
@@ -274,7 +270,7 @@ const MotivationSection: React.FC = () => {
                             onLoad={() => console.log('Image loaded successfully:', image.src)}
                           />
                         </div>
-                        <div className="text-center w-full py-1 px-2 bg-white/85 text-black">
+                        <div className="text-center w-full py-1 px-2 bg-white/85 text-white">
                           <span className="block uppercase tracking-wider text-xs font-medium" style={{ letterSpacing: '0.1em' }}>
                             {image.title}
                             {image.location && image.year && `, ${image.location} [est. ${image.year}]`}
