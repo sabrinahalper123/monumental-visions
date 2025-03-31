@@ -31,27 +31,27 @@ const MonumentImage: React.FC<MonumentImageProps> = ({ image, name, location }) 
   };
 
   return (
-    <div className="max-w-4xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms', opacity: '1' }}>
+    <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms', opacity: '1' }}>
       {image ? (
         imageError ? (
-          <div className="relative w-full h-[500px] bg-gray-100 flex items-center justify-center rounded-md shadow-lg">
+          <div className="relative w-full h-80 bg-gray-100 flex items-center justify-center rounded-md shadow-lg">
             <p className="text-gray-500">Image not available</p>
           </div>
         ) : (
           <>
-            {!imageLoaded && <Skeleton className="w-full h-[500px] rounded-md" />}
+            {!imageLoaded && <Skeleton className="w-full h-80 rounded-md" />}
             <img 
               src={image}
               alt={`${name} Monument Concept`} 
-              className={`relative w-full object-cover shadow-lg rounded-md ${imageLoaded ? 'block' : 'hidden'}`}
+              className={`relative w-full h-auto object-cover shadow-lg rounded-md ${imageLoaded ? 'block' : 'hidden'}`}
               onLoad={handleImageLoad}
               onError={handleImageError}
-              style={{ maxHeight: '700px', width: '100%' }}
+              style={{ maxHeight: '500px', width: '100%' }}
             />
           </>
         )
       ) : (
-        <div className="relative w-full h-[500px] bg-gray-100 flex items-center justify-center rounded-md shadow-lg">
+        <div className="relative w-full h-80 bg-gray-100 flex items-center justify-center rounded-md shadow-lg">
           <p className="text-gray-500">No image for this concept</p>
         </div>
       )}
