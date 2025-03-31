@@ -30,6 +30,22 @@ const MonumentImage: React.FC<MonumentImageProps> = ({ image, name, location }) 
     toast.error(`Failed to load image: ${image}`);
   };
 
+  // Process the image path to ensure it works in both development and production
+  const getImageUrl = (src: string) => {
+    // If it's an external URL (http/https), use it directly
+    if (src.startsWith('http') || src.startsWith('https')) {
+      return src;
+    }
+    
+    // For Athena image, use the specific path that works in production
+    if (src.includes('Athena Final Watercolor')) {
+      return '/Athena Final Watercolor';
+    }
+    
+    // For other local images
+    return src;
+  };
+
   return (
     <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms', opacity: '1' }}>
       {image ? (
@@ -41,7 +57,7 @@ const MonumentImage: React.FC<MonumentImageProps> = ({ image, name, location }) 
           <>
             {!imageLoaded && <Skeleton className="w-full h-80 rounded-md" />}
             <img 
-              src={image}
+              src={getImageUrl(image)}
               alt={`${name} Monument Concept`} 
               className={`relative w-full h-auto object-cover shadow-lg rounded-md ${imageLoaded ? 'block' : 'hidden'}`}
               onLoad={handleImageLoad}
