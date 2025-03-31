@@ -32,12 +32,14 @@ const MonumentImage: React.FC<MonumentImageProps> = ({ image, name, location }) 
 
   // Function to get proper image URL for both development and production
   const getImageUrl = (src: string) => {
+    // If it's an external URL (http/https), use it directly
     if (src.startsWith('http') || src.startsWith('https')) {
       return src;
     }
     
-    // For local images, ensure they're correctly referenced
-    return src.startsWith('./') ? src : `.${src.startsWith('/') ? '' : '/'}${src}`;
+    // For local images in the public folder, use the path as is if it starts with /
+    // This ensures the path is relative to the domain root
+    return src;
   };
 
   return (
