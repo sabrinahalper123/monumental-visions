@@ -30,6 +30,16 @@ const MonumentImage: React.FC<MonumentImageProps> = ({ image, name, location }) 
     toast.error(`Failed to load image: ${image}`);
   };
 
+  // Function to get proper image URL for both development and production
+  const getImageUrl = (src: string) => {
+    if (src.startsWith('http') || src.startsWith('https')) {
+      return src;
+    }
+    
+    // For local images, ensure they're correctly referenced
+    return src.startsWith('./') ? src : `.${src.startsWith('/') ? '' : '/'}${src}`;
+  };
+
   return (
     <div className="max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '400ms', opacity: '1' }}>
       {image ? (
@@ -41,7 +51,7 @@ const MonumentImage: React.FC<MonumentImageProps> = ({ image, name, location }) 
           <>
             {!imageLoaded && <Skeleton className="w-full h-80 rounded-md" />}
             <img 
-              src={image}
+              src={getImageUrl(image)}
               alt={`${name} Monument Concept`} 
               className={`relative w-full h-auto object-cover shadow-lg rounded-md ${imageLoaded ? 'block' : 'hidden'}`}
               onLoad={handleImageLoad}
