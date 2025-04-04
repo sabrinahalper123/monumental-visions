@@ -53,7 +53,7 @@ const MonumentSection: React.FC = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <span className="inline-block font-accent text-black text-sm uppercase tracking-widest mb-3 opacity-0 animate-fade-in font-semibold">Thought Exercise</span>
-          <h2 className="section-heading">{currentMonument.name}</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-4 sm:mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '300ms' }}>{currentMonument.name}</h2>
         </div>
         
         <div className="flex flex-col items-center mb-10 relative">
