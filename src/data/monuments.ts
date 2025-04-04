@@ -16,7 +16,7 @@ export const monuments = [
   {
     id: 'phoenix',
     name: 'Rising Phoenix',
-    image: 'https://i.imgur.com/DpfVD5t.jpeg',
+    image: 'https://raw.githubusercontent.com/sabrinahalper123/monumental-visions/refs/heads/main/public/DOVE%20123.jpg',
     location: 'Pacific Palisades, California',
     description: [
       "The Rising Phoenix stands as a powerful symbol of rebirth, renewal, and resilience for Pacific Palisades, especially in the wake of the devastating fires earlier this year.",
