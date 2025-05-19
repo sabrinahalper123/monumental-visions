@@ -34,7 +34,7 @@ const Header: React.FC = () => {
           <span className={cn(
             "transition-colors duration-300",
             isScrolled ? "text-black" : "text-white"
-          )}>Monumental</span>
+          )}>Alexandria</span>
         </a>
         
         {/* Mobile menu button */}

@@ -47,7 +47,7 @@ const HeroSection: React.FC = () => {
             animationDelay: '200ms',
             textShadow: '0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006' // Keeping the thin black text-shadow for letter outline
           }}>
-            Monumental
+            Alexandria
           </h1>
           
           <p className="font-sans text-lg sm:text-xl md:text-2xl opacity-0 animate-fade-in text-white/90" style={{ animationDelay: '500ms' }}>
