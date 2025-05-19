@@ -41,11 +41,11 @@ const HeroSection: React.FC = () => {
       {/* Content container */}
       <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Adding "monuments of" text above ALEXANDRIA - now with increased size */}
+          {/* "monuments of" text with improved readability */}
           <div className="mb-0 opacity-0 animate-fade-in" style={{ animationDelay: '100ms' }}>
-            <span className="font-sans text-base sm:text-lg md:text-xl uppercase tracking-wide text-white/80" style={{ 
+            <span className="font-sans text-base sm:text-lg md:text-xl uppercase tracking-wide text-white" style={{ 
               letterSpacing: '0.2em',
-              textShadow: '0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006'
+              textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 1px 2px rgba(0,0,0,0.6)'
             }}>
               monuments of
             </span>
