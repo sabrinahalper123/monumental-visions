@@ -18,8 +18,7 @@ const Footer: React.FC = () => {
                 className="text-white hover:text-white/90 underline"
               >
                 Alexandria Library (AI)
-              </a> is translating many of the world's greatest works to inspire in the intellectual realm. 
-              In all cases we are inspired by the best of the past and present and hope to similarly motivate people in the future.
+              </a> is translating many of the world's greatest works to inspire in the intellectual realm. In all cases we are inspired by the best of the past and present and hope to similarly motivate people in the future.
             </p>
           </div>
         </div>
