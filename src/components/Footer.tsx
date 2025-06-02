@@ -11,8 +11,14 @@ const Footer: React.FC = () => {
               Alexandria
             </h3>
             <p className="text-sm text-white/70 max-w-md">
-              Building monumental public works to inspire humanity's future.
-              Thinking big, starting small, and making a lasting impact.
+              Alexandria is a project to inspire humanity at an intellectual and physical level. Alexandria Monuments is building large scale art in the physical world. <a 
+                href="https://www.alexlib.org/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white hover:text-white/90 underline"
+              >
+                Alexandria Library (AI)
+              </a> is translating many of the world's greatest works to inspire in the intellectual realm. In all cases we are inspired by the best of the past and present and hope to similarly motivate people in the future.
             </p>
           </div>
         </div>
