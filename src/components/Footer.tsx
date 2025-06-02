@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
             <h3 className="text-2xl mb-4 font-medium">
               Alexandria
             </h3>
-            <p className="text-sm text-white/70 max-w-md">
+            <p className="text-sm text-white/70">
               Alexandria is a project to inspire humanity at an intellectual and physical level. Alexandria Monuments is building large scale art in the physical world. <a 
                 href="https://www.alexlib.org/" 
                 target="_blank" 
