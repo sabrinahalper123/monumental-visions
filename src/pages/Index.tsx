@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import MonumentSection from '@/components/MonumentSection';
 import MotivationSection from '@/components/MotivationSection';
 import Footer from '@/components/Footer';
 
@@ -23,7 +22,6 @@ const Index: React.FC = () => {
       <Header />
       <main>
         <HeroSection />
-        <MonumentSection />
         <MotivationSection />
       </main>
       <Footer />

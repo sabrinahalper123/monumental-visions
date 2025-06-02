@@ -64,7 +64,6 @@ const Header: React.FC = () => {
         {/* Desktop menu */}
         <nav className="hidden md:flex space-x-8">
           {[
-            { name: 'Ideas', color: isScrolled ? 'text-black hover:text-black/70' : 'text-white hover:text-white/70' },
             { name: 'Motivation', color: isScrolled ? 'text-black hover:text-black/70' : 'text-white hover:text-white/70' },
             { name: 'Process', color: isScrolled ? 'text-black hover:text-black/70' : 'text-white hover:text-white/70' }
           ].map((item) => (
@@ -86,7 +85,6 @@ const Header: React.FC = () => {
       )}>
         <nav className="container mx-auto px-4 flex flex-col space-y-4">
           {[
-            { name: 'Ideas', color: 'text-black hover:text-black/70' },
             { name: 'Motivation', color: 'text-black hover:text-black/70' },
             { name: 'Process', color: 'text-black hover:text-black/70' }
           ].map((item) => (
