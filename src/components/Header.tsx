@@ -65,7 +65,8 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex space-x-8">
           {[
             { name: 'Motivation', color: isScrolled ? 'text-black hover:text-black/70' : 'text-white hover:text-white/70' },
-            { name: 'Process', color: isScrolled ? 'text-black hover:text-black/70' : 'text-white hover:text-white/70' }
+            { name: 'Process', color: isScrolled ? 'text-black hover:text-black/70' : 'text-white hover:text-white/70' },
+            { name: 'Inspirations', color: isScrolled ? 'text-black hover:text-black/70' : 'text-white hover:text-white/70' }
           ].map((item) => (
             <a 
               key={item.name}
@@ -86,7 +87,8 @@ const Header: React.FC = () => {
         <nav className="container mx-auto px-4 flex flex-col space-y-4">
           {[
             { name: 'Motivation', color: 'text-black hover:text-black/70' },
-            { name: 'Process', color: 'text-black hover:text-black/70' }
+            { name: 'Process', color: 'text-black hover:text-black/70' },
+            { name: 'Inspirations', color: 'text-black hover:text-black/70' }
           ].map((item) => (
             <a 
               key={item.name}
