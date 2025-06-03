@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "@/lib/utils";
 
@@ -251,7 +250,7 @@ const MotivationSection: React.FC = () => {
                 </div>
               </div>
               
-              <div className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-16">
+              <div id="inspirations" className="animate-on-scroll opacity-0 max-w-3xl mx-auto w-full mt-16">
                 <div className="relative mb-5">
                   <div className="flex justify-center">
                     <span className="relative px-4 bg-background text-black font-semibold font-accent text-sm">INSPIRATIONS</span>
