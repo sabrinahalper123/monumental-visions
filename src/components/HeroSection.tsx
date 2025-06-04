@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
       </div>
       
       {/* Content container */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 -mt-32 sm:-mt-36 md:-mt-40 lg:-mt-44">
+      <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 -mt-40 sm:-mt-44 md:-mt-48 lg:-mt-52">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-sans font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-2 sm:mb-3 opacity-0 animate-fade-in tracking-tight text-white" style={{ 
             textTransform: 'uppercase',
