@@ -60,7 +60,7 @@ const HeroSection: React.FC = () => {
             </span>
           </div>
           
-          <p className="font-sans text-lg sm:text-xl md:text-2xl opacity-0 animate-fade-in text-white/90" style={{ animationDelay: '500ms' }}>
+          <p className="font-sans text-lg sm:text-xl md:text-2xl opacity-0 animate-fade-in text-white/90 -mt-4" style={{ animationDelay: '500ms' }}>
             Inspiring humanity to build its future
           </p>
         </div>
