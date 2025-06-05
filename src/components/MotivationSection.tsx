@@ -222,7 +222,7 @@ const MotivationSection: React.FC = () => {
               </div>
               
               <div className="animate-on-scroll opacity-0 text-lg leading-relaxed mb-12">
-                We're starting small but thinking big, collaborating with bronze and marble foundries and artisans on several projects. Our goal is to create something meaningful with the community. <a href="mailto:hi@alexmonuments.org" className="text-black hover:underline">Reach out</a> if you're an artist or architect interested in getting involved.
+                We're starting small but thinking big, collaborating with bronze and marble foundries and artisans on several projects. Our goal is to create something meaningful with the community. <a href="mailto:hi@alexandriamonuments.org" className="text-black hover:underline">Reach out</a> if you're an artist or architect interested in getting involved.
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -230,7 +230,7 @@ const MotivationSection: React.FC = () => {
                   <h3 className="font-display text-xl mb-4">Sponsors</h3>
                   <p className="text-lg leading-relaxed">
                     The founding sponsor of Alexandria is <a href="https://eladgil.com/" className="text-black hover:underline" target="_blank" rel="noopener noreferrer">Elad Gil</a>. Other sponsors and support list coming soon. 
-                    Reach out to <a href="mailto:hi@alexmonuments.org" className="text-black hover:underline">hi@alexmonuments.org</a> if you're interested in supporting this project.
+                    Reach out to <a href="mailto:hi@alexandriamonuments.org" className="text-black hover:underline">hi@alexandriamonuments.org</a> if you're interested in supporting this project.
                   </p>
                 </div>
                 
