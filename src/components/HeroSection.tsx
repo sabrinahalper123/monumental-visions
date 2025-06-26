@@ -41,26 +41,16 @@ const HeroSection: React.FC = () => {
       {/* Content container */}
       <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 -mt-40 sm:-mt-44 md:-mt-48 lg:-mt-52">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-sans font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-2 sm:mb-3 opacity-0 animate-fade-in tracking-tight text-white" style={{ 
+          <h1 className="font-sans font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 opacity-0 animate-fade-in tracking-tight text-white" style={{ 
             textTransform: 'uppercase',
             letterSpacing: '0.05em',
             animationDelay: '200ms',
             textShadow: '0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006, 0 0 1px #0006' // Keeping the thin black text-shadow for letter outline
           }}>
-            Alexandria
+            Alexandria Monuments
           </h1>
           
-          {/* "monuments" text below ALEXANDRIA */}
-          <div className="mb-4 sm:mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '300ms' }}>
-            <span className="font-sans text-base sm:text-lg md:text-xl uppercase tracking-wide text-white" style={{ 
-              letterSpacing: '0.2em',
-              textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 1px 2px rgba(0,0,0,0.6)'
-            }}>
-              monuments
-            </span>
-          </div>
-          
-          <p className="font-sans text-lg sm:text-xl md:text-2xl opacity-0 animate-fade-in text-white/90 -mt-4" style={{ animationDelay: '500ms' }}>
+          <p className="font-sans text-lg sm:text-xl md:text-2xl opacity-0 animate-fade-in text-white/90" style={{ animationDelay: '500ms' }}>
             Inspiring humanity to build its future
           </p>
         </div>
